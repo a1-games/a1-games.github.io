@@ -34974,7 +34974,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-image-1 {
   width: 77px;
   height: 77px;
-  margin: 19px auto 0 0;
+  margin: 20px auto 0 0;
 }
 
 .u-header .u-logo-image-1 {
@@ -34984,40 +34984,41 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-text-1 {
   font-weight: 700;
+  font-size: 2.25rem;
   margin: -58px auto 0;
 }
 
 .u-header .u-image-2 {
-  width: 55px;
-  height: 55px;
-  margin: -47px 0 30px auto;
+  width: 66px;
+  height: 66px;
+  margin: -55px 0 28px auto;
 }
 @media (max-width: 1199px) {
   .u-header .u-image-1 {
     width: 77px;
     height: 77px;
+    margin-top: 22px;
   }
 
   .u-header .u-text-1 {
-    margin-top: -58px;
+    margin-top: -59px;
   }
 
   .u-header .u-image-2 {
-    width: 55px;
-    height: 55px;
-    margin-top: -47px;
-    margin-right: 0;
+    width: 66px;
+    height: 66px;
+    margin-top: -53px;
   }
 }
 @media (max-width: 991px) {
   .u-header .u-sheet-1 {
-    min-height: 184px;
+    min-height: 191px;
   }
 
   .u-header .u-image-1 {
     width: 117px;
     height: 117px;
-    margin-top: 34px;
+    margin-top: 37px;
   }
 
   .u-header .u-text-1 {
@@ -35028,41 +35029,51 @@ a.u-link.u-text-hover-grey-90:hover {
     width: 77px;
     height: 77px;
     margin-top: -58px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
+  .u-header .u-sheet-1 {
+    min-height: 193px;
+  }
+
   .u-header .u-image-1 {
     width: 117px;
     height: 117px;
+    margin-top: 38px;
   }
 
   .u-header .u-text-1 {
-    margin-top: -78px;
+    font-size: 1.875rem;
+    margin-top: -75px;
   }
 
   .u-header .u-image-2 {
-    margin-top: -58px;
-    margin-bottom: 54px;
+    margin-top: -55px;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-sheet-1 {
-    min-height: 174px;
+    min-height: 150px;
   }
 
   .u-header .u-image-1 {
     width: 77px;
     height: 77px;
+    margin-top: 37px;
   }
 
   .u-header .u-text-1 {
     width: auto;
+    font-size: 1rem;
+    margin-top: -47px;
   }
 
   .u-header .u-image-2 {
     width: 63px;
     height: 63px;
+    margin-top: -40px;
+    margin-bottom: 44px;
   }
 }
 .u-footer {
