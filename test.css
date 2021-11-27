@@ -34,22 +34,30 @@
     background: transparent;
     border-style: solid;
     border-width: 4px;
-    border-color: black;
+    border-color: transparent;
     cursor: pointer;
-    width: 70%;
-    margin: 0 auto;
+    margin: 1.6rem 0 auto auto;
+    /*dsfdf*/
+    padding: 0.8rem 1.4rem;
+    vertical-align: middle;
 }
 #google-play-button-text {
+    /*button:*/
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    padding: 0.8rem 1.4rem;
     /*font adjustments:*/
+    text-align: center;
     text-decoration: none;
     color: #000000 !important;
-    font-family: 'Open Sans',sans-serif;
-    text-transform: uppercase;
     font-size: 1rem;
-    letter-spacing: 0px;
-    font-weight: bold;
+    font-family: Roboto;
+    text-transform: uppercase;
+    vertical-align: middle;
 }
-#google-play-button:hover {
+#google-play-button-text:hover {
     background-color: #5fc3f5 !important;
 }
 
@@ -142,8 +150,25 @@ body {
     color: #000000 !important;
 }
 
-.bannertext{
-    
+.footer-title {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: RobotoLight;
+    letter-spacing: 2px;
+}
+.footer-text {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: RobotoThin;
+    letter-spacing: 1px;
+}
+.footer-link:hover {
+    color: #5fc3f5;
 }
 
 .text-bubblegum {
@@ -158,5 +183,36 @@ body {
     src: url(fonts/BubblegumSans-Regular.otf);
     src: url(fonts/BubblegumSans-Regular.ttf);
 }
+@font-face {
+    font-family: RobotoMedium;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoLight;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: RobotoThin;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
 
 @import url(//fonts.google.com/specimen/Bubblegum+Sans);
+@import url(//fonts.google.com/specimen/Roboto);
