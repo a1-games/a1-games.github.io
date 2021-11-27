@@ -5,7 +5,8 @@ body {
 
 #header {
     background-image: none;
-    background-color: black;
+    background: rgb(245,50,93);
+    background: linear-gradient(90deg, rgba(245,50,93,.2) 0%, rgba(131,254,91,.2) 49%, rgba(255,247,0,.2) 100%);
     padding: 0px;
 }
 
@@ -16,49 +17,81 @@ body {
 
 .fullwidth {
     width: 100%;
-    margin: 0px;
 }
 
 .no-padding {
     padding: 0px;
 }
 
-.banner {
-}
-
-.bannertable {
-    height: 100%;
-}
-
-.bannericon {
-    height: 128px;
-    width: 128px;
+.blob-skins {
+    height: 218px;
+    width: 218px;
     padding: 10px;
     border-radius: 20%;
 }
 
-.tablerow {
+.bannertable {
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
+.bannericon {
+    height: 84px;
+    width: 84px;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.bannericona1 {
+    height: 108px;
+    width: 108px;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+#top-page-cover {
+    background-image: url("images/bckgrnd03.png");
+    object-fit: none;
+}
+.th-text-a1 {
+    text-align: left;
+    padding-left: 16px;
+    font-size: 32px;
+    width: 180px;
+    margin: 0px;
+}
+.true-center {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
 .th-text {
     text-align: center;
+    font-size: 32px;
+    margin: 0px;
 }
 
-.bannertext{
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    text-transform: inherit;
+.text-color {
     background-color: transparent;
-    align-self: flex-start;
     color: #000000 !important;
 }
 
+.bannertext{
+    
+}
+
+.text-bubblegum {
+    font-family: BubblegumSans;
+    font-size: 6rem;
+    color: #83fe5b;
+}
 
 }@font-face {
-  font-family: 'BubblegumSans-Regular';
+  font-family: BubblegumSans;
   font-style: normal;
   font-weight: 400;
   src: url(fonts/BubblegumSans-Regular.otf);
 }
+
+@import url(//fonts.google.com/specimen/Bubblegum+Sans);
