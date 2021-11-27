@@ -1,3 +1,36 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* width */
+::-webkit-scrollbar {
+    height: 12px;
+    -webkit-overflow-scrolling: touch;
+    /*display:none;*/
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D3D3D3;
+    opacity: 10%;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #D3D3D3;
+        opacity: 30%;
+        border-radius: 20px;
+    }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
 body {
     font-family: Arial;
     margin: 0px;
@@ -19,6 +52,10 @@ body {
     width: 100%;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .no-padding {
     padding: 0px;
 }
@@ -28,6 +65,11 @@ body {
     width: 218px;
     padding: 10px;
     border-radius: 20%;
+}
+
+.layout-row {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .bannertable {
@@ -83,15 +125,15 @@ body {
 
 .text-bubblegum {
     font-family: BubblegumSans;
-    font-size: 6rem;
     color: #83fe5b;
 }
 
-}@font-face {
-  font-family: BubblegumSans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/BubblegumSans-Regular.otf);
+@font-face {
+    font-family: BubblegumSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/BubblegumSans-Regular.otf);
+    src: url(fonts/BubblegumSans-Regular.ttf);
 }
 
 @import url(//fonts.google.com/specimen/Bubblegum+Sans);
