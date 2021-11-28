@@ -110,7 +110,13 @@ body {
     padding-right: 10%;
 }
 
-#top-page-cover {
+#top-page-index {
+    background-image: url("images/subscride.png");
+    background-size: cover;
+    object-fit: none;
+}
+
+#top-page-jumpingbacteria {
     background-image: url("images/bckgrnd03.png");
     object-fit: none;
 }
@@ -162,7 +168,12 @@ body {
 .footer-link:hover {
     color: #5fc3f5;
 }
-
+.youtube-link:hover {
+    color: red;
+}
+.twitch-link:hover {
+    color: rebeccapurple;
+}
 /*on mobile*/
 @media (max-width: 767px) {
     .hidden-mobile {
@@ -182,14 +193,14 @@ body {
         padding: 6px 0;
         border-radius: 10px;
     }
-    .text-bubblegum {
-        font-family: BubblegumSans;
-        color: #83fe5b;
-        font-size: 3rem;
+    .text-bubblegum-index {
+        font-family: RobotoLight;
+        color: #e0e5eb;
+        font-size: 3.4rem;
         text-align: center;
         margin: 0;
-        padding-top: 64px;
-        letter-spacing: 0.6rem;
+        padding: 3rem;
+        letter-spacing: 0.4rem;
     }
 }
 
@@ -212,14 +223,14 @@ body {
         padding: 8px 0;
         border-radius: 12px;
     }
-    .text-bubblegum {
-        font-family: BubblegumSans;
-        color: #83fe5b;
+    .text-bubblegum-index {
+        font-family: RobotoLight;
+        color: #e0e5eb;
         font-size: 6rem;
         text-align: center;
         margin: 0;
-        padding-top: 64px;
-        letter-spacing: 0.6rem;
+        padding: 5rem;
+        letter-spacing: 0.4rem;
     }
 }
 

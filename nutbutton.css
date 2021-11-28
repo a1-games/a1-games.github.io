@@ -1,0 +1,35 @@
+#top-page-nut {
+    background-image: url("images/nutnutnut20pc.png");
+    background-repeat: repeat;
+    object-fit: none;
+}
+
+
+/*on mobile*/
+@media (max-width: 767px) {
+    .text-bubblegum-nut {
+        font-family: BubblegumSans;
+        color: #385484;
+        font-size: 3.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 3rem;
+        letter-spacing: 0.6rem;
+        -webkit-text-stroke: 1px black;
+    }
+}
+
+/*on desktop*/
+@media (min-width: 767px) {
+    .text-bubblegum-nut {
+        font-family: BubblegumSans;
+        color: #385484;
+        font-size: 6rem;
+        text-align: center;
+        margin: 0;
+        padding: 5rem;
+        letter-spacing: 0.6rem;
+        font-weight: 900;
+        -webkit-text-stroke: 1px black;
+    }
+}
