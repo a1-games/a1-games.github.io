@@ -106,8 +106,8 @@ body {
 
 .bannertable {
     height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #top-page-cover {
@@ -134,6 +134,10 @@ body {
 .text-color-black {
     background-color: transparent;
     color: #000000 !important;
+}
+.text-color-socials {
+    background-color: transparent;
+    color: lightgray;
 }
 
 .footer-title {
