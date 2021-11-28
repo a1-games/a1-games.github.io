@@ -38,7 +38,7 @@
     border-width: 4px;
     border-color: transparent;
     cursor: pointer;
-    margin: 1.6rem 0 auto auto;
+    margin: 0.4rem 0 auto auto;
     /*dsfdf*/
     padding: 0.8rem 1.4rem;
     vertical-align: middle;
@@ -111,7 +111,7 @@ body {
 }
 
 #top-page-index {
-    background-image: url("images/subscride.png");
+    background-image: url("images/banner.png");
     background-size: cover;
     object-fit: none;
 }

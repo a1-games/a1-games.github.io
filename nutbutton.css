@@ -17,6 +17,10 @@
         letter-spacing: 0.6rem;
         -webkit-text-stroke: 1px black;
     }
+    .nut-button {
+        height: 256px;
+        width: 256px;
+    }
 }
 
 /*on desktop*/
@@ -32,4 +36,55 @@
         font-weight: 900;
         -webkit-text-stroke: 1px black;
     }
+
+    .nut-button {
+        height: 512px;
+        width: 512px;
+    }
 }
+
+
+/*nut button in browser*/
+.nut-button {
+    background-image: url("images/nut/nutUnpressed.png"); /* Green */
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    padding: 2rem;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+.nut-button:active {
+    background-image: url("images/nut/nutPressed.png"); /* Green */
+}
+
+.nut-button-div {
+    background-color: #d2d2d2;
+    padding: 4rem;
+    text-align: center;
+}
+
+#square-button-text {
+    /*button:*/
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    padding: 0.8rem 1.4rem;
+    /*font adjustments:*/
+    text-align: center;
+    text-decoration: none;
+    color: #000000 !important;
+    font-size: 1rem;
+    font-family: Roboto;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+    #square-button-text:hover {
+        background-color: #3672dc !important;
+    }
+
+
+
+
