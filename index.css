@@ -1,7 +1,7 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 /* width */
 ::-webkit-scrollbar {
-    height: 12px;
+    height: 22px;
     -webkit-overflow-scrolling: touch;
     /*display:none;*/
 }
@@ -11,7 +11,7 @@
 }
 /* Handle */
 ::-webkit-scrollbar-thumb:horizontal {
-    background: #83fe5b;
+    background: gray; /*#83fe5b*/
     border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:vertical {
@@ -20,7 +20,7 @@
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:horizontal:hover {
-    background: #53e424;
+    background: #666; /*#53e424*/
 }
 ::-webkit-scrollbar-thumb:vertical:hover {
     background: gray;
@@ -233,6 +233,29 @@ body {
         letter-spacing: 0.4rem;
     }
 }
+
+@keyframes bannermove {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50);
+    }
+}
+
+.slideshow {
+    display: flex;
+    position: relative;
+    animation-name: bannermove;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+
 
 
 
