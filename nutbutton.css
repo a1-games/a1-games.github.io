@@ -63,7 +63,8 @@
     text-align: center;
 }
 
-#square-button-text {
+#square-button-text, 
+#square-button-text-mizkif {
     /*button:*/
     background: transparent;
     border-style: solid;
@@ -79,11 +80,9 @@
     text-transform: uppercase;
     vertical-align: middle;
 }
-
     #square-button-text:hover {
         background-color: #3672dc !important;
     }
-
-
-
-
+#square-button-text-mizkif:hover {
+    background-color: #6335f7 !important;
+}
