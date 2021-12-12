@@ -97,7 +97,7 @@
     </header>
 
     <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas" width=960 height=600></canvas>
+        <canvas id="unity-canvas" width=460 height=800></canvas>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
@@ -108,7 +108,7 @@
         <div id="unity-footer">
             <div id="unity-webgl-logo"></div>
             <div id="unity-fullscreen-button"></div>
-            <div id="unity-build-title">The Mizkif Soundboard</div>
+            <div id="unity-build-title">mizkifSoundboard</div>
         </div>
     </div>
     <script>
@@ -143,16 +143,16 @@
             updateBannerVisibility();
         }
 
-        var buildUrl = "mizkif/Build";
+        var buildUrl = "Build";
         var loaderUrl = buildUrl + "/mizkif webgl.loader.js";
         var config = {
-            dataUrl: buildUrl + "/mizkif webgl.data.br",
+            dataUrl: buildUrl + "/mizkif webgl.data",
             frameworkUrl: buildUrl + "/mizkif webgl.framework.js",
-            codeUrl: buildUrl + "/mizkif webgl.wasm.br",
+            codeUrl: buildUrl + "/mizkif webgl.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "mizkifSoundboard",
-            productVersion: "1.2",
+            productVersion: "1.3",
             showBanner: unityShowBanner,
         };
 
