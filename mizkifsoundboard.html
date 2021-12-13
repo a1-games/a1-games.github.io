@@ -97,7 +97,7 @@
     </header>
 
     <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas" width=460 height=800></canvas>
+        <canvas id="unity-canvas" width=960 height=600></canvas>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
@@ -143,12 +143,12 @@
             updateBannerVisibility();
         }
 
-        var buildUrl = "Build";
+        var buildUrl = "mizkif/Build";
         var loaderUrl = buildUrl + "/mizkif webgl.loader.js";
         var config = {
-            dataUrl: buildUrl + "/mizkif webgl.data",
-            frameworkUrl: buildUrl + "/mizkif webgl.framework.js",
-            codeUrl: buildUrl + "/mizkif webgl.wasm",
+            dataUrl: buildUrl + "/mizkif webgl.data.br",
+            frameworkUrl: buildUrl + "/mizkif webgl.framework.js.br",
+            codeUrl: buildUrl + "/mizkif webgl.wasm.br",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "mizkifSoundboard",
@@ -170,8 +170,8 @@
             config.devicePixelRatio = 1;
             unityShowBanner('WebGL builds are not supported on mobile devices.');
         } else {
-            canvas.style.width = "460px";
-            canvas.style.height = "800px";
+            canvas.style.width = "960px";
+            canvas.style.height = "600px";
         }
         loadingBar.style.display = "block";
 
