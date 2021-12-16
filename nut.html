@@ -7,96 +7,19 @@
     <link rel="stylesheet" href="index.css" media="screen">
     <link rel="shortcut icon" href="images/a1Icon16px.ico" type="image/x-icon">
     <script src="nut.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("php/header.html");
+        });
+    </script>
 </head>
 <body style="background-color: #d2d2d2;">
-    <header>
-        <div id="header">
-            <table align="center" class="fullwidth bannertable" style="overflow-x: scroll;">
-                <tr class="hidden-mobile">
-                    <th align="left" style="width:30%;">
-                        <table>
-                            <tr>
-                                <th>
-                                    <a href="index.html" alt="Go Back To Main Menu" title="Back To Home Page">
-                                        <img src="images/a1Icon512px.png" class="bannericona1">
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="index.html" alt="Go Back To Main Menu" title="Back To Home Page" style="margin-left: 4px; text-decoration: none; color: black;">
-                                        Back To Home Page
-                                    </a>
-                                </th>
-                            </tr>
-                        </table>
-                    </th>
-                    <th align="center">
-                        <table>
-                            <tr>
-                                <th>
-
-                                </th>
-                            </tr>
-                        </table>
-                    </th>
-                    <th align="right" style="width:30%;">
-                        <table style="overflow:auto;">
-                            <tr>
-                                <th>
-                                    <a href="https://play.google.com/store/apps/details?id=com.a1creator.nut" target="_blank" alt="Go Back To Main Menu" title="Back To Home Page" style="text-decoration: none; color: black;">
-                                        Download On Google Play
-                                    </a>
-                                </th>
-                                <th>
-                                    <a href="https://play.google.com/store/apps/details?id=com.a1creator.nut" target="_blank" alt="should open the page that lets you either go to google app store or play in browser" title="Nut Button Icon">
-                                        <img src="images/nutIcon512.jpg" class="bannericon">
-                                    </a>
-                                </th>
-                            </tr>
-                        </table>
-                    </th>
-                </tr>
-                <tr class="hidden-desktop">
-                    <th align="center">
-                        <table>
-                            <tr>
-                                <th>
-                                    <a href="index.html" alt="Go Back To Main Menu" title="Back To Home Page">
-                                        <img src="images/a1Icon512px.png" class="bannericona1">
-                                    </a>
-                                </th>
-                                <th>
-                                    <a>
-                                        <h2 class="no-padding th-text-a1 text-color-black">a1-creator</h2>
-                                    </a>
-                                </th>
-                            </tr>
-                        </table>
-                    </th>
-                </tr>
-                <tr class="hidden-desktop">
-                    <th align="right" style="width:100%;">
-                        <table style="overflow:auto;" align="center">
-                            <tr>
-                                <th>
-                                    <p>
-                                        Download On Google Play
-                                    </p>
-                                </th>
-                                <th>
-                                    <a href="nutbuttonpage.html" alt="should open the page that lets you either go to google app store or play in browser" title="Nut Button Icon">
-                                        <img src="images/nutIcon512.jpg" class="bannericon">
-                                    </a>
-                                </th>
-                            </tr>
-                        </table>
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </header>
+    <!-- load header in -->
+    <header id="header"></header>
 
     <div class="nut-button-div">
-        <input type="button" value="" onclick="playMusic()" class="nut-button"/>
+        <input type="button" value="" onclick="playMusic()" class="nut-button" />
     </div>
 </body>
 </html>
