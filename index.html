@@ -13,11 +13,12 @@
     <script>
         $(function() {
             $("#header").load("php/header.html");
+            $("#footer").load("php/footer.html");
         });
     </script>
 </head>
 <body>
-    <!-- load header attempt -->
+    <!-- load header in -->
     <header id="header"></header>
 
     <!-- MIZKIF SOUNDBOARD SHOWCASE -->
@@ -34,39 +35,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer style="background-color: #4d4d4d;">
-        <div style="padding: 46px 0;">
-            <table align="center">
-                <tr>
-                    <th style="background-color: transparent; width: 600px">
-                        <div>
-                            <h1 class="footer-title">Contact Me:</h1>
-                        </div>
-                    </th>
-                    <th style="background-color: transparent; width: 600px">
-                        <div>
-                            <h1 class="footer-title">Other:</h1>
-                        </div>
-                    </th>
-                </tr>
-                <tr>
-                    <th style="background-color: transparent; width: 600px; vertical-align: top;">
-                        <div style="padding: 4px;">
-                            <p class="footer-text">customerhelp.a1a3@gmail.com</p>
-                        </div>
-                    </th>
-                    <th style="background-color: transparent; width: 600px; vertical-align: top;">
-                        <div style="padding:4px;">
-                            <a href="Privacy-Policy.html" class="footer-text footer-link">Privacy Policy</a>
-                        </div>
-                        <div style="padding:4px;">
-                            <a href="Terms-And-Conditions.html" class="footer-text footer-link">Terms and Conditions</a>
-                        </div>
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </footer>
+    <footer style="background-color: #4d4d4d;" id="footer"> </footer>
 
 </body>
 
