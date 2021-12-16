@@ -9,10 +9,16 @@
     <link rel="shortcut icon" href="images/a1Icon16px.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 <body>
     <!-- load header attempt -->
-    <?php $IPATH = $_SERVER["DOCUMENT.ROOT"]."/php/"; include($IPATH."header.html")?>
+    <header id="header"></header>
 
     <!-- MIZKIF SOUNDBOARD SHOWCASE -->
     <div class="showcase-strip" style="width: 100%; background-image: url(mizkif/indexShowcaseBackground.png); background-repeat: repeat; background-size: contain; ">
