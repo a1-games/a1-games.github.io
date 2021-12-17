@@ -1,4 +1,10 @@
 
+
+#top-page-jumpingbacteria {
+    background-image: url("images/jumpingbacteria/bckgrnd03.png");
+    object-fit: none;
+}
+
 /*on mobile*/
 @media (max-width: 767px) {
     .text-bubblegum {
