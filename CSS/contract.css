@@ -111,7 +111,7 @@ body {
 }
 
 #top-page-cover {
-    background-image: url("images/bckgrnd03.png");
+    background-image: url("../images/bckgrnd03.png");
     object-fit: none;
 }
 .th-text-a1 {

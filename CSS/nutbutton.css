@@ -1,5 +1,5 @@
 #top-page-nut {
-    background-image: url("images/nut/nutnutnut20pc.png");
+    background-image: url("../images/nut/nutnutnut20pc.png");
     background-repeat: repeat;
     object-fit: none;
 }
@@ -45,7 +45,7 @@
 
 /*nut button in browser*/
 .nut-button {
-    background-image: url("images/nut/nutUnpressed.png"); /* Green */
+    background-image: url("../images/nut/nutUnpressed.png"); /* Green */
     background-color: transparent;
     background-size: cover;
     border: none;
@@ -54,7 +54,7 @@
     margin: 2rem 0;
 }
 .nut-button:active {
-    background-image: url("images/nut/nutPressed.png"); /* Green */
+    background-image: url("../images/nut/nutPressed.png"); /* Green */
 }
 
 .nut-button-div {
