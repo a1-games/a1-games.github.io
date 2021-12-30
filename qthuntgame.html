@@ -45,7 +45,7 @@
     </div>
 
     <div id="unity-container" class="unity-desktop">
-        <canvas id="unity-canvas" width=380 height=680></canvas>
+        <canvas id="unity-canvas" width=640 height=800></canvas>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
@@ -86,16 +86,16 @@
             updateBannerVisibility();
         }
 
-        var buildUrl = "twitchStreamers/mizkif/Build";
-        var loaderUrl = buildUrl + "/mizkif webgl.loader.js";
+        var buildUrl = "twitchStreamers/qtcinderella/game/Build";
+        var loaderUrl = buildUrl + "/game.loader.js";
         var config = {
-            dataUrl: buildUrl + "/mizkif webgl.data",
-            frameworkUrl: buildUrl + "/mizkif webgl.framework.js",
-            codeUrl: buildUrl + "/mizkif webgl.wasm",
+            dataUrl: buildUrl + "/game.data",
+            frameworkUrl: buildUrl + "/game.framework.js",
+            codeUrl: buildUrl + "/game.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
-            productName: "mizkifSoundboard",
-            productVersion: "1.3",
+            productName: "QTHUNT",
+            productVersion: "0.1",
             showBanner: unityShowBanner,
         };
 
@@ -113,8 +113,8 @@
             config.devicePixelRatio = 1;
             unityShowBanner('WebGL builds are not supported on mobile devices.');
         } else {
-            canvas.style.width = "380px";
-            canvas.style.height = "680px";
+            canvas.style.width = "640px";
+            canvas.style.height = "800px";
         }
         loadingBar.style.display = "block";
 
