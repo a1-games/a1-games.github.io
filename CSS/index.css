@@ -60,7 +60,9 @@ body {
 .no-padding {
     padding: 0px;
 }
-
+.no-margin {
+    margin: 0px;
+}
 .blob-skins {
     height: 218px;
     width: 218px;

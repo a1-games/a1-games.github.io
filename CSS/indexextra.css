@@ -1,0 +1,41 @@
+
+.a1creator-title {
+    align-content: normal;
+    text-decoration: none;
+    vertical-align: middle;
+    color: ghostwhite;
+}
+.a1creator-subtext {
+    align-content: normal;
+    vertical-align: middle;
+    color: white;
+}
+.a1creator-songbox {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.a1creator-songbox-tablerow {
+    margin: 12px;
+    padding: 12px;
+    text-align: left;
+    background-size: contain;
+}
+
+.nospacebetweencells {
+    border-spacing: 0 24px;
+}
+
+.a1creator-overlay {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.a1creator-overlay:hover {
+    opacity: 1;
+}
+
+.a1creator-a1gamesicon {
+    height: 46px;
+    width: 46px;
+    padding: 8px 0;
+    border-radius: 12px;
+}
