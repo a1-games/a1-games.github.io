@@ -21,6 +21,11 @@
     background-size: contain;
 }
 
+.no-text-decoration:hover .no-text-decoration:link .no-text-decoration:visited .no-text-decoration:active {
+    text-decoration: none !important;
+}
+
+
 .nospacebetweencells {
     border-spacing: 0 24px;
 }
@@ -34,8 +39,47 @@
 }
 
 .a1creator-a1gamesicon {
-    height: 46px;
-    width: 46px;
+    height: 64px;
+    width: 64px;
     padding: 8px 0;
     border-radius: 12px;
 }
+
+.a1creator-a1games-tab {
+    position: absolute;
+    display: table;
+    overflow: hidden;
+    left: 120%;
+    transition: .5s ease;
+
+    top: 50%;
+    bottom: 0;
+
+    opacity: 50%
+}
+.absolute-right {
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.absolute-right-and-center {
+    -moz-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+}
+.absolute-center {
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.a1creator-a1games-tab:hover {
+    left: 100%;
+    opacity: 100%;
+}
+
