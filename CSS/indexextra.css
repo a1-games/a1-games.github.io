@@ -1,14 +1,16 @@
+html {
+    background-color: #5A5A5A;
+}
 .a1creator-songbox-tablerow {
     margin: 12px;
     padding: 12px;
     text-align: left;
     background-size: contain;
 }
-
 .no-text-decoration:hover .no-text-decoration:link .no-text-decoration:visited .no-text-decoration:active {
     text-decoration: none !important;
+    box-shadow: none;
 }
-
 /*on mobile*/
 @media (max-width: 767px) {
     .nospacebetweencells {
@@ -16,6 +18,7 @@
     }
     .a1creator-title {
         align-content: normal;
+        box-shadow: none;
         text-decoration: none;
         vertical-align: middle;
         color: white;
@@ -23,6 +26,8 @@
     }
     .a1creator-subtext {
         align-content: normal;
+        box-shadow: none;
+        text-decoration: none;
         vertical-align: middle;
         color: ghostwhite;
         padding: 0 1.4rem 1.4rem 1.4rem;
