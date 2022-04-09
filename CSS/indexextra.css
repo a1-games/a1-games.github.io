@@ -7,10 +7,11 @@ html {
     text-align: left;
     background-size: contain;
 }
-.no-text-decoration:hover .no-text-decoration:link .no-text-decoration:visited .no-text-decoration:active {
-    text-decoration: none !important;
+a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link, .no-text-decoration:visited, .no-text-decoration:active {
+    text-decoration: none!important;
     box-shadow: none;
 }
+
 /*on mobile*/
 @media (max-width: 767px) {
     .nospacebetweencells {
@@ -18,16 +19,12 @@ html {
     }
     .a1creator-title {
         align-content: normal;
-        box-shadow: none;
-        text-decoration: none;
         vertical-align: middle;
         color: white;
         padding: 0 1.4rem 0.4rem 1.4rem;
     }
     .a1creator-subtext {
         align-content: normal;
-        box-shadow: none;
-        text-decoration: none;
         vertical-align: middle;
         color: ghostwhite;
         padding: 0 1.4rem 1.4rem 1.4rem;
@@ -80,7 +77,7 @@ html {
         position: absolute;
         display: table;
         overflow: hidden;
-        left: 120%;
+        left: 100%;
         transition: .5s ease;
         top: 50%;
         bottom: 0;
@@ -101,29 +98,19 @@ html {
 .a1creator-overlay:hover {
     opacity: 1;
 }
-
-
-
-.absolute-right {
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
-}
 .absolute-right-and-center {
+    -moz-transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    -webkit-transform: translate(-30%, -50%);
+    -o-transform: translate(-30%, -50%);
+    transform: translate(-30%, -50%);
+}
+.absolute-right-and-center:hover {
+    transform: translate(-100%, -50%);
     -moz-transform: translate(-100%, -50%);
     -ms-transform: translate(-100%, -50%);
     -webkit-transform: translate(-100%, -50%);
     -o-transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
-}
-.absolute-center {
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 .a1creator-a1games-tab:hover {
     left: 100%;
