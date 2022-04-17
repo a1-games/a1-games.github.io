@@ -1,0 +1,40 @@
+#google-play-button {
+    /*button:*/
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0.4rem 0 auto auto;
+    /*dsfdf*/
+    padding: 0.8rem 1.4rem;
+    vertical-align: middle;
+}
+.google-play-button-text {
+    /*button:*/
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    padding: 0.8rem 1.4rem;
+    /*font adjustments:*/
+    text-align: center;
+    text-decoration: none;
+    color: #000000 !important;
+    font-size: 1rem;
+    font-family: Roboto;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+#google-play-button-text-jumpingbacteria:hover {
+    background-color: #5fc3f5 !important;
+}
+#google-play-button-text-nut:hover {
+    background-color: #3672dc !important;
+}
+#google-play-button-text-mizkif:hover {
+    background-color: #6335f7 !important;
+}
+#google-play-button-text-crab:hover {
+    background-color: #89CFF0 !important;
+}

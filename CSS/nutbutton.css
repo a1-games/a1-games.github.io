@@ -63,26 +63,3 @@
     text-align: center;
 }
 
-#square-button-text, 
-#square-button-text-mizkif {
-    /*button:*/
-    background: transparent;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-    padding: 0.8rem 1.4rem;
-    /*font adjustments:*/
-    text-align: center;
-    text-decoration: none;
-    color: #000000 !important;
-    font-size: 1rem;
-    font-family: Roboto;
-    text-transform: uppercase;
-    vertical-align: middle;
-}
-    #square-button-text:hover {
-        background-color: #3672dc !important;
-    }
-#square-button-text-mizkif:hover {
-    background-color: #6335f7 !important;
-}
