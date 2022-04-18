@@ -1,5 +1,8 @@
-html {
-    background-color: #5A5A5A;
+
+#html-id {
+    background: linear-gradient(0deg, rgba(80,110,80,1) 0%, rgba(80,80,110,1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
 }
 .a1creator-songbox-tablerow {
     margin: 12px;
