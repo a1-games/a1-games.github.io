@@ -1,0 +1,16 @@
+.showcase-rectangle {
+    margin: 0 auto;
+    width: 340px;
+    height: 240px;
+    border-radius: 32px;
+    background-size: cover;
+    text-align: center;
+}
+.showcase-title {
+    width: 260px;
+    height: 160px;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: auto 0;
+    word-break: break-word;
+}
