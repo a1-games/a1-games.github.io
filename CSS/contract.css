@@ -105,6 +105,7 @@ body {
 }
 
 .bannertable {
+    height: 264px;
     padding-left: 10%;
     padding-right: 10%;
 }
