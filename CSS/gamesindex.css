@@ -1,7 +1,11 @@
 
 .showcase-grid {
+    width: 80%;
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
     grid-auto-flow: row; /* when something has to be added, be it a row */
     grid-template-areas:
@@ -11,7 +15,23 @@
     gap: 0px;
 
     overflow: hidden;
+    justify-items: stretch;
 }
+
+/* this was the only way to set the correct height while maintaining quadratic building blocks dynamically */
+.quadgrid {
+    padding-bottom: 25%;
+}
+.triplegrid {
+    padding-bottom: 33.3%;
+}
+.doublegrid {
+    padding-bottom: 50%;
+}
+.singlegrid {
+    padding-bottom: 100%;
+}
+
 
 /*on desktop*/
 @media (min-width: 767px) {
@@ -19,6 +39,7 @@
         font-size: 4rem;
         word-break: break-word;
         width: 100%;
+
         vertical-align: middle;
         text-align: center;
         text-decoration: none;
@@ -32,7 +53,8 @@
     }
     .showcase-rectangle {
         width: 100%;
-        height: 18rem;
+        height: 0;
+        
         margin: 0 auto;
         background-position: 50% 50%;
         background-size: cover;
