@@ -1,169 +1,60 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" id="html-id">
+<html style="font-size: 16px;">
 <head>
-    <title>a1creator</title>
+    <title>a1games</title>
     <link rel="stylesheet" href="CSS/index.css" media="screen">
-    <link rel="stylesheet" href="CSS/indexextra.css" media="screen">
-    <link rel="stylesheet" href="CSS/contract.css" media="screen">
+    <link rel="stylesheet" href="CSS/gamesindex.css" media="screen">
     <link rel="stylesheet" href="CSS/jumpingbacteria.css" media="screen">
     <link rel="stylesheet" href="CSS/nutbutton.css" media="screen">
+    <link rel="stylesheet" href="CSS/googleplaystoreButton.css" media="screen">
     <link rel="stylesheet" href="CSS/scrollbar/scrollbarIndex.css" media="screen">
-    <link rel="shortcut icon" href="images/a1creator/PageIcon16.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/a1Icon16px.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#header").load("php/header.html");
+            $("#footer").load("php/footer.html");
+        });
+    </script>
 </head>
-<body style="height: 100%;">
-    <!-- HEADER -->
-    <header id="header" >
-        <table align="center" class="fullwidth no-text-decoration" style="overflow-x: scroll; background-color: #181818; overflow:hidden;">
-            <tr>
-                <th align="left" style="width:30%; margin: auto 12px;">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>
-                                
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-                <th align="left" style="width:40%; margin: auto 12px;">
-                    <table style="width: 100%;">
-                        <tr>
-                            <th>
-                                <h2 style="font-size: 32px; color: ghostwhite; text-align: center; width: 100%; padding: 0; 0">a1creator</h2>
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-                <th align="right" style="width:30%; position:relative;">
-                    <table style="border-radius: 12px; overflow: auto; text-decoration: none;" class="a1creator-a1games-tab absolute-right-and-center no-text-decoration">
-                        <tr>
-                            <th>
-                                <a href="a1gamesindex.html" target="_blank" alt="Go To a1games website" title="Go to a1games website">
-                                    <img src="images/a1creator/a1gamesIcon512px.png" class="a1creator-a1gamesicon no-margin">
-                                </a>
-                            </th>
-                            <th class="hidden-mobile">
-                                <a href="a1gamesindex.html" target="_blank" alt="Go To a1games website" title="Go to a1games website" class="no-text-decoration">
-                                    <h2 class="a1creator-title no-padding no-margin no-text-decoration">a1games</h2>
-                                </a>
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-        </table>
-    </header>
-    <!-- BODY -->
-    <div class="showcase-strip" style="width: 100%; background-repeat: repeat; background-size: contain; ">
-        <table align="center" class="fullwidth bannertable" style="overflow-x: scroll;" cellspacing="0">
-            <!-- DESKTOP WEBSITE BODY-->
-            <tr class="hidden-mobile">
-                <th align="left" style="width:70%;">
-                    <table style="width: 100%;" class="nospacebetweencells">
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_doyouloveme.png); background-position: left;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ysPUc3dliU9e1XjvESB5r?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                            <th style="width:50%;">
-                                <h2 class="no-padding no-margin a1creator-title">do you love me ?</h2>
-                                <h4 class="no-padding no-margin a1creator-subtext">this song is about being so used to rejection that sadness is an anticipated feeling when confronting a loved one</h4>
-                            </th>
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_lovingawitch.png); background-position: right;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Mz33hNae1LbnCOfY0IB4K?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                            <th style="width:50%;">
-                                <h2 class="no-padding no-margin a1creator-title">loving a witch</h2>
-                                <h4 class="no-padding no-margin a1creator-subtext">a short story about a man who almost regained his strength by being loved, but almost was never good enough</h4>
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-            <!-- MOBILE WEBSITE BODY-->
-            <tr class="hidden-desktop">
-                <th align="left" style="width:70%;">
-                    <table style="width: 100%;" class="nospacebetweencells">
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_doyouloveme.png); background-position: center;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ysPUc3dliU9e1XjvESB5r?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_doyouloveme.png); background-position: center;">
-                            <th>
-                                <h2 class="no-margin a1creator-title">do you love me ?</h2>
-                                <h4 class="no-margin a1creator-subtext">this song is about being so used to rejection that sadness is an anticipated feeling when confronting a loved one</h4>
-                            </th>
-                        </tr>
-                        <tr style="height: 4rem;">
-                            <!-- space between new song-->
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_lovingawitch.png); background-position: center;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Mz33hNae1LbnCOfY0IB4K?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_lovingawitch.png); background-position: center;">
-                            <th>
-                                <h2 class="no-margin a1creator-title">loving a witch</h2>
-                                <h4 class="no-margin a1creator-subtext">a story about a man who felt love that was almost as strong as hers, but almost was never good enough</h4>
-                            </th>
-                        </tr>
-                        <tr style="height: 4rem;">
-                            <!-- space between new song-->
-                        </tr>
-                        <tr>
-                            <th>
-                                <p style="padding-bottom: 200px;">
-
-                                </p>
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-        </table>
+<body>
+    <!-- load header in -->
+    <header id="header"></header>
+    <table align="center" class="fullwidth no-text-decoration" style="overflow-x: scroll; background-color: #181818; overflow:hidden;">
+        <tr>
+            <th align="left" style="margin: auto 12px;">
+                <!-- CRAB DEFENSE SHOWCASE -->
+                <div class="showcase-rectangle" style="background-image: url(images/crabdefence/crabBanner.png); ">
+                    <a href="crabdefence.html" target="_blank" class="showcase-title" style="color: #89CFF0;">CRAB DEFENCE</a>
+                </div>
+            </th>
+            <th align="left" style="margin: auto 12px;">
+                <!-- DO YOU BELIEVE SHOWCASE -->
+                <div class="showcase-rectangle" style="background-image: url(images/doYouBelieve/painting03.png);">
+                    <a href="https://a1creator.itch.io/doyoubelieve" target="_blank" class="showcase-title" style="color: #F0E022;">DO YOU BELIEVE?</a>
+                </div>
+            </th>
+            <th align="left" style="margin: auto 12px;">
+                <!-- NUT BUTTON SHOWCASE -->
+                <div class="showcase-rectangle" style="background-image: url(images/nut/unpressedShowcaseWide.jpg);">
+                    <a href="nutbuttonpage.html" class="showcase-title" style=" color: #385484;">NUT BUTTON</a>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <!-- MIZKIF SOUNDBOARD SHOWCASE -->
+    <div class="showcase-strip" style="width: 100%; background-image: url(twitchStreamers/mizkif/indexShowcaseBackground.png); background-repeat: repeat; background-size: contain; ">
+        <a href="mizkifsoundboardpage.html" class="text-bubblegum-nut" style="padding: 0; color: #6335f7; text-decoration: none;">THE MIZKIF SOUNDBOARD</a>
     </div>
+    <!-- JUMPING BACTERIA SHOWCASE -->
+    <div class="showcase-strip" style="width: 100%; background-image: url(images/jumpingbacteria/a1bannergoogplay.png); background-repeat: repeat; background-size: contain; ">
+        <a href="jumpingbacteria.html" class="text-bubblegum-nut" style="padding: 0; color: #83fe5b; text-decoration: none;">JUMPING BACTERIA</a>
+    </div>
+
     <!-- FOOTER -->
-    <footer style="background-color: #181818; width: 100%;" id="footer">
-        <div style="padding: 38px 0;">
-            <table align="center">
-                <tr>
-                    <th style="background-color: transparent; width: 600px">
-                        <div>
-                            <h1 class="footer-title">My links:</h1>
-                        </div>
-                    </th>
-                    <th style="background-color: transparent; width: 600px">
-                        <div>
-                            <h1 class="footer-title">Other:</h1>
-                        </div>
-                    </th>
-                </tr>
-                <tr>
-                    <th style="background-color: transparent; width: 600px; vertical-align: top;">
-                        <div style="padding: 4px;">
-                            <a href="https://open.spotify.com/artist/17yRdwIRijo4sUO3Jur0Cz?si=FyDb4mzaRRWHrvS9BtU2aw" class="footer-text footer-link" target="_blank" style="color: rgba(160,200,160,1);">Spotify</a>
-                        </div>
-                        <div style="padding: 4px;">
-                            <a href="https://www.instagram.com/a1creator_/" class="footer-text footer-link" target="_blank" style="color: rgba(160,160,200,1) ">Instagram</a>
-                        </div>
-                    </th>
-                    <th style="background-color: transparent; width: 600px; vertical-align: top;">
-                        <div style="padding:4px;">
-                            <a class="footer-text footer-link"> </a>
-                        </div>
-                        <div style="padding:4px;">
-                            <a class="footer-text footer-link"> </a>
-                        </div>
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </footer>
+    <footer style="background-color: #4d4d4d;" id="footer"> </footer>
 
 </body>
 
