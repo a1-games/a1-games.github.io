@@ -41,6 +41,7 @@
     -ms-transform: scale(1.02); /* IE 9 */
     -webkit-transform: scale(1.02); /* Safari 3-8 */
     transform: scale(1.02);
+    border-radius: 12px;
     z-index: 10;
 }
 
