@@ -41,9 +41,8 @@ body {
 }
 
 .bannertable {
-    height: 264px;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* 16px (1rem) space top and bot, 10% on either side*/
+    padding: 1rem 10%;
 }
 
 #top-page-index {
