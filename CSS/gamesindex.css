@@ -38,9 +38,9 @@
     transition: all .4s ease-in-out;
 }
 .showcase-rectangle:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
     z-index: 10;
 }
 
