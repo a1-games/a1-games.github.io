@@ -9,6 +9,8 @@
         'crabzoo crabdefence crabdefence crabdefence'
         'mizkifsoundboard mizkifsoundboard jumpingbacteria jumpingbacteria';
     gap: 0px;
+
+    overflow: hidden;
 }
 
 /*on desktop*/
