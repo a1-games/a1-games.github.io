@@ -22,39 +22,43 @@
 <body>
     <!-- load header in -->
     <header id="header"></header>
-    <table align="center" class="fullwidth no-text-decoration" style="overflow-x: scroll; background-color: #181818; overflow:hidden; display: grid;">
-        <tr>
-            <th align="left" style="margin: auto 12px;">
-                <!-- CRAB DEFENSE SHOWCASE -->
-                <div class="showcase-rectangle" style="background-image: url(images/crabdefence/crabBanner.png); ">
-                    <a href="crabdefence.html" target="_blank" class="showcase-title" style="color: #89CFF0;">CRAB DEFENCE</a>
-                </div>
-            </th>
-            <th align="left" style="margin: auto 12px;">
-                <!-- DO YOU BELIEVE SHOWCASE -->
-                <div class="showcase-rectangle" style="background-image: url(images/doYouBelieve/painting03.png);">
-                    <a href="https://a1creator.itch.io/doyoubelieve" target="_blank" class="showcase-title" style="color: #F0E022;">DO YOU BELIEVE?</a>
-                </div>
-            </th>
-            <th align="left" style="margin: auto 12px;">
-                <!-- NUT BUTTON SHOWCASE -->
-                <div class="showcase-rectangle" style="background-image: url(images/nut/unpressedShowcaseWide.jpg);">
-                    <a href="nutbuttonpage.html" class="showcase-title" style=" color: #385484;">NUT BUTTON</a>
-                </div>
-            </th>
-        </tr>
-    </table>
-    <!-- MIZKIF SOUNDBOARD SHOWCASE -->
-    <div class="showcase-strip" style="width: 100%; background-image: url(twitchStreamers/mizkif/indexShowcaseBackground.png); background-repeat: repeat; background-size: contain; ">
-        <a href="mizkifsoundboardpage.html" class="text-bubblegum-nut" style="padding: 0; color: #6335f7; text-decoration: none;">THE MIZKIF SOUNDBOARD</a>
-    </div>
-    <!-- JUMPING BACTERIA SHOWCASE -->
-    <div class="showcase-strip" style="width: 100%; background-image: url(images/jumpingbacteria/a1bannergoogplay.png); background-repeat: repeat; background-size: contain; ">
-        <a href="jumpingbacteria.html" class="text-bubblegum-nut" style="padding: 0; color: #83fe5b; text-decoration: none;">JUMPING BACTERIA</a>
+
+    <!-- grid layout thing for showcases -->
+    <div class="fullwidth no-text-decoration showcase-grid">
+        <!-- DO YOU BELIEVE SHOWCASE -->
+        <div style="grid-area: doyoubelieve;">
+            <div class="showcase-rectangle" style="background-image: url(images/doYouBelieve/painting03.png); background-repeat: repeat;">
+                <a href="https://a1creator.itch.io/doyoubelieve" target="_blank" class="showcase-title" style="color: #F0E022; ">DO YOU BELIEVE?</a>
+            </div>
+        </div>
+        <!-- NUT BUTTON SHOWCASE -->
+        <div style="grid-area: nutbutton;">
+            <div class="showcase-rectangle"  style="background-image: url(images/nut/unpressedShowcaseWide.jpg);">
+                <a href="nutbuttonpage.html" class="showcase-title" style="color: #385484;">NUT BUTTON</a>
+            </div>
+        </div>
+        <!-- CRAB DEFENSE SHOWCASE -->
+        <div style="grid-area: crabdefence;">
+            <div class="showcase-rectangle" style="background-image: url(images/crabdefence/crabBanner.png); ">
+                <a href="crabdefence.html" target="_blank" class="showcase-title" style="color: #89CFF0;">CRAB DEFENCE</a>
+            </div>
+        </div>
+        <!-- MIZKIF SOUNDBOARD SHOWCASE -->
+        <div style="grid-area: mizkifsoundboard;">
+            <div class="showcase-rectangle" style="background-image: url(twitchStreamers/mizkif/indexShowcaseBackground.png);">
+                <a href="mizkifsoundboardpage.html" class="showcase-title" style="color: #6335f7;">THE MIZKIF SOUNDBOARD</a>
+            </div>
+        </div>
+        <!-- JUMPING BACTERIA SHOWCASE -->
+        <div style="grid-area: jumpingbacteria;">
+            <div class="showcase-rectangle" style="background-image: url(images/jumpingbacteria/a1bannergoogplay.png);">
+                <a href="jumpingbacteria.html" class="showcase-title" style="color: #83fe5b;">JUMPING BACTERIA</a>
+            </div>
+        </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer style="background-color: #4d4d4d;" id="footer"> </footer>
+        <!-- FOOTER -->
+        <footer style="background-color: #4d4d4d;" id="footer"> </footer>
 
 </body>
 

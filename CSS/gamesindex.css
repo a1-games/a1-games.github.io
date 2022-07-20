@@ -1,26 +1,6 @@
 
-.showcase-table {
-    width: 8rem;
-}
-.showcase-rectangle {
-    width: 18rem;
-    height: 18rem;
-    margin: 0 auto;
-    background-position: 50% 50%;
-    background-size: cover;
-    text-align: center;
-    table-layout: fixed;
-    position: relative;
-    transition: all .4s ease-in-out;
-}
-.showcase-rectangle:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-    z-index: 10;
-}
 .showcase-title {
-    font-size: 3rem;
+    font-size: 4rem;
     word-break: break-word;
     width: 100%;
     vertical-align: middle;
@@ -33,4 +13,38 @@
     -ms-transform: translate(-50%, -50%);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    grid-auto-flow: column; /* when something has to be added, be it a column */
+    grid-template-areas:
+        'doyoubelieve doyoubelieve doyoubelieve nutbutton'
+        'crabzoo crabdefence crabdefence crabdefence'
+        'mizkifsoundboard mizkifsoundboard jumpingbacteria jumpingbacteria';
+    gap: 0px;
+}
+
+.showcase-rectangle {
+    width: 100%;
+    height: 18rem;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    table-layout: fixed;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+.showcase-rectangle:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+
+.showcase-griditem {
+    
 }
