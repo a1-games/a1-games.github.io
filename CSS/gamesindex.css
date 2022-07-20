@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
-    grid-auto-flow: column; /* when something has to be added, be it a column */
+    grid-auto-flow: row; /* when something has to be added, be it a row */
     grid-template-areas:
         'doyoubelieve doyoubelieve doyoubelieve nutbutton'
         'crabzoo crabdefence crabdefence crabdefence'
