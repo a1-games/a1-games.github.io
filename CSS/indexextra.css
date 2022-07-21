@@ -14,23 +14,34 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
     text-decoration: none!important;
     box-shadow: none;
 }
+.bannertable-music {
+    /* 64px (4rem) space top and bot, 10% on either side*/
+    padding: 4rem 10%;
+}
 
+.no-padding {
+    padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
 /*on mobile*/
 @media (max-width: 767px) {
     .nospacebetweencells {
-        border-spacing: 0 0px;
+        border-spacing: 1rem 0px;
     }
     .a1creator-title {
         align-content: normal;
         vertical-align: middle;
         color: white;
-        padding: 0 1.4rem 0.4rem 1.4rem;
+        padding: 0 1.4rem;
     }
     .a1creator-subtext {
         align-content: normal;
         vertical-align: middle;
         color: ghostwhite;
-        padding: 0 1.4rem 1.4rem 1.4rem;
+        padding: 0.4rem 1.4rem 1.4rem 1.4rem;
     }
     .a1creator-songbox {
         padding-top: 1rem;
@@ -63,20 +74,19 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
 /*on desktop*/
 @media (min-width: 767px) {
     .nospacebetweencells {
-        border-spacing: 0 24px;
+        border-spacing: 0 4rem;
     }
     .a1creator-title {
         align-content: normal;
         text-decoration: none;
-        vertical-align: middle;
+        vertical-align: bottom;
         color: white;
-        padding: 0.4rem;
     }
     .a1creator-subtext {
         align-content: normal;
         vertical-align: middle;
         color: ghostwhite;
-        padding: 0.4rem;
+        padding: 0 1.4rem 0 0;
         word-wrap: break-word;
     }
     .a1creator-songbox {
@@ -91,7 +101,8 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
         transition: .5s ease;
         top: 50%;
         bottom: 0;
-        opacity: 50%
+        opacity: 50%;
+        cursor: pointer;
     }
     .a1creator-a1gamesicon {
         height: 44px;
