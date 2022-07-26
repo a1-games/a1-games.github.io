@@ -3,18 +3,17 @@
     background-color: #808080;
     width: 76%;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: center;
     grid-auto-flow: row; /* when something has to be added, be it a row */
     grid-template-areas:
+        'spacevoyage spacevoyage spacevoyage spacevoyage'
         'doyoubelieve doyoubelieve doyoubelieve nutbutton'
         'crabzoo crabdefence crabdefence crabdefence'
         'mizkifsoundboard mizkifsoundboard jumpingbacteria jumpingbacteria';
     gap: 0px;
-
     justify-items: stretch;
 }
 
