@@ -211,6 +211,12 @@ body {
     src: url(fonts/BubblegumSans-Regular.ttf);
 }
 @font-face {
+    font-family: Ethnocentric;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/ethnocentric.otf);
+}
+@font-face {
     font-family: RobotoMedium;
     font-style: normal;
     font-weight: normal;
