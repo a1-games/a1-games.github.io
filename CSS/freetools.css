@@ -1,0 +1,67 @@
+
+.rowdiv {
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+}
+.description {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    -webkit-text-stroke: thin black;
+}
+.rowtable {
+    width: 80%;
+    height: 100%;
+    border-collapse: collapse;
+}
+.tagsrow {
+    background-image: none;
+    height: 1rem;
+    background-color: black;
+    color: black;
+    font-family: Arial;
+    font-size: 0.8rem;
+}
+.tagsfield {
+    text-align: right;
+}
+.creditsrow {
+    background-image: none;
+    height: 1rem;
+    background-color: #222222;
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 0.8rem;
+}
+.creditsfield {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.download-button {
+    /*button:*/
+    background-color: dimgray;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    cursor: pointer;
+    padding: 0.8rem 1.4rem;
+    vertical-align: middle;
+
+    margin: 0 2rem;
+}
+.download-button:hover {
+    background-color: #89CFF0 !important;
+}
+
+.download-button-text {
+    /*font adjustments:*/
+    text-align: center;
+    text-decoration: none;
+    color: #000000 !important;
+    font-size: 1rem;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
