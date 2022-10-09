@@ -42,7 +42,7 @@ body {
 
 .bannertable {
     /* 16px (1rem) space top and bot, 10% on either side*/
-    padding: 1rem 10%;
+    padding: 1rem 0;
 }
 
 #top-page-index {
