@@ -1,9 +1,4 @@
 
-#html-id {
-    background: linear-gradient(0deg, rgba(80,110,80,1) 0%, rgba(80,80,110,1) 100%);
-    background-attachment: fixed;
-    background-size: cover;
-}
 .a1creator-songbox-tablerow {
     margin: 12px;
     padding: 12px;
@@ -14,10 +9,6 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
     text-decoration: none!important;
     box-shadow: none;
 }
-.bannertable-music {
-    /* 64px (4rem) space top and bot, 10% on either side*/
-    padding: 4rem 10%;
-}
 
 .no-padding {
     padding: 0px;
@@ -26,11 +17,13 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
 .no-margin {
     margin: 0px;
 }
+.nospacebetweencells {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
 /*on mobile*/
 @media (max-width: 767px) {
-    .nospacebetweencells {
-        border-spacing: 1rem 0px;
-    }
+    
     .a1creator-title {
         align-content: normal;
         vertical-align: middle;
@@ -73,9 +66,6 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
 }
 /*on desktop*/
 @media (min-width: 767px) {
-    .nospacebetweencells {
-        border-spacing: 0 4rem;
-    }
     .a1creator-title {
         align-content: normal;
         text-decoration: none;

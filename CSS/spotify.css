@@ -1,0 +1,30 @@
+#html-id {
+    background: linear-gradient(0deg, rgba(80,110,80,1) 0%, rgba(80,80,110,1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.spotify-banner {
+    text-align: left;
+
+    position: relative;
+}
+.spotify-title {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+
+    color: snow;
+    font-size: 5rem;
+    margin: 0;
+}
+.spotify-gradient-background {
+    background-image: linear-gradient(rgba(222, 16, 68, 0.6), rgb(0,0,0));
+}
+.spotify-gradient-overlay {
+    background-image: linear-gradient(rgba(0.4, 0.4, 0.4, 0.6), rgb(0.2,0.2,0.2, 0.4));
+}
+.spotify-playlist {
+    align-content: center;
+    height: 100%;
+    width: 80px;
+}

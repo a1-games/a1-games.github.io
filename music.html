@@ -4,6 +4,7 @@
     <title>a1creator</title>
     <link rel="stylesheet" href="CSS/indexextra.css" media="screen">
     <link rel="stylesheet" href="CSS/contract.css" media="screen">
+    <link rel="stylesheet" href="CSS/spotify.css" media="screen">
     <link rel="stylesheet" href="CSS/scrollbar/scrollbarIndex.css" media="screen">
     <link rel="shortcut icon" href="images/a1creator/PageIcon16.ico" type="image/x-icon">
     <meta charset="UTF-8">
@@ -12,14 +13,14 @@
 </head>
 <body style="height: 100%;">
     <!-- HEADER -->
-    <header id="header" >
+    <header id="header">
         <table align="center" class="fullwidth no-text-decoration" style="overflow-x: scroll; background-color: #181818; overflow:hidden;">
             <tr>
                 <th align="left" style="width:30%; margin: auto 12px;">
                     <table style="width: 100%;">
                         <tr>
                             <th>
-                                
+
                             </th>
                         </tr>
                     </table>
@@ -52,78 +53,26 @@
             </tr>
         </table>
     </header>
-    <!-- BODY -->
-    <div style="width: 100%; background-repeat: repeat; background-size: contain; ">
-        <table align="center" class="fullwidth bannertable-music" style="overflow-x: scroll;" cellspacing="0">
-            <!-- DESKTOP WEBSITE BODY-->
-            <tr class="hidden-mobile">
-                <th align="left" style="width:70%;">
-                    <table style="width: 100%;" class="nospacebetweencells">
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_doyouloveme.png); background-position: left;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ysPUc3dliU9e1XjvESB5r?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                            <th style="width:50%;">
-                                <h2 class="no-padding no-margin a1creator-title">do you love me ?</h2>
-                                <h4 class="no-margin a1creator-subtext">being so used to rejection that sadness is an anticipated feeling when confronting a loved one</h4>
-                            </th>
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_lovingawitch.png); background-position: right;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Mz33hNae1LbnCOfY0IB4K?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                            <th style="width:50%;">
-                                <h2 class="no-padding no-margin a1creator-title">loving a witch</h2>
-                                <h4 class="no-margin a1creator-subtext">she was perfect, but not for him. that title was taken and never returned</h4>
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-            <!-- MOBILE WEBSITE BODY-->
-            <tr class="hidden-desktop">
-                <th align="left" style="width:70%;">
-                    <table style="width: 100%;" class="nospacebetweencells">
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_doyouloveme.png); background-position: center;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2ysPUc3dliU9e1XjvESB5r?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_doyouloveme.png); background-position: center;">
-                            <th>
-                                <h2 class="no-margin a1creator-title">do you love me ?</h2>
-                                <h4 class="no-margin a1creator-subtext">being so used to rejection that sadness is an anticipated feeling when confronting a loved one</h4>
-                            </th>
-                        </tr>
-                        <tr style="height: 4rem;">
-                            <!-- space between new song-->
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_lovingawitch.png); background-position: center;">
-                            <th class="a1creator-songbox" style=" text-align: center;">
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Mz33hNae1LbnCOfY0IB4K?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            </th>
-                        </tr>
-                        <tr class="a1creator-songbox-tablerow" style="background-image: url(images/a1creator/songboxStrip_lovingawitch.png); background-position: center;">
-                            <th>
-                                <h2 class="no-margin a1creator-title">loving a witch</h2>
-                                <h4 class="no-margin a1creator-subtext">she was perfect, but not for him. that title was taken and never returned</h4>
-                            </th>
-                        </tr>
-                        <tr style="height: 4rem;">
-                            <!-- space between new song-->
-                        </tr>
-                        <tr>
-                            <th>
-                                <p style="padding-bottom: 200px;">
+    
+    <!-- DESKTOP WEBSITE BODY-->
+    <table class="nospacebetweencells fullwidth spotify-gradient-background">
+        <tr>
+            <th class="spotify-header" style="background-image: url(images/a1creator/banner.png); height: 320px; padding: 0; background-size: cover; background-position: center;">
+                <div class="spotify-gradient-overlay" style="position: relative; height: 100%; width: 100%;">
+                    <h2 class="spotify-title">a1creator</h2>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td style="padding: 0;">
+                <div class="spotify-playist">
+                    <iframe src="https://open.spotify.com/embed/artist/17yRdwIRijo4sUO3Jur0Cz?utm_source=generator&theme=0" style="width: 100%; height: 600px;" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
 
-                                </p>
-                            </th>
-                        </tr>
-                    </table>
-                </th>
-            </tr>
-        </table>
-    </div>
+
     <!-- FOOTER -->
     <footer style="background-color: #181818; width: 100%;" id="footer">
         <div style="padding: 38px 0;">

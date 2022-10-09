@@ -41,8 +41,7 @@ body {
 }
 
 .bannertable {
-    /* 16px (1rem) space top and bot, 10% on either side*/
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 #top-page-index {
@@ -104,6 +103,9 @@ body {
 }
 .twitch-link:hover {
     color: rebeccapurple;
+}
+.instagram-link:hover {
+    color: #DD2A7B;
 }
 
 .showcase-strip {
