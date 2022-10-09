@@ -98,15 +98,6 @@ body {
 .footer-link:hover {
     color: #5fc3f5;
 }
-.youtube-link:hover {
-    color: red;
-}
-.twitch-link:hover {
-    color: rebeccapurple;
-}
-.instagram-link:hover {
-    color: #DD2A7B;
-}
 
 .showcase-strip {
     margin: auto;

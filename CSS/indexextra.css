@@ -9,6 +9,21 @@ a, h2, .no-text-decoration, .no-text-decoration:hover, .no-text-decoration:link,
     text-decoration: none!important;
     box-shadow: none;
 }
+.youtube-link:hover {
+    color: red;
+}
+
+.twitch-link:hover {
+    color: rebeccapurple;
+}
+
+.instagram-link:hover {
+    color: #DD2A7B;
+}
+
+.spotify-link:hover {
+    color: forestgreen;
+}
 
 .no-padding {
     padding: 0px;

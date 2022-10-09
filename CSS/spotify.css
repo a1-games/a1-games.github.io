@@ -23,8 +23,15 @@
 .spotify-gradient-overlay {
     background-image: linear-gradient(rgba(0.4, 0.4, 0.4, 0.6), rgb(0.2,0.2,0.2, 0.4));
 }
-.spotify-playlist {
-    align-content: center;
+.maintain-same-width {
     height: 100%;
-    width: 80px;
+    width: 84%;
+    margin: auto;
+}
+.music-links {
+    text-decoration: none !important;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: #282828;
 }
