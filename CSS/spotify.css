@@ -5,8 +5,12 @@
 }
 .spotify-banner {
     text-align: left;
-
     position: relative;
+    padding: 0;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/a1creator/banner.png);
 }
 .spotify-title {
     position: absolute;
@@ -25,13 +29,26 @@
 }
 .maintain-same-width {
     height: 100%;
-    width: 84%;
+    width: 80%;
     margin: auto;
 }
 .music-links {
     text-decoration: none !important;
-    margin: 0 1rem;
-    padding: 1rem 0;
+    margin: 1rem 0.5rem;
+    padding: 0;
     font-size: 1.2rem;
     color: #282828;
+}
+
+/*on mobile*/
+@media (max-width: 767px) {
+    .spotify-banner {
+        height: 160px;
+    }
+    .spotify-title {
+        font-size: 2rem;
+    }
+}
+/*on desktop*/
+@media (min-width: 767px) {
 }
