@@ -42,8 +42,8 @@
     padding: 0;
     height: 6rem;
     width: 60%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
     background-position: center;
 }
 .tagsrow {
