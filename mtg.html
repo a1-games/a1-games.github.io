@@ -13,6 +13,7 @@
     <script>
         $(function () {
             $("#header").load("php/header.html");
+            $("#shrekSwamps").load("php/mtg/shrekSwampsDownload.html");
         });
     </script>
 </head>
@@ -26,10 +27,12 @@
         <h3>Download the entire set (pdf):</h3>
         <a class="download-button download-button-text" href="files/scripts/test.txt" download="dl-file">DOWNLOAD</a>
     </div>
-    <div style="padding: 2rem;">
-        <h3>Shrek Custom Swamp Cards (pdf):</h3>
-        <a class="download-button download-button-text" href="files/mtg/shrek/ShrekSwamps.pdf" download="dl-file">DOWNLOAD</a>
-    </div>
+
+    <h3>Shrek Custom Swamp Cards (pdf):</h3>
+    <div id="shrekSwamps"></div>
+
+    <!-- space between -->
+    <div style="height: 22rem;"> </div>
 
     <table class="set-icon-table">
         <tr>
