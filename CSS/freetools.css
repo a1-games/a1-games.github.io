@@ -8,7 +8,7 @@
     color: white;
     text-align: left;
     font-size: 1.4rem;
-    -webkit-text-stroke: thin black;
+    font-weight: bold;
 }
 .rowtable {
     width: 80%;
