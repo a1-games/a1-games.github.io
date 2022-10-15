@@ -27,6 +27,7 @@
 .creditsfield {
     color: darkgoldenrod;
     text-decoration: underline;
+    text-align: center;
 }
 .mainrow {
     height: 6rem;
