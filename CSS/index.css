@@ -40,10 +40,6 @@ body {
     flex-wrap: wrap;
 }
 
-.bannertable {
-    padding: 1rem 3rem;
-}
-
 #top-page-index {
     background-image: url("../images/banner.png");
     background-size: cover;
