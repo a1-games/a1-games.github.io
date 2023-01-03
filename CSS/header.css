@@ -118,3 +118,15 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.youtube-link:hover {
+    color: red;
+}
+
+.twitch-link:hover {
+    color: rebeccapurple;
+}
+
+.instagram-link:hover {
+    color: #DD2A7B;
+}
