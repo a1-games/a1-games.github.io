@@ -15,6 +15,7 @@
     <script>
         $(function () {
             $("#header").load("php/header.html");
+            $("#aitreasuretokens").load("php/mtg/aitreasures.html");
             $("#shrekSwamps").load("php/mtg/shrekSwampsDownload.html");
             $("#shrekMountains").load("php/mtg/shrekMountainsDownload.html");
             $("#shrekForests").load("php/mtg/shrekForestsDownload.html");
@@ -31,12 +32,18 @@
     <!-- banenr image -->
     <div style="height: 14rem; background-image: url(images/mtg/shrek/allCardsThumbnail.jpg); background-size: contain;"> </div>
 
-    <h1 style="text-align: center;">Custom Magic The Gathering Cards: Shrek</h1>
+    <h1 style="text-align: center;">Custom Magic The Gathering Cards</h1>
     <h2 style="text-align: center; font-style: oblique;">**Personal use only**</h2>
     <h5 style="text-align: center;">Nothing on this page is made for profit. Download whatever you want :)</h5>
     <h5 style="text-align: center;">".PDF" will download a pdf fitted to A4 size, ready to print 9x of each different card</h5>
     <h5 style="text-align: center;">".ZIP" will download a zip file containing each different card as a .png</h5>
     <h5 style="text-align: center;">"TEMPLATE" will download a zip file containing each different card template as a .psd</h5>
+
+    <!-- Title -->
+    <h3 style="text-align: center;">AI Generated Treasure Tokens:</h3>
+
+    <!-- Treasure Cards -->
+    <div id="aitreasuretokens"></div>
 
     <!-- Title -->
     <h3 style="text-align: center;">Shrek Custom Basic Lands:</h3>
@@ -89,38 +96,49 @@
 
     <h5 style="text-align: center;"> I'm currently making a custom Shrek set for mtg, here are the set icons if you want to make your own:</h5>
     <table class="set-icon-table" style="margin: auto;">
+
         <tr>
-            <th colspan="4">
-                Set Icons for Rarity:
-            </th>
-        </tr>
-        <tr>
-            <td class="set-icon-display"><img class="set-icon-image" title="Common" src="images/mtg/shrek/Set_Icon_Common.png" /></td>
-            <td class="set-icon-display"><img class="set-icon-image" title="Uncommon" src="images/mtg/shrek/Set_Icon_Uncommon.png" /></td>
-            <td class="set-icon-display"><img class="set-icon-image" title="Rare" src="images/mtg/shrek/Set_Icon_Rare.png" /></td>
-            <td class="set-icon-display"><img class="set-icon-image" title="Mythic" src="images/mtg/shrek/Set_Icon_Mythic.png" /></td>
-        </tr>
-        <tr>
-            <th colspan="4">
-                Card Watermarks:
-            </th>
-        </tr>
-        <tr>
-            <td colspan="2"> <img class="set-icon-image" title="Rare Watermark" src="images/mtg/shrek/Watermark_Rare.png" /></td>
-            <td colspan="2"> <img class="set-icon-image" title="Mythic Watermark" src="images/mtg/shrek/Watermark_Mythic.png" /></td>
-        </tr>
-        <tr>
-            <th colspan="4">
-                Alternative Watermarks:
-            </th>
-        </tr>
-        <tr>
-            <td colspan="2"> <img class="set-icon-image" title="Alternative Watermark A 1" src="images/mtg/shrek/Watermark_Alternative_a_1.png" /></td>
-            <td colspan="2"> <img class="set-icon-image" title="Alternative Watermark A 2" src="images/mtg/shrek/Watermark_Alternative_a_2.png" /></td>
-        </tr>
-        <tr>
-            <td colspan="2"> <img class="set-icon-image" title="Alternative Watermark B 1" src="images/mtg/shrek/Watermark_Alternative_b_1.png" /></td>
-            <td colspan="2"> <img class="set-icon-image" title="Alternative Watermark B 2" src="images/mtg/shrek/Watermark_Alternative_b_2.png" /></td>
+            <td>
+                <table>
+                    <tr>
+                        <th colspan="4">
+                            Set Icons for Rarity:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="set-icon-display"><img class="set-icon-image" title="Common" src="images/mtg/shrek/Set_Icon_Common.png" /></td>
+                        <td class="set-icon-display"><img class="set-icon-image" title="Uncommon" src="images/mtg/shrek/Set_Icon_Uncommon.png" /></td>
+                        <td class="set-icon-display"><img class="set-icon-image" title="Rare" src="images/mtg/shrek/Set_Icon_Rare.png" /></td>
+                        <td class="set-icon-display"><img class="set-icon-image" title="Mythic" src="images/mtg/shrek/Set_Icon_Mythic.png" /></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            Card Watermarks:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <img class="set-icon-image" title="Rare Watermark" src="images/mtg/shrek/Watermark_Rare.png" /></td>
+                        <td colspan="2"> <img class="set-icon-image" title="Mythic Watermark" src="images/mtg/shrek/Watermark_Mythic.png" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Alternative Watermarks:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> <img class="set-watermark" title="Alternative Watermark A 1" src="images/mtg/shrek/Watermark_Alternative_a_1.png" /></td>
+                        <td> <img class="set-watermark" title="Alternative Watermark A 2" src="images/mtg/shrek/Watermark_Alternative_a_2.png" /></td>
+                    </tr>
+                    <tr>
+                        <td> <img class="set-watermark" title="Alternative Watermark B 1" src="images/mtg/shrek/Watermark_Alternative_b_1.png" /></td>
+                        <td> <img class="set-watermark" title="Alternative Watermark B 2" src="images/mtg/shrek/Watermark_Alternative_b_2.png" /></td>
+                    </tr>
+                </table>
+            </td>
         </tr>
     </table>
 

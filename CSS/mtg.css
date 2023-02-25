@@ -10,3 +10,7 @@
     height: 100%;
     width: 100%;
 }
+.set-watermark {
+    height: 100%;
+    width: 100px;
+}
