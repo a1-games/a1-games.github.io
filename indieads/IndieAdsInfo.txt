@@ -1,1 +1,1 @@
-{"foldernames":["spacevoyage","test1","test2"]}
+{"foldernames":["spacevoyage","test2"]}
