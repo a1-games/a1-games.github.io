@@ -1,13 +1,13 @@
 <html lang="en-us"><script src="https://pygame-web.github.io/archives/0.7/pythons.js" type=module id="site" data-os="vtx,fs,snd,gui" async defer>#<!--
 
 print("""
-Loading aflevering-onlinearcadegame from aflevering-onlinearcadegame.apk
+Loading SpaceShooterOnline from aflevering-onlinearcadegame.apk
     Pygbag Version : 0.7.1
     Template Version : 0.7.0
     Python  : 3.11
     CDN URL : https://pygame-web.github.io/archives/0.7/
     Screen  : {{cookiecutter.width}}x{{cookiecutter.height}}
-    Title   : aflevering-onlinearcadegame
+    Title   : SpaceShooterOnline
     Folder  : aflevering-onlinearcadegame
     Authors : pgw
     SPDX-License-Identifier: cookiecutter.spdx
@@ -211,52 +211,50 @@ asyncio.run( custom_site() )
 #
 # do not alter that comment block it is separating python code from html code
 # =============================================================================
-# --></script><head>
-    <!--
-    //=============================================================================
-    //
-    //
-    //
-    //
-    //
-    //
-    //
+# --></script><head><!--
+//=============================================================================
+//
+//
+//
+//
+//
+//
+//
 
-        {%- if cookiecutter.comment != "" -%}
-    {{cookiecutter.comment}}
-        {% endif %}
+    {%- if cookiecutter.comment != "" -%}
+{{cookiecutter.comment}}
+    {% endif %}
 
-    -->
-    <script type="application/javascript">
-        // END BLOCK
+--><script type="application/javascript">
+// END BLOCK
 
 
 
-        // this dict is available under PyConfig.config from __main__
+// this dict is available under PyConfig.config from __main__
 
-        config = {
-            xtermjs : "1" ,
-            _sdl2 : "canvas",
-            user_canvas : 1,
-            user_canvas_managed : 0,
-            ume_block : 1,
-            can_close : 0,
-            archive : "aflevering-onlinearcadegame",
-            gui_debug : 3,
-            cdn : "https://pygame-web.github.io/archives/0.7/",
-            autorun : 0,
-            PYBUILD : "3.11"
-        }
+config = {
+    xtermjs : "1" ,
+    _sdl2 : "canvas",
+    user_canvas : 1,
+    user_canvas_managed : 0,
+    ume_block : 1,
+    can_close : 0,
+    archive : "aflevering-onlinearcadegame",
+    gui_debug : 3,
+    cdn : "https://pygame-web.github.io/archives/0.7/",
+    autorun : 0,
+    PYBUILD : "3.11"
+}
 
-    </script>
+</script>
 
-    <title>Space Shooter Online</title>
+    <title>SpaceShooterOnline</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="height=device-height, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
 
     <link rel="prefetch" href="https://pygame-web.github.io/archives/0.7/pythonrc.py">
     <link rel="prefetch" href="https://pygame-web.github.io/archives/0.7/vt/xterm.js">
@@ -264,7 +262,7 @@ asyncio.run( custom_site() )
     <link rel="prefetch" href="https://pygame-web.github.io/archives/0.7/vt/xterm-addon-image.js">
 
 
-    <link rel="shortcut icon" href="images/a1Icon16px.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
 
     <style>
         #status {
@@ -281,17 +279,9 @@ asyncio.run( custom_site() )
             width: 300px;
         }
 
-        div.emscripten {
-            text-align: center;
-        }
-
-        div.emscripten_border {
-            border: 1px solid black;
-        }
-
-        div.thick_border {
-            border: 4px solid black;
-        }
+        div.emscripten { text-align: center; }
+        div.emscripten_border { border: 1px solid black; }
+        div.thick_border { border: 4px solid black; }
 
         /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
         /* average size of droid screen 470dp x 320dp  */
@@ -299,10 +289,12 @@ asyncio.run( custom_site() )
             border: 0px none;
             background-color: transparent;
             width: 100%;
-            height =100%;
+            height=100%;
             z-index: 5;
+
             padding: 0;
             margin: 0 auto;
+
             position: absolute;
             top: 0;
             bottom: 0;
@@ -314,17 +306,17 @@ asyncio.run( custom_site() )
             font-family: arial;
             margin: 0;
             padding: none;
-            background-color: powderblue;
+            background-color:powderblue;
         }
 
-        .topright {
-            position: absolute;
-            top: 0px;
-            right: 0px;
+        .topright{
+           position:absolute;
+           top:0px;
+           right:0px;
         }
 
         .bottomright {
-            position: absolute;
+            position:absolute;
             top: 40%;
             right: 0px;
         }
@@ -335,17 +327,17 @@ asyncio.run( custom_site() )
             justify-content: center;
         }
 
-        .trinfo {
-            position: relative;
-            right: 0px;
-            border: 1px solid black;
+        .trinfo{
+           position:relative;
+           right:0px;
+           border: 1px solid black;
         }
 
-        .framed {
-            position: relative;
-            top: 150px;
-            right: 10px;
-            border: 1px solid black;
+        .framed{
+           position:relative;
+           top:150px;
+           right:10px;
+           border: 1px solid black;
         }
     </style>
 
