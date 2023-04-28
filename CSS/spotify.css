@@ -39,9 +39,58 @@
     font-size: 1.2rem;
     color: #282828;
 }
+.spotify-link:hover {
+    color: forestgreen;
+}
+
+.instagram-link:hover {
+    color: rgb(158, 20, 140);
+}
+
+
+.a1creator-songbox-tablerow {
+    margin: 12px;
+    padding: 12px;
+    text-align: left;
+    background-size: contain;
+}
+
+
+
+.absolute-right-and-center:hover {
+    transform: translate(-100%, -50%);
+    -moz-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+}
+.a1creator-a1games-tab:hover {
+    left: 100%;
+    opacity: 100%;
+}
+
+
+
+
+.a1creator-a1gamesicon {
+    height: 44px;
+    width: 44px;
+    padding: 0 0;
+    border-radius: 12px;
+}
+
+
+
+
 
 /*on mobile*/
 @media (max-width: 767px) {
+    .a1creator-a1gamesicon {
+        height: 44px;
+        width: 44px;
+        padding: 1px 2px;
+        border-radius: 8px;
+    }
     .spotify-banner {
         height: 160px;
     }
