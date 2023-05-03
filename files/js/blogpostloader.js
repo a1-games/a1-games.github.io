@@ -6,6 +6,12 @@ var postCount = 0;
 
 var container = document.getElementById("showcase-grid");
 
+// get the array of blog post ids
+// Example: [
+// "space_voyage", 
+// "crab_island", 
+// "example_name"
+// ]
 async function getPosts()
 {
     var list;
