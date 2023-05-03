@@ -1,6 +1,6 @@
 .showcase-grid {
     background-color: #808080;
-    width: 76%;
+    width: 56%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

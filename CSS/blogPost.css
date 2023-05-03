@@ -1,0 +1,21 @@
+
+
+#post-template {
+    display: none;
+}
+
+
+.blog-post {
+    position: relative;
+    height: 26vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogpost-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
