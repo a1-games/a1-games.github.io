@@ -1,4 +1,6 @@
 
 .blogpost-background {
     background-image: src('img/spacevoyage/460x215_Thumbnail.png');
+    background-repeat: none;
+    background-size: cover;
 }
