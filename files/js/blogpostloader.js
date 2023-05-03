@@ -5,8 +5,6 @@ var SORTED_POSTS = [];
 var postCount = 0;
 
 var container = document.getElementById("showcase-grid");
-var postTemplate = document.getElementById("post-template");
-
 
 async function getPosts()
 {
