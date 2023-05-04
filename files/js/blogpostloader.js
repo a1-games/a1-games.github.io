@@ -15,7 +15,7 @@ var container = document.getElementById("showcase-grid");
 async function getPosts()
 {
     var list;
-    fetch("https://a1creator.com/files/blogpostlist.json")
+    fetch("https://a1-games.github.io/files/blogpostlist.json")
         .then((response) => response.json())
         .then((jsonresponse) =>  {
             // [...] makes a copy instead of a reference
@@ -34,7 +34,7 @@ async function getPosts()
 
 async function loadAndAddPost(post_id) {
     // fetch the json game info file
-    fetch(`https://a1games.fun/blogposts/${post_id}/${post_id}.html`)
+    fetch(`https://a1-games.github.io/blogposts/${post_id}/${post_id}.html`)
         .then((response) => response.text())
         .then((jsonresponse) =>  {
 
