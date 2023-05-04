@@ -15,11 +15,7 @@ var container = document.getElementById("showcase-grid");
 async function getPosts()
 {
     var list;
-    fetch("https://a1creator.com/files/blogpostlist.json", {
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-        }
-    })
+    fetch("https://a1creator.com/files/blogpostlist.json")
         .then((response) => response.json())
         .then((jsonresponse) =>  {
             // [...] makes a copy instead of a reference
