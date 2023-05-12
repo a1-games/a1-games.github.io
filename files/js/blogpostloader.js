@@ -16,6 +16,7 @@ async function getPosts()
 {
     var list;
     fetch("https://a1creator.com/files/blogpostlist.json")
+        .catch((test) => { console.log("failed"); return test; })
         .then((response) => response.json())
         .then((jsonresponse) =>  {
             // [...] makes a copy instead of a reference
