@@ -23,10 +23,13 @@
         $(function() {
             $("#header").load("php/header.html");
             for (let i = 0; i < blogposts.length; i++) {
+                let newdiv = document.createElement("div");
+                newdiv.id = `${blogposts[i]}`
+                document.getElementById("main-container").append(newdiv)
                 $(`#${blogposts[i]}`).load(`blogposts/${blogposts[i]}/${blogposts[i]}.html`);
             }
         });
-        </script>
+    </script>
 </head>
 <body>
     <!-- load header in -->
@@ -35,9 +38,8 @@
     <h1> website is undergoing complete reconstruction.</h1>
     
     <!-- container for blogpost rows -->
-    <div>
+    <div id="main-container">
         
-        <div id="space_voyage"></div>
         
     </div>
     
