@@ -23,7 +23,7 @@
         $(function() {
             $("#header").load("php/header.html");
             for (let i = 0; i < blogposts.length; i++) {
-                $(`#${blogposts[i]}`).load("blogposts/${blogposts[i]}/${blogposts[i]}.html");
+                $(`#${blogposts[i]}`).load(`blogposts/${blogposts[i]}/${blogposts[i]}.html`);
             }
         });
         </script>
@@ -33,8 +33,6 @@
     <header id="header"></header>
     
     <h1> website is undergoing complete reconstruction.</h1>
-    
-    <a href="spacevoyage.html" >click here to view Space Voyage: The Puzzle Game</a>
     
     <!-- container for blogpost rows -->
     <div>
