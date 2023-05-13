@@ -21,18 +21,12 @@
 }
 
 
-
-
-
 .blogpost-message {
     display: block;
     position: absolute;
     
     margin: 0;
     padding: 0;
-    width: 65%;
-
-    left: 65%;
     top: 50%;
     transform: translate(-50%, -50%);
     
