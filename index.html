@@ -15,9 +15,16 @@
     <!-- Jquery (load first!) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
+
+        let blogposts = []
+        blogposts.push("space_voyage")
+        //blogposts.push("pygame_engine")
+
         $(function() {
             $("#header").load("php/header.html");
-            $("#spacevoyage").load("blogposts/space_voyage/space_voyage.html");
+            for (let i = 0; i < blogposts.length; i++) {
+                $(`#${blogposts[i]}`).load("blogposts/${blogposts[i]}/${blogposts[i]}.html");
+            }
         });
         </script>
 </head>
@@ -32,7 +39,7 @@
     <!-- container for blogpost rows -->
     <div>
         
-        <div id="spacevoyage"></div>
+        <div id="space_voyage"></div>
         
     </div>
     
