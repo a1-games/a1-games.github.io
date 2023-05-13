@@ -19,8 +19,6 @@
         let blogposts = [];
         blogposts.push("space_voyage");
         blogposts.push("a1games_fun");
-
-        let pageheight = 0;
         
         $(function() {
             $("#header").load("php/header.html");
@@ -32,10 +30,9 @@
                 newdiv.id = `${blogposts[i]}`;
                 maincontainer.append(newdiv);
                 $(`#${blogposts[i]}`).load(`blogposts/${blogposts[i]}/${blogposts[i]}.html`);
-                pageheight += 400;
             }
 
-            maincontainer.style.height = `${pageheight}`;
+            maincontainer.style.marginBottom = `8rem`;
         });
 
 
