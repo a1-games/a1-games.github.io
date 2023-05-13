@@ -21,10 +21,12 @@
         blogposts.push("a1games_fun");
 
         let pageheight = 0;
-        var maincontainer = document.getElementById("main-container");
-
+        
         $(function() {
             $("#header").load("php/header.html");
+            
+            var maincontainer = document.getElementById("main-container");
+            
             for (let i = 0; i < blogposts.length; i++) {
                 let newdiv = document.createElement("div");
                 newdiv.id = `${blogposts[i]}`;
@@ -32,9 +34,10 @@
                 $(`#${blogposts[i]}`).load(`blogposts/${blogposts[i]}/${blogposts[i]}.html`);
                 pageheight += newdiv.style.height;
             }
+            
+            maincontainer.style.height = `${pageheight}`;
         });
 
-        maincontainer.style.height = pageheight;
 
     </script>
 </head>
