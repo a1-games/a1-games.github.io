@@ -18,33 +18,29 @@
         $(function() {
             $("#header").load("php/header.html");
         });
-    </script>
+        </script>
 </head>
 <body>
     <!-- load header in -->
     <header id="header"></header>
-
+    
     <h1> website is undergoing complete reconstruction.</h1>
-
+    
     <a href="spacevoyage.html" >click here to view Space Voyage: The Puzzle Game</a>
-
+    
     <!-- container for blogpost rows -->
-    <div class="no-text-decoration showcase-grid">
+    <div>
         
-        <!-- Space Voyage SHOWCASE -->
-        <div class="blog-post">
-            <div class="blogpost-background"></div>
-            <h1>
-                Test
-            </h1>
-        </div>
+        <div id="spacevoyage"></div>
         
     </div>
-
-    <script src="files/js/blogpostloader.js"></script>
-
+    
+    
     <script>
-        //document.location.replace("spacevoyage.html")
+        await $("#spacevoyage").load("blogposts/space_voyage/space_voyage.html");
+        var bodydiv = document.getElementById("spacevoyage");
+
+        
     </script>
 
 
