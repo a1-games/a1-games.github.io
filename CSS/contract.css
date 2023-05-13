@@ -104,11 +104,6 @@ body {
     flex-wrap: wrap;
 }
 
-.bannertable {
-    height: 64px;
-    padding-left: 6%;
-    padding-right: 6%;
-}
 
 #top-page-cover {
     background-image: url("../images/bckgrnd03.png");

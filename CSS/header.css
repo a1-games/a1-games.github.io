@@ -1,4 +1,13 @@
-﻿.selection-tab-button {
+﻿
+.bannertable {
+    height: 64px;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 80%;
+}
+
+
+.selection-tab-button {
     background-color: transparent;
     height: 4rem;
     width: 4rem;
