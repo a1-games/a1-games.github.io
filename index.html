@@ -32,9 +32,9 @@
                 newdiv.id = `${blogposts[i]}`;
                 maincontainer.append(newdiv);
                 $(`#${blogposts[i]}`).load(`blogposts/${blogposts[i]}/${blogposts[i]}.html`);
-                pageheight += newdiv.style.height;
+                pageheight += 400;
             }
-            
+
             maincontainer.style.height = `${pageheight}`;
         });
 
