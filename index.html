@@ -16,19 +16,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
 
-        let blogposts = []
-        blogposts.push("space_voyage")
-        blogposts.push("a1games_fun")
+        let blogposts = [];
+        blogposts.push("space_voyage");
+        blogposts.push("a1games_fun");
+
+        let pageheight = 0;
+        let maincontainer = document.getElementById("main-container");
 
         $(function() {
             $("#header").load("php/header.html");
             for (let i = 0; i < blogposts.length; i++) {
                 let newdiv = document.createElement("div");
-                newdiv.id = `${blogposts[i]}`
-                document.getElementById("main-container").append(newdiv)
+                newdiv.id = `${blogposts[i]}`;
+                maincontainer.append(newdiv);
                 $(`#${blogposts[i]}`).load(`blogposts/${blogposts[i]}/${blogposts[i]}.html`);
+                pageheight += newdiv.style.height;
             }
         });
+
+        maincontainer.style.height = pageheight;
+
     </script>
 </head>
 <body>
