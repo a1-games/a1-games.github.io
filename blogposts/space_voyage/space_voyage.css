@@ -7,7 +7,9 @@
 }
 
 #sv-container {
-    background-color: #dadada;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
 }
 
 #sv-thumbnail {
@@ -19,4 +21,7 @@
     
     width: 26%;
     
+    border-width: 1px;
+    border-color: inherit;
+    border-style: solid;
 }
