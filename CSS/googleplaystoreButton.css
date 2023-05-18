@@ -16,17 +16,21 @@
     border-style: solid;
     border-width: 4px;
     border-radius: 0;
-    border-color: black;
+    border-color: inherit !important;
     padding: 0.8rem 1.4rem;
     margin: 0 0.4rem;
     /*font adjustments:*/
     text-align: center;
     text-decoration: none;
-    color: #000000 !important;
+    color: inherit !important;
     font-size: 1rem;
     font-family: Roboto;
     text-transform: uppercase;
     vertical-align: middle;
+}
+.scalebutton-120 {
+    /*Why doesn't this work????*/
+    transform: scale(1.2);
 }
 #google-play-button-text-spacevoyageGreen:hover {
     background-color: #89FFA4 !important;
@@ -48,4 +52,7 @@
 }
 #google-play-button-text-a1gamesfun:hover {
     background-color: #00fff25d !important;
+}
+#google-play-button-text-pygameengine:hover {
+    background-color: #a59c215d !important;
 }

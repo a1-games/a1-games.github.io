@@ -1,0 +1,41 @@
+
+
+#pe-msg {
+    width: 54%;
+
+    top: 50%;
+    transform: translate(0, -50%);
+
+    right: auto;
+    left: 0;
+}
+
+#pygame_engine-thumbnail {
+    
+    top: 50%;
+    transform: translateY(-50%);
+    height: 95%;
+    width: 45%;
+    right: 0.5rem;
+    left: auto;
+    
+    
+}
+
+.blogpost-container {
+    background-color: rgb(73, 73, 73);
+
+    border-color: white;
+    color: white;
+}
+
+#pygame_thumbnail_description {
+    display: block;
+    position: absolute;
+    color: rgb(255, 238, 0);
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Courier New', Courier, monospace;
+}
