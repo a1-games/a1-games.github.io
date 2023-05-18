@@ -6,7 +6,7 @@
 }
 
 #pe-msg {
-    width: 58%;
+    width: 56%;
 
     top: 50%;
     transform: translate(0, -50%);
@@ -23,7 +23,7 @@
     top: 50%;
     transform: translateY(-50%);
     height: 90%;
-    width: 40%;
+    width: 42%;
     right: 1rem;
     left: auto;
     

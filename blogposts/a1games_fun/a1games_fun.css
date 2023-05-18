@@ -2,8 +2,13 @@
     left: 50%;
     width: 50%;
 
-    background-color: rgba(255, 255, 255, 0.938);
     border-radius: inherit;
     padding: 2rem 0 3rem 0;
 
+    background-color: #0f0f0fee;
+    color: inherit;
+}
+
+#a1gamesfun-container {
+    color: white;
 }
