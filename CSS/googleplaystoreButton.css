@@ -33,10 +33,10 @@
     transform: scale(1.2);
 }
 #google-play-button-text-spacevoyageGreen:hover {
-    background-color: #89FFA4 !important;
+    background-color: #89FFA4cc !important;
 }
 #google-play-button-text-spacevoyageBlue:hover {
-    background-color: #89F1FF !important;
+    background-color: #89F1FFcc !important;
 }
 #google-play-button-text-jumpingbacteria:hover {
     background-color: #5fc3f5 !important;
