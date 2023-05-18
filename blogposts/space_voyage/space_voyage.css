@@ -5,3 +5,18 @@
 
     left: 65%;
 }
+
+#sv-container {
+    background-color: #dadada;
+}
+
+#sv-thumbnail {
+    
+    top: 50%;
+    transform: translateY(-50%);
+    height: 110%;
+    left: 6%;
+    
+    width: 26%;
+    
+}
