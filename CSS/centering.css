@@ -4,3 +4,9 @@
     vertical-align: middle;
     margin: 0 auto;
 }
+
+.auto-center {
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
