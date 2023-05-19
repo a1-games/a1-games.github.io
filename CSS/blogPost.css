@@ -1,23 +1,48 @@
 
+html {
+    font-size: 1vw;
+}
 
 #post-template {
     display: none;
 }
 
+.aspect-fitter {
+    display: block;
+    position: relative;
 
+    min-width: 400px;
+    max-width: 60%;
+
+    
+    
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+    resize: horizontal;
+    border: 1px dashed;
+    overflow: auto;
+    max-width: 100%;
+    height: calc(100vh - 16px);
+
+}
 
 .blogpost-container {
     display: block;
     position: relative;
-
+    
     margin: auto;
     margin-top: 3rem ;
-    min-width: 400px;
-    max-width: 60%;
-    height: 340px;
-
+    /*
+    min-height: 100px;
+    max-height: 340px;
+    */
     background-color: #333333;
     border-radius: 1rem;
+
+    /**/
+    width: 100%;
+    padding-bottom: 30%;
 }
 
 
@@ -25,7 +50,7 @@
     display: block;
     position: absolute;
     
-    margin: 0;
+    margin: 0;rgb(122, 64, 64)
     padding: 0;
     top: 50%;
     transform: translate(-50%, -50%);
