@@ -4,6 +4,8 @@
 }
 
 .blogpost-container {
+    font-size: 0.5rem;
+
     display: block;
     position: relative;
     
