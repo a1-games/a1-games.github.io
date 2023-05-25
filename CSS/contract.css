@@ -92,6 +92,10 @@ body {
     padding: 0px;
 }
 
+.no-margin {
+    margin: 0px;
+}
+
 .blob-skins {
     height: 218px;
     width: 218px;
@@ -108,11 +112,6 @@ body {
 #top-page-cover {
     background-image: url("../images/bckgrnd03.png");
     object-fit: none;
-}
-.th-text-a1 {
-    text-align: left;
-    font-size: 32px;
-    margin: 0 0 0 1.6rem;
 }
 .true-center {
     text-align: center;
