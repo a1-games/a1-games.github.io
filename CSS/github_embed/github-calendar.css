@@ -1,3 +1,9 @@
+
+.py-1 {
+    display: none;
+}
+
+
 :root {
   --color-calendar-graph-day-bg: #dddbdb;
   --color-calendar-graph-day-L1-bg: #39dd34;
