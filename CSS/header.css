@@ -173,6 +173,14 @@
     color: #DD2A7B;
 }
 
+.github-link:hover {
+    color: #FFFFFF;
+}
+
+.linkedin-link:hover {
+    color: #4e62cf;
+}
+
 
 .selection-tab-button {
     background-color: transparent;
