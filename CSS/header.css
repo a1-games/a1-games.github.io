@@ -5,29 +5,29 @@
 }
 
 .headerdiv {
-    display: block;
+    display: flex;
     position: relative;
-
-    height: 86px;
+    
+    height: 64px;
     width: 50%;
     margin: 0 auto;
-
+    
+    align-items: center;
+    justify-content: center;
     /*background-color: black;*/
 }
 
 #a1-icon-div {
     display: flex;
-    position: absolute;
-
-    left: 0;
-    top: 0;
-    bottom: 0;
+    position: relative;
+    
+    height: 100%;
     width: auto;
 
 }
 
 #a1-icon {
-    display: inline-block;
+    display: flex;
     position: relative;
 
     height: 100%;
@@ -41,17 +41,25 @@
 #a1-name {
     padding: 0;
     margin: auto 1rem;
-    color: white;
+    color: rgb(180, 180, 180);
 }
 
-#a1-socials {
-    display: inline-block;
-    position: absolute;
+.text-color-socials {
+    background-color: transparent;
+    color: rgb(180, 180, 180);
+}
 
+
+#a1-socials {
+    display: flex;
+    position: relative;
+
+    height: 100%;
+    align-items: center;
+
+
+    margin: 0 1rem;
     
-    top: 50%;
-    left: 50%;
-    transform:  translate(-50%, -50%);
 }
 .a1-social {
     
@@ -85,7 +93,6 @@
     height: auto;
     width: auto;
 }
-
 
 
 
