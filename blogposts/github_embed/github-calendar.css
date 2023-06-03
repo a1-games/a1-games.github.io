@@ -1,4 +1,19 @@
 
+/*on mobile*/
+@media (max-width: 767px) {
+    
+    .ContributionCalendar-day {
+        width: 5px;
+        height: 5px;
+    }
+
+    .js-calendar-graph-svg {
+        width: 410px;
+        height: 64px;
+    }
+}
+
+
 .py-1 {
     display: none;
 }
