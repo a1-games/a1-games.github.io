@@ -1,8 +1,8 @@
 
 
 #pe-container {
-    background-color: transparent;
-    border: white 1px solid;
+    background-color: #ffffff15;
+    /*border: white 1px solid;*/
 }
 
 #pe-msg {
@@ -23,11 +23,11 @@
     top: 50%;
     transform: translateY(-50%);
     height: 90%;
-    width: 42%;
+    width: 40%;
     right: 1rem;
     left: auto;
     
-    border: white 1px solid;
+    /*border: white 1px solid;*/
 }
 
 

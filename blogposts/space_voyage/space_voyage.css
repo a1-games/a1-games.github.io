@@ -7,9 +7,9 @@
 }
 
 #sv-container {
-    background-color: transparent;
+    background-color: #ffffff15;
     color: white;
-    border: white 1px solid;
+    /*border: white 1px solid;*/
 
     padding-bottom: 270px;
 }
@@ -26,4 +26,5 @@
     border-width: 1px;
     border-color: inherit;
     border-style: solid;
+    
 }
