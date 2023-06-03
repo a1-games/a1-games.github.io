@@ -15,7 +15,7 @@
     <!-- Include Github Calendar -->
     <link rel="stylesheet" href="blogposts/github_embed/github-calendar.css" />
     <script
-        src="blogposts/github_embed/github-calendar.min.js">
+        src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     </script>
     
     <!-- Jquery (load first!) -->
@@ -52,15 +52,13 @@
     
     <!-- Prepare a container for your calendar. -->
     <div class="github-calendar" >
-        <!-- Loading stuff -->
-        Loading the data just for you.
     </div>
 
     <script>
 
         options = {
             tooltips: false,
-            responsive: false,
+            responsive: true,
             global_stats: false,
         }
 
