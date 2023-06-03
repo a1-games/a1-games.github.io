@@ -7,12 +7,10 @@
 
     background-color: #0f0f0fee;
     color: inherit;
-    border: white 1px solid;
 }
 
 #sso-container {
     color: white;
-    border: white 1px solid;
 
 
     background-size: contain;
