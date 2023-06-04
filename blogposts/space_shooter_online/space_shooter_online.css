@@ -14,6 +14,30 @@
 
 
     background-size: contain;
-    max-width: 40%;
+    width: 900;
+    min-width: 40%;
     padding-bottom: 340px;
 }
+
+
+/*on mobile*/
+@media (max-width: 900px) {
+
+    #sso-container {
+        max-width: 100%;
+    }
+    #sso-msg {
+        width: 70%;
+    }
+}
+
+
+/*on mobile*/
+@media (max-width: 600px) {
+
+    #sso-container {
+        font-size: 2.4vw;
+    }
+}
+
+

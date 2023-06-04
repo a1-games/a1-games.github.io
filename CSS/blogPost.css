@@ -8,8 +8,7 @@
     display: block;
     position: relative;
     
-    min-width: 900px;
-    max-width: 50%;
+    min-width: 50%;
 
     margin: auto;
     margin-top: 3rem ;
@@ -21,8 +20,15 @@
     border-radius: 1rem;
 
     /**/
-    width: 100%;
+    width: 900px;
     padding-bottom: 260px;
+}
+
+/*on mobile*/
+@media (max-width: 900px) {
+    .blogpost-container {
+        max-width: 100%;
+    }
 }
 
 

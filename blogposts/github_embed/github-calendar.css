@@ -1,13 +1,9 @@
 
 .position-relative {
-    width: 780px;
+    width: 80%;
+    max-width: 780px;
 }
-/*on mobile*/
-@media (max-width: 767px) {
-    .position-relative {
-        width: 420px;
-    }
-}
+
 
 .py-1 {
     display: none;

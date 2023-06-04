@@ -5,9 +5,9 @@
     border-width: 4px;
     border-color: transparent;
     cursor: pointer;
-    margin: 0.4rem 0 auto auto;
+    margin: 0.4em 0 auto auto;
     /*dsfdf*/
-    padding: 0.8rem 1.4rem;
+    padding: 0.8em 1.4em;
     vertical-align: middle;
 }
 .google-play-button-text {
@@ -17,13 +17,13 @@
     border-width: 4px;
     border-radius: 0;
     border-color: inherit !important;
-    padding: 0.8rem 1.4rem;
-    margin: 0 0.4rem;
+    padding: 0.8em 1.4em;
+    margin: 0 0.4em;
     /*font adjustments:*/
     text-align: center;
     text-decoration: none;
     color: inherit !important;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: Roboto;
     text-transform: uppercase;
     vertical-align: middle;

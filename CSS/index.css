@@ -1,4 +1,11 @@
 
+/*on mobile*/
+@media (max-width: 600px) {
+    html {
+        overflow: hidden;
+        /*font-size: 2.5vw;*/
+    }
+}
 
 
 body {
