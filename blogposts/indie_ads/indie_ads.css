@@ -1,0 +1,54 @@
+#ia-msg {
+    left: 27%;
+    width: 50%;
+
+    border-radius: inherit;
+    padding: 2rem 0 3rem 0;
+
+    background-color: #0f0f0fee;
+    color: inherit;
+}
+
+#ia-container {
+    color: white;
+
+
+    background-size: contain;
+    width: 900;
+    min-width: 40%;
+    padding-bottom: 340px;
+}
+
+#ia-gallery{
+    display: flex;
+    position: absolute;
+
+    right: 0;
+
+    width: 400px;
+    height: 400px;
+
+    background-color: #e8ff1734;
+}
+
+/*on mobile*/
+@media (max-width: 900px) {
+
+    #ia-container {
+        max-width: 100%;
+    }
+    #ia-msg {
+        width: 70%;
+    }
+}
+
+
+/*on mobile*/
+@media (max-width: 600px) {
+
+    #ia-container {
+        font-size: 2.4vw;
+    }
+}
+
+
