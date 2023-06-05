@@ -28,6 +28,18 @@
         blogposts.push("a1games_fun");
         blogposts.push("pygame_engine");
         blogposts.push("space_shooter_online");
+
+        list = [...blogposts];
+        blogposts = [];
+        
+        count = list.length;
+        for (let i = 0; i < count; i++) {
+            // get rnd index
+            let rnd = Math.floor(Math.random() * list.length);
+            blogposts.push(list[rnd]);
+            list.splice(rnd, 1);
+        }
+
         
         $(function() {
             $("#header").load("header.html");
