@@ -8,7 +8,7 @@ function loadAdGallery()
 {
 
     var indieads = document.body.getElementsByClassName("indieads");
-    indieads.classList
+    
     for (let i = 0; i < indieads.length; i++) {
         
         classnames = indieads[i].classList;
