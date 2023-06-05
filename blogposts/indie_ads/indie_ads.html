@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../../CSS/fonts.css" media="screen">
     <link rel="stylesheet" href="../../CSS/centering.css" media="screen">
     <link rel="stylesheet" href="../../CSS/googleplaystoreButton.css" media="screen">
+    <!-- Indie Ads Fetch-->
+    <script src="https://indieads.github.io/indieads.js"></script>
 </head>
 <body style="background-color: #0d1117;background-color: #FFFFFF;">
     <!-- container for blogpost rows -->
@@ -23,21 +25,23 @@
 
 
         <div id="ia-gallery" >
-            <div class="indieads 231x87"></div>
-            <div class="indieads 320x50"></div>
-            <div class="indieads 374x448"></div>
-            <div class="indieads 460x215"></div>
-            <div class="indieads 320x50"></div>
-            <div class="indieads 320x50"></div>
-
+            <div id="ia-column-1">
+                <div class="indieads 231x87 ia-alignright"></div>
+                <div class="indieads 374x448 ia-alignright"></div>
+            </div>
+            <div id="ia-column-2">
+                <div class="indieads 320x50"></div>
+                <div class="indieads 460x215"></div>
+                <div class="indieads 616x253"></div>
+            </div>
         </div>
         
         <!--<button class="blogpost-button">Click</button>-->
 
         
+        <script src="indie_ads.js"></script>
     </div>
 
-    <script src="indie_ads.js"></script>
 
 </body>
 

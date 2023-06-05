@@ -4,42 +4,46 @@
 
 
 
+function loadAdGallery()
+{
 
-
-
-var indieads = document.body.getElementsByClassName("indieads");
-
-
-indieads.forEach(ad => {
-    ad.classList.forEach(classname => {
-        if (classname.includes("320x50"))
+    var indieads = document.body.getElementsByClassName("indieads");
+    indieads.classList
+    for (let i = 0; i < indieads.length; i++) {
+        
+        classnames = indieads[i].classList;
+        ad = indieads[i];
+        
+        if (classnames.contains("320x50"))
         {
-            spawnIndieAd(ad, AdResolutions.Landscape_320x50);
+            spawnIndieAd_ImageOnly(ad, AdResolutions.Banner_320x50);
         }
-        if (classname.includes("231x87"))
+        if (classnames.contains("231x87"))
         {
-            spawnIndieAd(ad, AdResolutions.Landscape_231x87);
+            spawnIndieAd_ImageOnly(ad, AdResolutions.Landscape_231x87);
         }
-        if (classname.includes("460x215"))
+        if (classnames.contains("460x215"))
         {
-            spawnIndieAd(ad, AdResolutions.Landscape_460x215);
+            spawnIndieAd_ImageOnly(ad, AdResolutions.Landscape_460x215);
         }
-        if (classname.includes("616x353"))
+        if (classnames.contains("616x253"))
         {
-            spawnIndieAd(ad, AdResolutions.Landscape_616x353);
+            spawnIndieAd_ImageOnly(ad, AdResolutions.Landscape_616x253);
         }
-        if (classname.includes("374x448"))
+        if (classnames.contains("374x448"))
         {
-            spawnIndieAd(ad, AdResolutions.Landscape_374x448);
+            spawnIndieAd_ImageOnly(ad, AdResolutions.Portrait_374x448);
         }
-        if (classname.includes("600x900"))
+        if (classnames.contains("600x900"))
         {
-            spawnIndieAd(ad, AdResolutions.Landscape_600x900);
+            spawnIndieAd_ImageOnly(ad, AdResolutions.Portrait_600x900);
         }
-    })
-});
+        
+        console.log(ad)
+    }
+}
 
 
-
+loadAdGallery();
 
 

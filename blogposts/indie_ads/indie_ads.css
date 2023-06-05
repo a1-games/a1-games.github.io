@@ -23,13 +23,63 @@
     display: flex;
     position: absolute;
 
-    right: 0;
+    align-items: center;
+    justify-content: center;
 
-    width: 400px;
-    height: 400px;
+    flex-direction: row;
+    
+    top: 0;
+    right: -32%;
+    bottom: 0;
+    left: 32%;
 
-    background-color: #e8ff1734;
+    flex-shrink: 0;
+    
+    background-color: #e8ff1700;
+    
+    gap: 0;
 }
+
+#ia-column-1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0;
+}
+
+#ia-column-2 {
+    display: flex;
+    flex-direction: column;
+
+    align-content: flex-end;
+    align-items: flex-start;
+
+    gap: 0;
+}
+
+.indieads {
+    margin: 0;
+    padding: 0;
+
+}
+
+.indiead-img {
+    display: flex;
+    width: 53%;
+    outline: 1px white solid;
+}
+
+.ia-alignright {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+
 
 /*on mobile*/
 @media (max-width: 900px) {
