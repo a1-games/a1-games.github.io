@@ -90,12 +90,16 @@
     #ia-msg {
         width: 70%;
         left: 50%;
-        z-index: 2 !important;
+        z-index: 10 !important;
     }
     #ia-gallery {
-        left: 0;
-        right: 0;
-        z-index: 10 !important;
+        left: -24%;
+        right: -40%;
+        
+        z-index: 2 !important;
+    }
+    .indiead-img {
+        width: 60%;
     }
 }
 
