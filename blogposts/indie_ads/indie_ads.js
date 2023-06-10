@@ -39,7 +39,7 @@ function loadAdGallery()
             spawnIndieAd_ImageOnly(ad, AdResolutions.Portrait_600x900);
         }
         
-        console.log(ad)
+        //console.log(ad)
     }
 }
 
