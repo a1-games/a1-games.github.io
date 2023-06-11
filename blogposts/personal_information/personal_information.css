@@ -5,11 +5,11 @@
     display: block;
     position: relative;
 
-    background-color: #83ff5d15;
+    background-color: #83ff5d00;
     /*border: white 1px solid;*/
     color: rgb(223, 223, 223);
     
-
+    padding-bottom: 0;
     
 }
 
@@ -22,8 +22,11 @@
 #pi-headshot {
     position: relative;
 
-    height: 100px;
+    height: 150px;
+
+    border-radius: 1em;
 }
+
 
 #pi-info {
     position: relative;
@@ -35,11 +38,23 @@
     font-size: 2rem;
     font-style: bold;
     font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 #pi-skills {
     font-size: 1rem;
     font-family: RobotoLight, Georgia, Times, 'Times New Roman', serif;
+    
+    padding: 0.5rem 0;
+}
+
+#pi-cv-link {
+    margin: 2em 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    font-family: RobotoThin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: rgb(106, 204, 204);
 }
 
 /*on mobile*/
