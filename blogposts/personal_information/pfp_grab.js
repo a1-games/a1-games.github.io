@@ -5,7 +5,9 @@
 
 async function getSrc()
 {
-    await fetch("https://www.linkedin.com/in/a1creator/")
+    await fetch("https://api.linkedin.com/v2/people/(id:{person ID})", {
+        method: "GET", // *GET, POST, PUT, DELETE, etc.
+      })
         .then((response) => {
             response.text()
         })
@@ -21,7 +23,7 @@ async function getSrc()
                     return
                 }
             }
-        })
+        });
 }
 
 getSrc()
