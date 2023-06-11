@@ -25,14 +25,12 @@
     <script src="https://indieads.github.io/indieads.js"></script>
 
     <script>
-
         let blogposts = [];
         blogposts.push("space_voyage");
         blogposts.push("indie_ads");
         blogposts.push("a1games_fun");
         blogposts.push("pygame_engine");
         blogposts.push("space_shooter_online");
-        blogposts.push("personal_information");
 
         list = [...blogposts];
         blogposts = [];
@@ -44,10 +42,10 @@
             blogposts.push(list[rnd]);
             list.splice(rnd, 1);
         }
-
         
         $(function() {
             $("#header").load("header.html");
+            $("#personal_information").load("blogposts/personal_information/personal_information.html");
             
             var maincontainer = document.getElementById("main-container");
             
@@ -60,13 +58,15 @@
 
             maincontainer.style.marginBottom = `8rem`;
         });
-
-
     </script>
 </head>
 <body>
     <!-- load header in -->
     <header id="header"></header>
+    
+    <!-- Prepare a container for your calendar. -->
+    <div id="personal_information" >
+    </div>
     
     <!-- Prepare a container for your calendar. -->
     <div class="github-calendar" >
