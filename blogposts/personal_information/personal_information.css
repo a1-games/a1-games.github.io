@@ -59,5 +59,7 @@
 
 /*on mobile*/
 @media (max-width: 900px) {
-    
+    #pi-name {
+        font-size: 1.3rem;
+    }
 }
