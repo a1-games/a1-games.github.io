@@ -2,7 +2,7 @@
 
 #pi-container {
 
-    display: block;
+    display: flex;
     position: relative;
 
     background-color: #83ff5d00;
@@ -10,7 +10,7 @@
     color: rgb(223, 223, 223);
     
     padding-bottom: 0;
-    
+    justify-content: center;
 }
 
 #pi-headline {
@@ -22,7 +22,7 @@
 #pi-headshot {
     position: relative;
 
-    height: 150px;
+    height: 120px;
 
     border-radius: 1em;
 }
