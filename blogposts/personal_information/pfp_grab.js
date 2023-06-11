@@ -5,7 +5,7 @@
 
 async function getSrc()
 {
-    await fetch("https://api.linkedin.com/v2/people/(id:{person ID})", {
+    await fetch("https://api.linkedin.com/v2/people/(id:{a1creator})", {
         method: "GET", // *GET, POST, PUT, DELETE, etc.
       })
         .then((response) => {
