@@ -92,6 +92,7 @@
         width: 70%;
         left: 50%;
         z-index: 10 !important;
+        background-color: #0d111744;
     }
     #ia-gallery {
         left: -24%;
