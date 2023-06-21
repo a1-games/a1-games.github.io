@@ -69,7 +69,8 @@
 .indiead-img {
     display: flex;
     width: 53%;
-    outline: 1px white solid;
+    outline: 2px solid white;
+    margin: 4px;
 }
 
 .ia-alignright {
