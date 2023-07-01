@@ -1,0 +1,17 @@
+
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2em;
+    font-style: normal;
+    color: azure;
+}
+
+#headertable {
+    background-color: rgba(0, 0, 0, 0.5);
+}
