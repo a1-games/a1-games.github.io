@@ -14,4 +14,6 @@ a {
 
 #headertable {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 2em;
+    border-radius: 1em;
 }
