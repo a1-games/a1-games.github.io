@@ -287,12 +287,20 @@ html {
     }
 
     html {
-        font-size: 20px;
+        font-size: 4vw;
     }
 
 }
 
 
+
+/*on mobile*/
+@media (max-width: 600px) {
+
+    #stb-container {
+        font-size: 2.4vw;
+    }
+}
 
 
 
