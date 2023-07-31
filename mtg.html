@@ -15,6 +15,7 @@
     <script>
         $(function () {
             $("#header").load("php/header.html");
+            $("#trilands").load("php/mtg/trilands.html");
             $("#aitreasuretokens").load("php/mtg/aitreasures.html");
             $("#shrekSwamps").load("php/mtg/shrekSwampsDownload.html");
             $("#shrekMountains").load("php/mtg/shrekMountainsDownload.html");
@@ -38,6 +39,12 @@
     <h5 style="text-align: center;">".PDF" will download a pdf fitted to A4 size, ready to print 9x of each different card</h5>
     <h5 style="text-align: center;">".ZIP" will download a zip file containing each different card as a .png</h5>
     <h5 style="text-align: center;">"TEMPLATE" will download a zip file containing each different card template as a .psd</h5>
+
+    <!-- Title -->
+    <h3 style="text-align: center;">Simplified Tri-Lands (Typeless)</h3>
+
+    <!-- Treasure Cards -->
+    <div id="trilands"></div>
 
     <!-- Title -->
     <h3 style="text-align: center;">AI Generated Treasure Tokens:</h3>
