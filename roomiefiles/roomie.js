@@ -7,6 +7,9 @@
 var questions = [
     "Navn og alder:",
     "Køn/Pronominer:",
+    "Email:",
+    "Mobil:",
+    "Evt. Instagram / Andet:",
     "Jeg ryger:",
     "Mine hobbyer:",
     "Mine favoritserier:",
