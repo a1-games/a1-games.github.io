@@ -38,6 +38,7 @@
     background-color: #e8ff1700;
     
     gap: 0;
+    pointer-events: none;
 }
 
 #ia-column-1 {
