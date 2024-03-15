@@ -1,0 +1,81 @@
+
+
+
+
+.inf-font {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+.inf-datetime {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.inf-location {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.inf-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.inf-text {
+    font-size: 1rem;
+    
+}
+
+.short-inf {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.short-inf-icon {
+    width: auto;
+    height: 1.1rem;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.short-inf-line{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inf-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: auto;
+    height: min-content;
+    overflow: hidden;
+
+
+    padding: 1rem;
+
+    color: #FFFFFF;
+    border-color: aqua;
+    background-color: #303030;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+

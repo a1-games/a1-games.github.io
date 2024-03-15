@@ -10,6 +10,7 @@
     <!-- Local Stylesheets -->
     <link rel="stylesheet" href="CSS/blogPost.css" media="screen">
     <link rel="stylesheet" href="CV/cv.css" media="screen">
+    <link rel="stylesheet" href="CV/information.css" media="screen">
     
     <!-- Jquery (load first!) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -47,10 +48,52 @@
     <div id="personal_information" >
     </div>
 
-    <!-- container for blogpost rows -->
-    <div id="main-container">
+    <div id="inf-aligner">
+
+        <!-- container for short form info -->
+        <div id="shortinf-container" >
+        </div>
+
+        <!-- container for information rows -->
+        <div id="inf-container" >
+        </div>
+
     </div>
 
+
+    <script src="CV/shortinfofiller.js"> </script>
+    <script>
+        insertShortInfo([
+            {iconname:"phone",text:"50 46 38 28"},
+            {iconname:"location",text:"Brabrand, DK"},
+            {iconname:"email",text:"contact@a1creator.com"},
+            {iconname:"email",text:"asbjorn15johnsen@gmail.com"},
+        ]);
+        insertShortInfo([
+            {iconname:"flag_dk",text:"Native"},
+            {iconname:"flag_eng",text:"Fluent"},
+        ]);
+    </script>
+    <script src="CV/informationfiller.js"> </script>
+    <script>
+        insertInformation("",
+                          "",
+                          "Education",
+                          "");
+    
+        insertInformation("2021, Jan - July",
+                          "Vallekilde Højskole",
+                          "Unity Development in C#",
+                          "Intro to Unity and C#. During the course i developed my first two video games in Unity.");
+    
+        insertInformation("2021 - 2024",
+                          "Dania Games Grenaa",
+                          "Computer Science & Game Development",
+                          "C#, python, Javascript, HTML & CSS, SQL, JSON. Networking in C# and python. During my education I produced more than 10 video games.");
+
+    
+    </script>
+        
 </body>
 
 </html>

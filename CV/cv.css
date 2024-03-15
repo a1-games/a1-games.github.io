@@ -1,8 +1,70 @@
 
-
+html {
+    
+    font-size: 22px;
+}
 
 body {
     font-family: Arial;
     margin: 0px;
     background: #18171d;
 }
+
+
+#inf-aligner {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+    height: 100vw;
+
+    background-color: pink;
+}
+
+#shortinf-container {
+    width: 36%;
+    height: auto;
+    margin: 0 0.5rem 0 1rem;
+}
+
+
+#inf-container {
+    width: 64%;
+    height: auto;
+    margin: 0 1rem 0 0.5rem;
+}
+
+
+/*   Screen Size Adjustments   */
+
+/* Portrait */
+@media (max-width: 800px) {
+    #inf-container {
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    #shortinf-container {
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    #inf-aligner {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+}
+
+/* Landscape */
+@media (min-width: 801px) {
+    
+    #inf-aligner {
+        width: 60%;
+        min-width: 800px;
+        max-width: 1200px;
+    }
+
+}
+
+
