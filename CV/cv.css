@@ -11,6 +11,17 @@ body {
     background: #18171d;
 }
 
+#profile-title {
+    font-size: 2rem;
+    text-align: center;
+}
+#profile-info {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05rem;
+}
 
 #inf-aligner {
     
@@ -65,7 +76,9 @@ body {
         width: 90%;
         flex-direction: column;
     }
-    
+    #profile-info {
+        width: 90%;
+    }
 }
 
 /* Landscape */
