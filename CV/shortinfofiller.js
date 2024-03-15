@@ -31,6 +31,11 @@ function insertShortInfo(infosarray)
         let _text = document.createElement("div");
         _text.className = "inf-font short-inf";
         _text.innerText = infosarray[i].text;
+        if (infosarray[i].link)
+        {
+            _text.onclick = () => { window.open("https://"+infosarray[i].text); };
+            _text.style.cursor = "pointer";
+        }
 
         // line div
         let _line = document.createElement("div");

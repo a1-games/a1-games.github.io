@@ -18,11 +18,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script>
-        let blogposts = [];
-        blogposts.push("CV/contact");
-        blogposts.push("CV/info");
-
-        
         $(function() {
             // load header
             $("#header").load("header.html");
@@ -62,6 +57,9 @@
             {iconname:"email",text:"asbjorn15johnsen@gmail.com"},
         ]);
         insertShortInfo([
+            {iconname:"website",text:"a1creator.com", link:true},
+        ]);
+        insertShortInfo([
             {iconname:"flag_dk",text:"Native"},
             {iconname:"flag_eng",text:"Fluent"},
         ]);
@@ -78,6 +76,11 @@
                           "a1games",
                           "Solo Indie Game Developer",
                           "Worked on multiple games and apps. Released five apps on Google Play Store. Released a full single player puzzle game on Steam.");
+                          
+        insertInformation("2022 Sep - Oct",
+                          "Lunch Money Games",
+                          "Visual Effects & Shaders",
+                          "Internship at Lunch Money Games in charge of visual effects and shaders. I created particle effects and used Unity's Shader Graph to develop assets for the game Calcium Chaos. I quit to focus on releasing my own game.");
     
         setContainerColor("#FFFFFF11");
 
