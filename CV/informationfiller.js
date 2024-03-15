@@ -1,15 +1,36 @@
 
 const infContainer = document.getElementById("inf-container");
 
+var containerColor = "#FFFFFF";
 
+function setContainerColor(color)
+{
+    containerColor = color;
+}
 
+function insertInformationTitle(title)
+{
+    // title
+    let _title = document.createElement("div");
+    _title.className = "inf-font inf-title-big ";
+    _title.innerText = title;
 
+    infContainer.append(_title);
+}
+
+function insertSeperationLine()
+{
+    let _line = document.createElement("div");
+    _line.className = "seperation-line";
+    infContainer.append(_line);
+}
 
 function insertInformation(datetime, location, title, text)
 {
     // information container
     let newContainer = document.createElement("div");
     newContainer.className = "inf-container";
+    newContainer.style.backgroundColor = containerColor;
 
     // timedate
     let _time = document.createElement("div");

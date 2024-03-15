@@ -1,29 +1,41 @@
 
-html {
-    
-    font-size: 22px;
+:root {
+    --black: #FFFFFF;
+    --white: #FFFFFF;
 }
 
+
 body {
-    font-family: Arial;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0px;
     background: #18171d;
 }
 
 
 #inf-aligner {
+    
+    font-size: 22px;
+
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+
+    margin: 1rem auto 0 auto;
+    padding: 1rem 0;
+
+    border-radius: 0.5rem;
 
     height: 100vw;
-
+/*
+    background-color: var(--white);*/
 }
 
 #shortinf-container {
     width: 36%;
     height: auto;
     margin: 0 0.5rem 0 1rem;
+    z-index: 1;
+/*
+    background-color: #0399adCC;*/
 }
 
 
@@ -31,6 +43,7 @@ body {
     width: 64%;
     height: auto;
     margin: 0 1rem 0 0.5rem;
+    z-index: 1;
 }
 
 
@@ -59,7 +72,7 @@ body {
 @media (min-width: 801px) {
     
     #inf-aligner {
-        width: 60%;
+        width: 50%;
         min-width: 800px;
         max-width: 1200px;
     }

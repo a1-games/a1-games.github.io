@@ -9,6 +9,8 @@
     
     <!-- Local Stylesheets -->
     <link rel="stylesheet" href="CSS/blogPost.css" media="screen">
+    <link rel="stylesheet" href="CSS/fonts.css" media="screen">
+
     <link rel="stylesheet" href="CV/cv.css" media="screen">
     <link rel="stylesheet" href="CV/information.css" media="screen">
     
@@ -27,16 +29,6 @@
             // load personal information
             $("#personal_information").load("blogposts/personal_information/personal_information.html");
             
-            var maincontainer = document.getElementById("main-container");
-            
-            for (let i = 0; i < blogposts.length; i++) {
-                let newdiv = document.createElement("div");
-                newdiv.id = `${blogposts[i]}`;
-                maincontainer.append(newdiv);
-                $(`#${blogposts[i]}`).load(`${blogposts[i]}/${blogposts[i]}.html`);
-            }
-
-            maincontainer.style.marginBottom = `8rem`;
         });
     </script>
 </head>
@@ -73,25 +65,37 @@
             {iconname:"flag_dk",text:"Native"},
             {iconname:"flag_eng",text:"Fluent"},
         ]);
-    </script>
+        </script>
     <script src="CV/informationfiller.js"> </script>
     <script>
-        insertInformation("",
-                          "",
-                          "Education",
-                          "");
-    
-        insertInformation("2021, Jan - July",
-                          "Vallekilde Højskole",
-                          "Unity Development in C#",
-                          "Intro to Unity and C#. During the course i developed my first two video games in Unity.");
+        setContainerColor("#FFFFFF11");
+
+        insertInformationTitle("Experience");
+
+        insertSeperationLine();
     
         insertInformation("2021 - 2024",
-                          "Dania Games Grenaa",
-                          "Computer Science & Game Development",
-                          "C#, python, Javascript, HTML & CSS, SQL, JSON. Networking in C# and python. During my education I produced more than 10 video games.");
-
+                          "a1games",
+                          "Solo Indie Game Developer",
+                          "Worked on multiple games and apps. Released five apps on Google Play Store. Released a full single player puzzle game on Steam.");
     
+        setContainerColor("#FFFFFF11");
+
+        insertInformationTitle("Education");
+
+        insertSeperationLine();
+
+        insertInformation("2021, Jan - July",
+                        "Vallekilde Højskole",
+                        "Unity Development in C#",
+                        "Intro to Unity and C#. During the course i developed my first two video games in Unity.");
+
+        insertInformation("2021 - 2024",
+                        "Dania Games Grenaa",
+                        "Computer Science & Game Development",
+                        "C#, python, Javascript, HTML & CSS, SQL, JSON. Networking in C# and python. During my education I produced more than 10 video games.");
+
+            
     </script>
         
 </body>

@@ -1,6 +1,6 @@
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
     font-family: BubblegumSans;
@@ -36,7 +36,7 @@
 @font-face {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     src: url(fonts/Roboto-Regular.ttf);
 }
 @font-face {

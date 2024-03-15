@@ -2,14 +2,23 @@
 const shortinfContainer = document.getElementById("shortinf-container");
 
 
-
-
-
 function insertShortInfo(infosarray)
 {
     // information container
     let newContainer = document.createElement("div");
     newContainer.className = "inf-container";
+    newContainer.style.backgroundImage = "url(CV/gamebricks.jpeg)";
+    newContainer.style.zIndex = "-1";
+
+    let shadeCover = document.createElement("div");
+    shadeCover.style.backgroundColor = "#02889cCC";
+    shadeCover.style.position = "absolute";
+    shadeCover.style.top = "0";
+    shadeCover.style.bottom = "0";
+    shadeCover.style.right = "0";
+    shadeCover.style.left = "0";
+    shadeCover.style.zIndex = "-1";
+    newContainer.append(shadeCover);
 
     for (let i = 0; i < infosarray.length; i++) {
 
