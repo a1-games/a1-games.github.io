@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="images/a1Icon16px.ico" type="image/x-icon">
+    <title>a1creator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="CSS/CV/cv.css" media="screen">
+    
+    <!-- Jquery (load first!) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        let blogposts = [];
+        blogposts.push("CV/contact");
+        blogposts.push("CV/info");
+
+        
+        $(function() {
+            $("#header").load("header.html");
+            $("#personal_information").load("blogposts/personal_information/personal_information.html");
+            
+            var maincontainer = document.getElementById("main-container");
+            
+            for (let i = 0; i < blogposts.length; i++) {
+                let newdiv = document.createElement("div");
+                newdiv.id = `${blogposts[i]}`;
+                maincontainer.append(newdiv);
+                $(`#${blogposts[i]}`).load(`${blogposts[i]}/${blogposts[i]}.html`);
+            }
+
+            maincontainer.style.marginBottom = `8rem`;
+        });
+    </script>
+</head>
+<body>
+    <!-- load header in -->
+    <header id="header"></header>
+    
+    <!-- Prepare a container for your calendar. -->
+    <div id="personal_information" >
+    </div>
+    
+
+    <!-- container for blogpost rows -->
+    <div id="main-container">
+        
+        
+    </div>
+    
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
