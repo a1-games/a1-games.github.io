@@ -25,7 +25,7 @@
                 <div style="height: 0.5em;">
 
                 </div>
-                <a id="pi-cv-link" download="Resume Asbjorn Johnsen" href="../files/Resume_Asbjorn_Johnsen_a1creator.pdf" >
+                <a id="pi-cv-link" >
                     Click to download resume as .pdf
                 </a>
             </div>
@@ -33,6 +33,24 @@
         
     </div>
 
+    <script>
+        var pdfButton = document.getElementById("pi-cv-link");
+        function printPDF()
+        {
+            var informationColumn = document.getElementById("inf-container");
+            var headlinediv = document.getElementById("personal_information");
+            var profilediv = document.getElementById("profile-inf-aligner");
+
+            informationColumn.prepend(profilediv);
+            informationColumn.prepend(headlinediv);
+
+            // open print dialog
+            print();
+        }
+        pdfButton.onclick = () => {
+            printPDF();
+        };
+    </script>
 
 </body>
 
