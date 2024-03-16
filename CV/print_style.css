@@ -1,0 +1,43 @@
+
+
+#header {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    #inf-container {
+        width: 64%;
+        margin: 0 1em 0 0.5em;
+    }
+    #shortinf-container {
+        width: 36%;
+        margin: 0 0.5em 0 1em;
+    }
+    #inf-aligner {
+        flex-direction: row;
+    }
+    
+    #profile-inf-aligner {
+        width: auto;
+    }
+    #profile-info {
+        width: auto;
+    }
+    #profile-title {
+        text-align: left;
+    }
+        
+    #inf-aligner {
+        font-size: 18px;
+        width: 50%;
+        min-width: 800px;
+        max-width: 1200px;
+        margin-top: 2rem;
+    }
+    #profile-inf-aligner {
+        width: 50%;
+        min-width: 600px;
+        max-width: 800px;
+    }
+}
