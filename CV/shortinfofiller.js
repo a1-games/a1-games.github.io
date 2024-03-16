@@ -26,6 +26,8 @@ function insertShortInfo(infosarray)
         let _icon = document.createElement("img");
         _icon.className = "short-inf-icon";
         _icon.src = `CV/icon_${infosarray[i].iconname}.png`;
+        if (infosarray[i].invert)
+            _icon.style.filter = "invert(0.95)";
 
         // text
         let _text = document.createElement("div");

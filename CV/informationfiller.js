@@ -8,21 +8,21 @@ function setContainerColor(color)
     containerColor = color;
 }
 
-function insertInformationTitle(title)
+function insertInformationTitle(title, container)
 {
     // title
     let _title = document.createElement("div");
     _title.className = "inf-font inf-title-big ";
     _title.innerText = title;
 
-    infContainer.append(_title);
+    container.append(_title);
 }
 
-function insertSeperationLine()
+function insertSeperationLine(container)
 {
     let _line = document.createElement("div");
     _line.className = "seperation-line";
-    infContainer.append(_line);
+    container.append(_line);
 }
 
 function insertInformation(datetime, location, title, text)

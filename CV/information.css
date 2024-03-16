@@ -3,7 +3,7 @@
 
 .inf-font {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: var(--black);
+    color: var(--information);
 }
 
 
@@ -36,14 +36,15 @@
     letter-spacing: 0.1rem;
     font-weight: 300;
     margin: 0;
+    margin-top: 1rem;
     padding: 0 1rem;
     font-family: 'Bebas Neue', 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.seperation-line{
+.seperation-line {
     height: 0.025em;
     width: auto;
-    background-color: var(--black);
+    background-color: var(--information);
     margin: 0 1rem 1rem 1rem;
 }
 
@@ -55,7 +56,7 @@
     line-height: 2rem;
     font-weight: 500;
     font-family: 'RobotoMedium';
-    color: var(--white);
+    color: var(--shortinfo);
 }
 
 .short-inf-icon {

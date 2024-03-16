@@ -35,16 +35,19 @@
     <div id="personal_information" >
     </div>
 
-    <div id="profile-title" class="inf-title-big inf-font">
-        Profile
-    </div>
-    <div id="profile-info" class="inf-font">
-        I view myself as a passionate programmer, whose experience includes
-        web-, mobile- and pc-development - most often in the world of video
-        games. I've worked in different programming languages, such as HTML,
-        CSS, Javascript, C# and python. I view myself as a very competent object
-        oriented programmer, who focuses on code optimization and
-        performance.        
+    <div id="profile-inf-aligner" class="inf-font">
+        <div id="profile-title" class="inf-title-big inf-font">
+            Profile
+        </div>
+        <div class="seperation-line"></div>
+        <div id="profile-text" class=" inf-container inf-text">
+            I view myself as a passionate programmer, whose experience includes
+            web-, mobile- and pc-development - most often in the world of video
+            games. I've worked in different programming languages, such as HTML,
+            CSS, Javascript, C# and python. I view myself as a very competent object
+            oriented programmer, who focuses on code optimization and
+            performance.       
+        </div> 
     </div>
 
 
@@ -62,28 +65,63 @@
 
 
     <script src="CV/shortinfofiller.js"> </script>
+    <script src="CV/informationfiller.js"> </script>
     <script>
+        
         insertShortInfo([
-            {iconname:"phone",text:"50 46 38 28"},
-            {iconname:"location",text:"Brabrand, DK"},
-            {iconname:"email",text:"contact@a1creator.com"},
-            {iconname:"email",text:"asbjorn15johnsen@gmail.com"},
+            {iconname:"website",text:"a1creator.com", link:true,invert:true},
         ]);
+        
+        // short information
+        insertInformationTitle("Contact", shortinfContainer);
+
+        insertSeperationLine(shortinfContainer);
+
         insertShortInfo([
-            {iconname:"website",text:"a1creator.com", link:true},
+            {iconname:"phone",text:"50 46 38 28",invert:true},
+            {iconname:"location",text:"Brabrand, DK",invert:true},
+            {iconname:"email",text:"contact@a1creator.com",invert:true},
+            {iconname:"email",text:"asbjorn15johnsen@gmail.com",invert:true},
         ]);
+        
+        insertInformationTitle("Skills", shortinfContainer);
+
+        insertSeperationLine(shortinfContainer);
+
+        insertShortInfo([
+            {iconname:"checkmark",text:"Object-Oriented Programming",invert:true},
+            {iconname:"checkmark",text:"Perfomance-Minded Optimization",invert:true},
+            {iconname:"checkmark",text:"Front End",invert:true},
+            {iconname:"checkmark",text:"Back End",invert:true},
+            {iconname:"checkmark",text:"Problem Solving",invert:true},
+            {iconname:"checkmark",text:"Computer Literacy",invert:true},
+            {iconname:"checkmark",text:"Windows, Apple, iOS & Android",invert:true},
+        ]);
+
+        insertInformationTitle("Languages", shortinfContainer);
+
+        insertSeperationLine(shortinfContainer);
+        
+        insertShortInfo([
+            {iconname:"checkmark",text:"C#",invert:true},
+            {iconname:"checkmark",text:"python",invert:true},
+            {iconname:"checkmark",text:"Javascript",invert:true},
+            {iconname:"checkmark",text:"HTML & CSS",invert:true},
+            {iconname:"checkmark",text:"JSON",invert:true},
+        ]);
+
         insertShortInfo([
             {iconname:"flag_dk",text:"Native"},
             {iconname:"flag_eng",text:"Fluent"},
         ]);
-        </script>
-    <script src="CV/informationfiller.js"> </script>
-    <script>
+        
+        
+        // long information
         setContainerColor("#FFFFFF11");
 
-        insertInformationTitle("Experience");
+        insertInformationTitle("Experience", infContainer);
 
-        insertSeperationLine();
+        insertSeperationLine(infContainer);
     
         insertInformation("2021 - 2024",
                           "a1games",
@@ -97,9 +135,9 @@
     
         setContainerColor("#FFFFFF11");
 
-        insertInformationTitle("Education");
+        insertInformationTitle("Education", infContainer);
 
-        insertSeperationLine();
+        insertSeperationLine(infContainer);
 
         insertInformation("2021, Jan - July",
                         "Vallekilde Højskole",

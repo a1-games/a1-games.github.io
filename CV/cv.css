@@ -1,26 +1,28 @@
 
 :root {
-    --black: #FFFFFF;
-    --white: #FFFFFF;
+    --information: #EEEEEE;
+    --shortinfo: #111111;
 }
 
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0px;
-    background: #18171d;
+    background: #141718;
 }
 
 #profile-title {
-    font-size: 2rem;
     text-align: center;
 }
-#profile-info {
-    width: 40%;
+#profile-inf-aligner {
+    
+    font-size: 22px;
+
     height: auto;
     margin: auto;
-    margin-bottom: 2rem;
-    letter-spacing: 0.05rem;
+}
+#profile-text {
+    background-color: #FFFFFF11;
 }
 
 #inf-aligner {
@@ -64,20 +66,24 @@ body {
 @media (max-width: 800px) {
     #inf-container {
         width: 100%;
-        margin: 0;
-        margin-top: 1rem;
+        margin: 0 auto;
     }
     #shortinf-container {
         width: 100%;
-        margin: 0;
-        margin-top: 1rem;
+        margin: 0 auto;
     }
     #inf-aligner {
         width: 90%;
         flex-direction: column;
     }
+    #profile-inf-aligner {
+        width: 90%;
+    }
     #profile-info {
         width: 90%;
+    }
+    #profile-title {
+        text-align: left;
     }
 }
 
@@ -88,8 +94,13 @@ body {
         width: 50%;
         min-width: 800px;
         max-width: 1200px;
+        margin-top: 2rem;
     }
-
+    #profile-inf-aligner {
+        width: 50%;
+        min-width: 600px;
+        max-width: 800px;
+    }
 }
 
 
