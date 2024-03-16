@@ -3,6 +3,7 @@
     <!-- Local Stylesheets -->
     <link rel="stylesheet" href="../CSS/blogPost.css" media="screen">
     <link rel="stylesheet" href="../blogposts/personal_information/personal_information.css" media="screen">
+    <link rel="stylesheet" href="../blogposts/personal_information/personal_information.css" media="print">
     <link rel="stylesheet" href="../CSS/fonts.css" media="screen">
 </head>
 
@@ -41,6 +42,7 @@
             var headlinediv = document.getElementById("personal_information");
             var profilediv = document.getElementById("profile-inf-aligner");
 
+            profilediv.className = "inf-font inf-container";
             informationColumn.prepend(profilediv);
             informationColumn.prepend(headlinediv);
 
