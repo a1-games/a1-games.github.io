@@ -40,7 +40,7 @@
 #pi-name {
     font-size: 2rem;
     font-style: bold;
-    font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
+    font-family: RobotoMedium, Georgia, Times, 'Times New Roman', serif;
     
 }
 
@@ -55,7 +55,7 @@
     margin: 2em 0;
     font-size: 0.9rem;
     font-style: italic;
-    font-family: RobotoThin, Georgia, Times, 'Times New Roman', serif;
+    font-family: RobotoLight, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     color: rgb(106, 204, 204);
 }
