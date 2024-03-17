@@ -45,9 +45,12 @@
             //informationColumn.prepend(headlinediv);
             
             var profilediv = document.getElementById("profile-inf-aligner");
-            profilediv.className = "inf-font inf-container";
-            profilediv.id = "";
-            informationColumn.prepend(profilediv);
+            if (profilediv != null)
+            {
+                profilediv.className = "inf-font inf-container";
+                profilediv.id = "";
+                informationColumn.prepend(profilediv);
+            }
             
             // open print dialog
             print();
