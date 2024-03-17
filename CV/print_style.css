@@ -4,6 +4,8 @@
 
 #pi-info {
     filter: invert(1);
+    
+    width: 48%;
 }
 
 
@@ -55,7 +57,7 @@ html, body {
 #headline-text {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.05em;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .inf-title-big {
