@@ -76,6 +76,10 @@
     align-items: center;
 }
 
+#pi-info {
+    filter: invert(1);
+}
+
 .inf-container {
     position: relative;
     display: flex;
