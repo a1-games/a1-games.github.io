@@ -6,13 +6,10 @@
     filter: invert(1);
 }
 
-#pi-container {
-    margin: 0 auto;
-}
 
 html, body {
     height:100%;
-    width: 90%;
+    width: 100%;
     margin: 0 !important; 
     padding: 0 !important;
     overflow: hidden;
@@ -37,6 +34,13 @@ html, body {
     text-align: left;
 }
 
+#pi-container {
+    margin: 0 auto;
+}
+
+#pi-headline {
+    padding: 0 1rem;
+}
 #pi-cv-link {
     display: none;
 }
@@ -63,6 +67,10 @@ html, body {
     #inf-aligner {
         flex-direction: row;
         margin: 0 auto;
+        font-size: 18px;
+        width: 50%;
+        min-width: 800px;
+        max-width: 1200px;
     }
     
     #profile-inf-aligner {
@@ -75,13 +83,6 @@ html, body {
         text-align: left;
     }
         
-    #inf-aligner {
-        font-size: 18px;
-        width: 50%;
-        min-width: 800px;
-        max-width: 1200px;
-        margin-top: 2rem;
-    }
     #profile-inf-aligner {
         width: 50%;
         min-width: 600px;
