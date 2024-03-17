@@ -2,17 +2,17 @@
 const shortinfContainer = document.getElementById("shortinf-container");
 
 
-function insertShortInfo(infosarray)
+function insertShortInfo(infosarray, bckgrndImage)
 {
     // information container
     let newContainer = document.createElement("div");
     newContainer.className = "inf-container";
-    newContainer.style.backgroundImage = "url(CV/gamebricks.jpeg)";
-    newContainer.style.zIndex = "-1";
+    newContainer.style.backgroundColor = containerColor;
 
     let shadeCover = document.createElement("div");
-    shadeCover.style.backgroundColor = containerColor;
     shadeCover.style.position = "absolute";
+    if (bckgrndImage != null)
+        shadeCover.style.backgroundImage = `url(CV/${bckgrndImage})`;
     shadeCover.style.top = "0";
     shadeCover.style.bottom = "0";
     shadeCover.style.right = "0";
