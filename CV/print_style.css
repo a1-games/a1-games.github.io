@@ -24,6 +24,7 @@ html, body {
 :root {
     --information: #111111;
     --shortinfo: #FFFFFF;
+    font-size: 12px;
 }
 
 #header {
@@ -67,7 +68,6 @@ html, body {
     #inf-aligner {
         flex-direction: row;
         margin: 0 auto;
-        font-size: 18px;
         width: 50%;
         min-width: 800px;
         max-width: 1200px;
