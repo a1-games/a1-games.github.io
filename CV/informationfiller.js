@@ -58,8 +58,7 @@ function insertText(text, container)
 {
     // information container
     let newContainer = document.createElement("div");
-    newContainer.className = "inf-container";
-    newContainer.style.backgroundColor = containerColor;
+    newContainer.className = "inf-container information-container";
 
     // description text
     let _text = document.createElement("div");
