@@ -74,11 +74,11 @@ html, body {
 @media (max-width: 800px) {
     #inf-container {
         width: 64%;
-        margin: 0 1em 0 0.5em;
+        margin: 0 1em 0 0.25em;
     }
     #shortinf-container {
         width: 36%;
-        margin: 0 0.5em 0 1em;
+        margin: 0 0.25em 0 1em;
     }
     #inf-aligner {
         flex-direction: row;
