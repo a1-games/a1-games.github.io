@@ -28,7 +28,6 @@
     <!-- Jquery (load first!) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="CV/pdfPrinter.js"></script>
 
     <script>
         $(function() {
@@ -69,13 +68,6 @@
     <script src="CV/informationfiller.js"> </script>
     <script>
         
-        // profile
-        insertInformationTitle("Profile", profileInfContainer);
-
-        insertSeperationLine(profileInfContainer);
-
-        insertText("I view myself as a passionate programmer, whose experience includes web-, mobile- and pc-development - most often in the world of videogames. I've worked in different programming languages, such as HTML, CSS, Javascript, C# and python. I view myself as a very competent object oriented programmer, who focuses on code optimization and performance.", profileInfContainer)
-    
 
         // short information
         
@@ -125,6 +117,13 @@
             {iconname:"flag_eng",text:"Fluent"},
         ]);
         
+        // profile
+        insertInformationTitle("Profile", infContainer);
+
+        insertSeperationLine(infContainer);
+
+        insertText("I view myself as a passionate programmer, whose experience includes web-, mobile- and pc-development - most often in the world of videogames. I've worked in different programming languages, such as HTML, CSS, Javascript, C# and python. I view myself as a very competent object oriented programmer, who focuses on code optimization and performance.", infContainer)
+    
         
         // long information
 

@@ -39,25 +39,8 @@
         pdfButton.style.cursor = "pointer";
         function printPDF()
         {
-            //var headlinediv = document.getElementById("personal_information");
-            //informationColumn.prepend(headlinediv);
-            
-            let profilediv = document.getElementById("profile-inf-aligner");
-            if (profilediv != null)
-            {
-                let children = [...profilediv.children];
-                let count = children.length;
-
-                for (let i = count - 1; i >= 0; i--) {
-                    infContainer.prepend(children[i]);
-                }
-
-                profilediv.remove();
-            }
-
             // open print dialog
             print();
-            //savePageAsPDF();
         }
         pdfButton.onclick = () => {
             printPDF();
