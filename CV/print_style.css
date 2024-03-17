@@ -2,6 +2,9 @@
     size: A4 portrait;
 }
 
+#pi-info {
+    filter: invert(1);
+}
 
 html {
     height:100%; 
