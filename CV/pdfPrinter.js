@@ -43,5 +43,5 @@ async function savePageAsPDF() {
     newWindow.print();
 
     // close the new window after printing
-    newWindow.close();
+    //newWindow.close();
 }
