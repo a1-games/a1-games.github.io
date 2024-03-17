@@ -21,19 +21,6 @@ body {
     font-size: 1.5em;
 }
 
-#profile-title {
-    text-align: center;
-}
-#profile-inf-aligner {
-    
-    font-size: 1.375rem;
-
-    height: auto;
-    margin: auto;
-}
-#profile-text {
-    background-color: #FFFFFF11;
-}
 
 #inf-aligner {
 

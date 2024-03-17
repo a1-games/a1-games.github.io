@@ -88,19 +88,4 @@ html, body {
         max-width: 1200px;
     }
     
-    #profile-inf-aligner {
-        width: auto;
-    }
-    #profile-info {
-        width: auto;
-    }
-    #profile-title {
-        text-align: left;
-    }
-        
-    #profile-inf-aligner {
-        width: 50%;
-        min-width: 600px;
-        max-width: 800px;
-    }
 }
