@@ -30,7 +30,7 @@ function insertInformation(datetime, location, title, text)
 {
     // information container
     let newContainer = document.createElement("div");
-    newContainer.className = "inf-container";
+    newContainer.className = "inf-container information-container";
     newContainer.style.backgroundColor = containerColor;
 
     // timedate

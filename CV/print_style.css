@@ -58,6 +58,19 @@ html, body {
     font-size: 1em;
 }
 
+.inf-title-big {
+    margin-top: 0;
+}
+
+.information-container {
+    margin: 0;
+    padding: 0 1em 1em 1em;
+}
+
+.inf-title {
+    margin-top: 0.4em;
+}
+
 @media (max-width: 800px) {
     #inf-container {
         width: 64%;

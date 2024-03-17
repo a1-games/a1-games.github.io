@@ -6,18 +6,10 @@ function insertShortInfo(infosarray, bckgrndImage)
 {
     // information container
     let newContainer = document.createElement("div");
-    newContainer.className = "inf-container";
-    newContainer.style.backgroundColor = containerColor;
+    newContainer.className = "inf-container short-inf-container";
 
     let shadeCover = document.createElement("div");
-    shadeCover.style.position = "absolute";
-    if (bckgrndImage != null)
-        shadeCover.style.backgroundImage = `url(CV/${bckgrndImage})`;
-    shadeCover.style.top = "0";
-    shadeCover.style.bottom = "0";
-    shadeCover.style.right = "0";
-    shadeCover.style.left = "0";
-    shadeCover.style.zIndex = "-1";
+    shadeCover.className = "short-inf-background-image"
     newContainer.append(shadeCover);
 
     for (let i = 0; i < infosarray.length; i++) {
