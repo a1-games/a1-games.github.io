@@ -2,13 +2,6 @@
 const infContainer = document.getElementById("inf-container");
 const profileInfContainer = document.getElementById("profile-inf-aligner");
 
-var containerColor = "#FFFFFF";
-
-function setContainerColor(color)
-{
-    containerColor = color;
-}
-
 function insertInformationTitle(title, container)
 {
     // title
@@ -31,7 +24,6 @@ function insertInformation(datetime, location, title, text)
     // information container
     let newContainer = document.createElement("div");
     newContainer.className = "inf-container information-container";
-    newContainer.style.backgroundColor = containerColor;
 
     // timedate
     let _time = document.createElement("div");
