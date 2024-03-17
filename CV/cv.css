@@ -11,6 +11,12 @@ body {
     background: #141718;
 }
 
+#headline-text {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+}
+
 #profile-title {
     text-align: center;
 }

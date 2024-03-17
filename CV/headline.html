@@ -18,7 +18,7 @@
                     Asbjørn "a1creator" Johnsen
                 </div>
                 <div style="width: 100%; height: 1px; background-color: white; margin: 0.5rem 0;"></div>
-                <div style="font-family: 'Roboto'; font-size: 1.5em; letter-spacing: 0.05em;">
+                <div id="headline-text" >
                     Motivated full-stack developer with game
                     <br>
                     development experience
@@ -36,16 +36,19 @@
 
     <script>
         var pdfButton = document.getElementById("pi-cv-link");
+        pdfButton.style.cursor = "pointer";
         function printPDF()
         {
             var informationColumn = document.getElementById("inf-container");
-            var headlinediv = document.getElementById("personal_information");
+
+            //var headlinediv = document.getElementById("personal_information");
+            //informationColumn.prepend(headlinediv);
+            
             var profilediv = document.getElementById("profile-inf-aligner");
-
             profilediv.className = "inf-font inf-container";
+            profilediv.id = "";
             informationColumn.prepend(profilediv);
-            informationColumn.prepend(headlinediv);
-
+            
             // open print dialog
             print();
         }
