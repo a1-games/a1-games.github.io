@@ -16,6 +16,7 @@ async function savePageAsPDF() {
     // cloneNode(true) will perform a deep clone 
     const head = document.head.cloneNode(true);
 
+    head.title = "Asbjørn Johnsen - Resume";
     // creating a new body element for our newWindow
     const body = document.createElement("body");
 
