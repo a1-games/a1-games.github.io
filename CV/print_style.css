@@ -25,6 +25,9 @@
     display: none;
 }
 
+.invert-icon {
+    filter: invert(0.05);
+}
 
 #headline-text {
     font-family: 'Roboto', sans-serif;
