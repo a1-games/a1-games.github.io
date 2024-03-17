@@ -6,12 +6,12 @@
     filter: invert(1);
 }
 
-html {
+html, body {
     height:100%; 
     margin: 0 !important; 
     padding: 0 !important;
     overflow: hidden;
-  }
+}
 
 * {
     -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
