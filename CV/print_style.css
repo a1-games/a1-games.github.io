@@ -26,7 +26,7 @@
 }
 
 .invert-icon {
-    filter: invert(0.05);
+    filter: none;
 }
 
 #headline-text {
