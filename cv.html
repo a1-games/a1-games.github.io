@@ -43,18 +43,6 @@
     </div>
 
     <div id="profile-inf-aligner" class="inf-font">
-        <div id="profile-title" class="inf-title-big inf-font">
-            Profile
-        </div>
-        <div class="seperation-line"></div>
-        <div id="profile-text" class=" inf-container inf-text">
-            I view myself as a passionate programmer, whose experience includes
-            web-, mobile- and pc-development - most often in the world of video
-            games. I've worked in different programming languages, such as HTML,
-            CSS, Javascript, C# and python. I view myself as a very competent object
-            oriented programmer, who focuses on code optimization and
-            performance.       
-        </div> 
     </div>
 
 
@@ -74,12 +62,23 @@
     <script src="CV/shortinfofiller.js"> </script>
     <script src="CV/informationfiller.js"> </script>
     <script>
+        setContainerColor("#FFFFFF11");
+        
+        // profile
+        insertInformationTitle("Experience", profileInfContainer);
+
+        insertSeperationLine(profileInfContainer);
+
+        insertText("I view myself as a passionate programmer, whose experience includes web-, mobile- and pc-development - most often in the world of videogames. I've worked in different programming languages, such as HTML, CSS, Javascript, C# and python. I view myself as a very competent object oriented programmer, who focuses on code optimization and performance.", profileInfContainer)
+    
+
+        // short information
+        setContainerColor("#02889cCC");
         
         insertShortInfo([
-            {iconname:"website",text:"a1creator.com", link:true,invert:true},
+            {iconname:"website",text:"Portfolio: a1creator.com", link:"https://a1creator.com",invert:true},
         ]);
         
-        // short information
         insertInformationTitle("Contact", shortinfContainer);
 
         insertSeperationLine(shortinfContainer);
@@ -147,16 +146,15 @@
         insertSeperationLine(infContainer);
 
         insertInformation("2021, Jan - July",
-                        "Vallekilde Højskole",
-                        "Unity Development in C#",
-                        "Intro to Unity and C#. During the course i developed my first two video games in Unity.");
+                          "Vallekilde Højskole",
+                          "Unity Development in C#",
+                          "Intro to Unity and C#. During the course i developed my first two video games in Unity.");
 
         insertInformation("2021 - 2024",
-                        "Dania Games Grenaa",
-                        "Computer Science & Game Development",
-                        "C#, python, Javascript, HTML & CSS, SQL, JSON. Networking in C# and python. During my education I produced more than 10 video games.");
+                          "Dania Games Grenaa",
+                          "Computer Science & Game Development",
+                          "C#, python, Javascript, HTML & CSS, SQL, JSON. Networking in C# and python. During my education I produced more than 10 video games.");
 
-            
     </script>
         
 </body>

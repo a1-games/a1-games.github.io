@@ -1,5 +1,6 @@
 
 const infContainer = document.getElementById("inf-container");
+const profileInfContainer = document.getElementById("profile-inf-aligner");
 
 var containerColor = "#FFFFFF";
 
@@ -61,7 +62,21 @@ function insertInformation(datetime, location, title, text)
     infContainer.append(newContainer);
 }
 
+function insertText(text, container)
+{
+    // information container
+    let newContainer = document.createElement("div");
+    newContainer.className = "inf-container";
+    newContainer.style.backgroundColor = containerColor;
 
+    // description text
+    let _text = document.createElement("div");
+    _text.className = "inf-font inf-text ";
+    _text.innerText = text;
+    newContainer.append(_text);
+    
+    container.append(newContainer);
+}
 
 
 

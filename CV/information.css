@@ -57,6 +57,7 @@
     font-weight: 500;
     font-family: 'RobotoMedium';
     color: var(--shortinfo);
+    text-wrap: nowrap;
 }
 
 .short-inf-icon {

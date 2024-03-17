@@ -11,7 +11,7 @@ function insertShortInfo(infosarray)
     newContainer.style.zIndex = "-1";
 
     let shadeCover = document.createElement("div");
-    shadeCover.style.backgroundColor = "#02889cCC";
+    shadeCover.style.backgroundColor = containerColor;
     shadeCover.style.position = "absolute";
     shadeCover.style.top = "0";
     shadeCover.style.bottom = "0";
@@ -33,9 +33,9 @@ function insertShortInfo(infosarray)
         let _text = document.createElement("div");
         _text.className = "inf-font short-inf";
         _text.innerText = infosarray[i].text;
-        if (infosarray[i].link)
+        if (infosarray[i].link != null)
         {
-            _text.onclick = () => { window.open("https://"+infosarray[i].text); };
+            _text.onclick = () => { window.open(infosarray[i].link); };
             _text.style.cursor = "pointer";
         }
 

@@ -39,43 +39,18 @@
         pdfButton.style.cursor = "pointer";
         function printPDF()
         {
-            var informationColumn = document.getElementById("inf-container");
-
             //var headlinediv = document.getElementById("personal_information");
             //informationColumn.prepend(headlinediv);
             
-            // delete original profilediv
-            var profilediv = document.getElementById("profile-inf-aligner");
+            let profilediv = document.getElementById("profile-inf-aligner");
+            let children = [...profilediv.children];
+            let count = children.length;
+
+            for (let i = count - 1; i >= 0; i--) {
+                infContainer.prepend(children[i]);
+            }
+
             profilediv.remove();
-
-            // insert profile as information container
-
-            // information container
-            let newContainer = document.createElement("div");
-            newContainer.className = "inf-container";
-            newContainer.style.backgroundColor = containerColor;
-
-            // description text
-            let _text = document.createElement("div");
-            _text.className = "inf-font inf-text ";
-            _text.innerText = "I view myself as a passionate programmer, whose experience includes web-, mobile- and pc-development - most often in the world of videogames. I've worked in different programming languages, such as HTML, CSS, Javascript, C# and python. I view myself as a very competent object oriented programmer, who focuses on code optimization and performance.";
-            newContainer.append(_text);
-            
-            infContainer.prepend(newContainer);
-            
-            
-            // seperation line
-            let _line = document.createElement("div");
-            _line.className = "seperation-line";
-            container.prepend(_line);
-
-            // title
-            let _title = document.createElement("div");
-            _title.className = "inf-font inf-title-big ";
-            _title.innerText = "Profile";
-
-            container.pre(_title);
-
 
             // open print dialog
             print();
