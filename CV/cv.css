@@ -2,6 +2,7 @@
 :root {
     --information: #EEEEEE;
     --shortinfo: #111111;
+    font-size: 15px;
 }
 
 
@@ -22,7 +23,7 @@ body {
 }
 #profile-inf-aligner {
     
-    font-size: 22px;
+    font-size: 1.375rem;
 
     height: auto;
     margin: auto;
@@ -33,7 +34,7 @@ body {
 
 #inf-aligner {
     
-    font-size: 22px;
+    font-size: 1.375rem;
 
     display: flex;
     flex-direction: row;
