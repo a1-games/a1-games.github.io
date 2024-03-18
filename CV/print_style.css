@@ -53,6 +53,13 @@ html, body {
     filter: none;
 }
 
+#pi-name {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+}
+
 #headline-text {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.05em;
@@ -89,7 +96,7 @@ html, body {
     #inf-aligner {
         flex-direction: row;
         margin: 0 auto;
-        width: 100%;
+        width: 95%;
     }
     
 }

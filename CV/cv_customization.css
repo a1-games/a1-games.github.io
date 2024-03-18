@@ -8,7 +8,7 @@
     
     /* Other Colors */
     --shadowColor: #11111122;
-    --shortinfo-color: #11cf3af9;
+    --shortinfo-color: #11cf3af5;
 }
 
 #pi-cv-link {
@@ -24,8 +24,12 @@
 .short-inf-background-image {
     background-image: url("bckgrnd_pattern_02.png");
     background-position: center;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    flood-color: var(--shortinfo-color);
 }
+
 
 
 .information-container {
