@@ -2,11 +2,6 @@
     size: A4 portrait;
 }
 
-#pi-info {
-    filter: invert(1);
-    
-    width: 48%;
-}
 
 
 html, body {
@@ -41,6 +36,10 @@ html, body {
 
 #pi-container {
     margin: 0 auto;
+}
+
+#pi-info {
+    filter: invert(1);
 }
 
 #pi-headline {
