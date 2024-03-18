@@ -13,7 +13,7 @@
 }
 
 #pi-cv-link {
-    color: var(--shortinfo-color)
+    color: var(--shortinfo-color) !important;
 }
 
 .short-inf-container {
