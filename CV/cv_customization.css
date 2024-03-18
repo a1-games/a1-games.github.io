@@ -8,7 +8,7 @@
     
     /* Other Colors */
     --shadowColor: #11111122;
-    --shortinfo-color: #11cf3af9;
+    --shortinfo-color: #11cf3af9 !important;
 }
 
 #pi-cv-link {
