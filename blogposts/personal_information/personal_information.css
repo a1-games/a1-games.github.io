@@ -34,7 +34,8 @@
 
 #pi-info {
     position: relative;
-    padding: 1rem 2rem;
+    width: 52%;
+    padding: 1rem 0 1rem 2rem;
 }
 
 #pi-name {
