@@ -5,9 +5,9 @@
     display: flex;
     position: relative;
 
-    background-color: #83ff5d00;
+    background-color: transparent;
     /*border: white 1px solid;*/
-    color: rgb(223, 223, 223);
+    color: var(--information);
     
     padding-bottom: 0;
     justify-content: center;
@@ -35,13 +35,13 @@
 #pi-info {
     position: relative;
     padding: 1rem 0 1rem 2rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
 }
 
 #pi-name {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
     
 }
@@ -58,16 +58,6 @@
     margin: 2em 0;
     font-size: 0.9rem;
     font-style: italic;
-    font-weight: 100;
-    letter-spacing: 0.025em;
-    font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
+    font-family: RobotoLight, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    color: #2247e9f9;
-}
-
-/*on mobile*/
-@media (max-width: 900px) {
-    #pi-name {
-        font-size: 1.3rem;
-    }
 }

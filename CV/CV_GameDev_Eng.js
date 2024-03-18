@@ -1,4 +1,18 @@
 
+
+
+
+// headline
+
+setHeadlineName("Asbjørn Ørts Johnsen");
+
+setOnelinerText("Motivated full stack-developer with game\ndevelopment experience");
+
+
+setDownloadText("Click to download resume as .pdf");
+
+
+
 // short information
 
 insertShortInfo([

@@ -1,4 +1,21 @@
 
+
+
+
+// headline
+
+setHeadlineName("Asbjørn Ørts Johnsen");
+
+setOnelinerText("Motiveret full stack-udvikler med\nspiludviklingserfaring");
+
+
+setDownloadText("Klik for at hente CV som .pdf");
+
+
+
+
+
+
 // short information
 
 insertShortInfo([
@@ -84,4 +101,4 @@ insertInformation("2021, Jan - Juli",
 insertInformation("2021 - 2024",
                     "Dania Games Grenaa",
                     "Datamatiker med spiludvikling",
-                    "Javascript, HTML & CSS, C#, python, SQL, JSON. Netværkskode i C# and python. Under uddannelsen producerede jeg mere end 15 spil, inklusiv 2 spil til Google Player Store på Android.");
+                    "Javascript, HTML & CSS, C#, python, SQL, JSON. Netværkskode i C# og python. Under uddannelsen producerede jeg mere end 15 spil, inklusiv 2 spil til Google Player Store på Android.");

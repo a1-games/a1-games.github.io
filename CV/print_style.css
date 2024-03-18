@@ -38,8 +38,8 @@ html, body {
     margin: 0 auto;
 }
 
-#pi-info {
-    filter: invert(1);
+#pi-headshot {
+    margin-bottom: 2em;
 }
 
 #pi-headline {
