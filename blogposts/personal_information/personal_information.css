@@ -35,18 +35,22 @@
 #pi-info {
     position: relative;
     padding: 1rem 0 1rem 2rem;
+    font-weight: 500;
+    font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
 }
 
 #pi-name {
     font-size: 2rem;
     font-style: bold;
-    font-family: RobotoMedium, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
     
 }
 
 #pi-skills {
     font-size: 1rem;
-    font-family: RobotoLight, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    font-family: Roboto, Georgia, Times, 'Times New Roman', serif;
     
     padding: 0.5rem 0;
 }
