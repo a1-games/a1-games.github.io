@@ -1,5 +1,13 @@
 
+
+
 :root {
+    /* Text Colors */
+    --information: #EEEEEE;
+    --shortinfo: #111111;
+    
+    /* Other Colors */
+    --shadowColor: #11111122;
     --shortinfo-color: #11cf3af9;
 }
 
