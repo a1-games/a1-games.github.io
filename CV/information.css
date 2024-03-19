@@ -53,8 +53,8 @@
     font-size: 0.7em;
     height: 2rem;
     line-height: 2rem;
-    font-weight: 500;
-    font-family: 'RobotoMedium';
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
     color: var(--shortinfo);
     text-wrap: nowrap;
 }
