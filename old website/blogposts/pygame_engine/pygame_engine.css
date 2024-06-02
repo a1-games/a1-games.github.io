@@ -1,0 +1,53 @@
+
+
+#pe-container {
+    background-color: #83ff5d15;
+    /*border: white 1px solid;*/
+}
+
+#pe-msg {
+    width: 56%;
+
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    right: auto;
+    left: 0;
+    
+    border-color: white;
+    color: white;
+}
+
+#pygame_engine-thumbnail {
+    
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 40%;
+    right: 1rem;
+    left: auto;
+    
+    /*border: white 1px solid;*/
+}
+
+
+#pygame_thumbnail_description {
+    display: block;
+    position: absolute;
+    color: rgb(255, 238, 0);
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*on mobile*/
+@media (max-width: 900px) {
+    #pe-msg {
+        width: 50%;
+        transform: translate(0, -50%);
+        left: 1em;
+        font-size: 12px;
+    }
+}

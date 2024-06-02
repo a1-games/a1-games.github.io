@@ -1,0 +1,29 @@
+
+
+
+.indieads {
+    width: auto;
+    height: auto;
+    user-select: none;
+}
+
+
+.indiead-img {
+    width: 100%;
+    display: block;
+}
+
+
+.indiead-medium {
+    width: 10em;
+}
+
+
+.indieads-background {
+    background: rgb(235,235,235);
+    background: linear-gradient(0deg, rgb(121, 155, 130) 0%, rgb(228, 218, 204) 15%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgb(204, 217, 224) 85%, rgb(117, 126, 146) 100%);
+}
+
+
+
+

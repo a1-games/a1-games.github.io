@@ -1,0 +1,86 @@
+
+
+
+
+
+.float-logo-square {
+    width: 7em;
+    height: 7em;
+
+    object-fit: contain;
+    user-select: none;
+}
+
+.float-logo-rectangle {
+    width: 25em;
+    height: 7em;
+
+    object-fit: contain;
+    user-select: none;
+}
+
+.shape-shadow-black {
+    /*xoffset yoffset spread length*/
+    filter: drop-shadow(-0.1em -0.1em 1em rgba(0,0,0,1));
+}
+.shape-shadow-white {
+    /*xoffset yoffset spread length*/
+    filter: drop-shadow(-0.1em -0.1em 1em rgba(255, 255, 255, 0.9));
+}
+
+
+
+.float-parent-middle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    top: 50%;
+    left: 50%;
+
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+.float-parent-right {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    top: 50%;
+    right: 10%;
+
+    z-index: 1;
+
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+}
+.float-parent-left {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+
+    top: 50%;
+    left: 10%;
+
+    z-index: 1;
+
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

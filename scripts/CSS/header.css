@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+/* keep this the same height as header-tab !! */
+.header-buffer {
+    height: 6em;
+    background: linear-gradient(0deg, rgba(117, 126, 146) 0%, rgba(204, 217, 224) 50%, rgba(255,255,255,1) 100%);
+}
+
+.header-tab {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+
+    z-index: 2;
+    background-color: transparent;
+
+    height: 6em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.a1icon {
+    width: 3.5em;
+    height: 3.5em;
+    margin: auto 1em;
+    filter: drop-shadow(0 0 0.4em #000000FF);
+}
+
+
+.headername {
+    width: auto;
+    height: 1em;
+    margin: auto 1em;
+
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 0.4em #000000FF;
+
+}
+
+.headername:hover {
+    text-shadow: 0 0 0.4em rgb(0, 126, 148);
+    cursor: pointer;
+}
+.a1icon:hover {
+    filter: drop-shadow(0 0 0.4em rgb(0, 126, 148));
+    cursor: pointer;
+}
+
+
+
+
+

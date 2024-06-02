@@ -1,0 +1,105 @@
+
+
+
+
+
+.whitetext {
+    display: block;
+    color: white;
+    font-weight: 600;
+    
+    padding: 0.4em 0;
+}
+
+
+
+.middle-center {
+    margin: 2em auto;
+    width: 50%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    width: 12em;
+    height: 5em;
+}
+.input {
+    background-color: rgb(221, 221, 221);
+}
+
+
+#picture-viewer {
+    position: relative;
+}
+
+.billedtekst {
+    display: block;
+    position: absolute;
+
+    left: 2em;
+    bottom: 1em;
+    z-index:89;
+}
+
+
+.fullscreenImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:90;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+
+.picbutton {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: fit-content;
+    height: 20em;
+}
+.picture {
+    position: relative;
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+
+#picture-holder {
+    position: relative;
+    display: flex;
+
+
+
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

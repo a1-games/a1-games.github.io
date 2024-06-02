@@ -1,0 +1,250 @@
+﻿
+#header-background {
+    background-color: #00000077;
+    padding: 2em 0;
+}
+
+.headerdiv {
+    display: flex;
+    position: relative;
+    
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    
+    align-items: center;
+    justify-content: center;
+    /*background-color: black;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#a1-icon-div {
+    display: flex;
+    position: relative;
+    
+    height: 32px;
+    width: auto;
+
+}
+
+#a1-icon {
+    display: flex;
+    position: relative;
+
+    height: 100%;
+    width: auto;
+}
+
+#a1-icon-img {
+    height: 100%;
+    opacity: 80%;
+}
+
+#a1-name {
+    padding: 0;
+    margin: auto 1rem;
+    color: rgb(223, 223, 223);
+}
+
+.text-color-socials {
+    background-color: transparent;
+    color: rgb(180, 180, 180);
+}
+
+
+#a1-socials {
+    display: flex;
+    position: relative;
+
+    height: 32px;
+    align-items: center;
+
+
+    margin: 0 1em;
+    
+}
+.a1-social {
+    
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.4em;
+    text-wrap: nowrap;
+}
+
+
+#dropdown-text {
+    display: block;
+    position: absolute;
+
+    padding: 0;
+    margin: 0;
+
+    color: white;
+
+    right: 1em;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+.wh-100 {
+    height: 100%;
+    width: 100%;
+}
+
+.wh-auto {
+    height: auto;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+/* test: */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+.fa-caret-down:before {
+    content: "▼";
+}
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* The dropdown container */
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.youtube-link:hover {
+    color: red;
+}
+
+.twitch-link:hover {
+    color: rebeccapurple;
+}
+
+.instagram-link:hover {
+    color: #DD2A7B;
+}
+
+.github-link:hover {
+    color: #FFFFFF;
+}
+
+.linkedin-link:hover {
+    color: #4e62cf;
+}
+
+
+.selection-tab-button {
+    background-color: transparent;
+    height: 4rem;
+    width: 4rem;
+    background: linear-gradient(to top, #3204fdba, #9907facc), url("../images/selectionIcon.png") no-repeat top center;
+    background-size: contain;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+}
+.selection-tab-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.selection-tab {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    transition: 0.5s ease;
+}
+.selection-tab:hover {
+    /*transform: translate(0, 75%); /*| translate Y should be 100 - (height of selection-row) |*/
+}
+.selection-item {
+    background: transparent;
+    overflow: visible;
+    text-align: right;
+    height: 100%;
+
+    transition: 0.3s ease;
+}
+.selection-item:hover {
+    background: grey;
+    overflow: visible;
+    text-align: right;
+    height: 100%;
+
+    cursor: pointer;
+}
+.selection-row {
+    height: 25%; /*| 100 / number of items |*/
+    width: 4px;
+}
+
+
+
+
+
+
+

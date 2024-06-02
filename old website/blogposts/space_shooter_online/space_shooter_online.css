@@ -1,0 +1,43 @@
+#sso-msg {
+    left: 50%;
+    width: 50%;
+
+    border-radius: inherit;
+    padding: 2rem 0 3rem 0;
+
+    background-color: #0f0f0fee;
+    color: inherit;
+}
+
+#sso-container {
+    color: white;
+
+
+    background-size: contain;
+    width: 900;
+    min-width: 40%;
+    padding-bottom: 340px;
+}
+
+
+/*on mobile*/
+@media (max-width: 900px) {
+
+    #sso-container {
+        max-width: 100%;
+    }
+    #sso-msg {
+        width: 70%;
+    }
+}
+
+
+/*on mobile*/
+@media (max-width: 600px) {
+
+    #sso-container {
+        font-size: 2.4vw;
+    }
+}
+
+

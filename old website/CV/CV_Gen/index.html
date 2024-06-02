@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="Assets/fonts.css" media="screen">
+    <link rel="stylesheet" href="Assets/fonts.css" media="print">
+    
+    <link rel="stylesheet" href="Assets/blogPost.css" media="screen">
+    <link rel="stylesheet" href="Assets/blogPost.css" media="print">
+    
+    <link rel="stylesheet" href="Assets/headline.css" media="screen">
+    <link rel="stylesheet" href="Assets/headline.css" media="print">
+    
+    <link rel="stylesheet" href="Assets/cv.css" media="screen">
+    <link rel="stylesheet" href="Assets/cv.css" media="print">
+    
+    <link rel="stylesheet" href="Assets/information.css" media="screen">
+    <link rel="stylesheet" href="Assets/information.css" media="print">
+
+    <link rel="stylesheet" href="Customization/cv_customization.css" media="screen">
+    <link rel="stylesheet" href="Customization/cv_customization.css" media="print">
+    
+
+    <!-- Overwrite some stuff when printing the page -->
+    <link rel="stylesheet" href="Customization/print_style.css" media="print">
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(function() {
+            // load your own header if you have one else leave be or remove
+            //$("#header").load("header.html");
+
+            
+        });
+    </script>
+</head>
+<body id="body">
+    
+    <!-- If you want to add a header, uncomment this div
+    <div id="header" >
+    </div> -->
+
+    <!-- Prepare a container for your calendar. -->
+    <div id="personal_information" >
+    </div>
+
+
+    <div id="inf-aligner">
+
+        <!-- container for bullet point info -->
+        <div id="shortinf-container" >
+        </div>
+
+        <!-- container for information rows -->
+        <div id="inf-container" >
+        </div>
+
+    </div>
+
+    <!-- Tools -->
+    <script src="Assets/shortinfofiller.js"> </script>
+    <script src="Assets/informationfiller.js"> </script>
+    <script src="Assets/headlinefiller.js"> </script>
+
+    <!-- Load CV Layout From File -->
+    <!-- You can make multiple tailored resumes and switch between them -->
+    <script src="CV_Example.js"> </script>
+    <!--
+    <script src="CV_Engineer.js"> </script>
+    <script src="CV_GameDev.js"> </script>
+    <script src="CV_Astronaut.js"> </script>
+    <script src="CV_Fisherman.js"> </script>
+    -->
+        
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="images/a1Icon16px.ico" type="image/x-icon">
+    <title>a1creator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="CSS/contract.css" media="screen">
+    <link rel="stylesheet" href="CSS/index.css" media="screen">
+    <link rel="stylesheet" href="roomiefiles/roomie.css" media="screen">
+    
+    <!-- Include Github Calendar -->
+    <link rel="stylesheet" href="blogposts/github_embed/github-calendar.css" />
+    <script
+        src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+    
+    <!-- Jquery (load first!) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Indie Ads Fetch-->
+    <script src="https://indieads.github.io/indieads.js"></script>
+
+    <!-- Email Proxy -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        emailjs.init('1MQ3eQ72Ec6vHC7An')
+    </script>
+
+</head>
+<body>
+    
+    <div class="middle-center" id="picture-viewer">
+        <div id="picture-holder">
+        </div>
+        <a class="whitetext billedtekst">Klik for at forstørre et billede</a>
+    </div>
+    <div id="question-holder" class="middle-center">
+        <form class="full-width" id="application-form">
+            <div id="question-template" class="middle-center" hidden>
+                <a class="whitetext">Jeg ryger:</a>
+                <input type="text" class="input full-width">
+            </div>
+            <input type="text" name="from_name" id="applicant-name" hidden>
+            <input type="text" name="data" id="application-data" hidden>
+        </form>
+    </div>
+
+    <div>
+
+    <a id="thankyoumessage" class="whitetext middle-center center-text">Ved at klikke "Send Ansøgning" sender du mig automatisk en email med din indtastede info.</a>
+    <button onclick="SubmitEmail()" class="button" id="submit-email-button">Send Ansøgning</button>
+
+
+
+    <!-- Roomie Script -->
+    <script src="roomiefiles/roomie.js"></script>
+</body>
+
+</html>
