@@ -1,0 +1,76 @@
+
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2em;
+    font-style: normal;
+    color: azure;
+    margin-bottom: 0;
+}
+
+#headertable {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 2em;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+#bya1 {
+    padding: 0;
+    margin-top: 0;
+
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+
+    color: rgba(240, 255, 255, 0.836);
+}
+
+#payments-holder {
+    /*display is set to grid in js*/
+    display: none;
+    grid-template-columns: repeat(auto-fill, 10em);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    
+    margin: auto;
+    
+    gap: 1em;
+    justify-content: center;
+    
+    margin: 1em auto;
+    padding: 1em;
+    
+    border-radius: 1rem;
+    background-color: rgb(33, 42, 65);
+    
+}
+
+
+.X {
+    display: block;
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    font-size: 0.6em;
+    
+    border: none;
+
+    background-color: rgba(190, 43, 43, 0.849);
+    border-radius: 0.1em;
+    padding: 0.2em 0.4em;
+    width: fit-content;
+    color: rgb(241, 241, 241);
+
+}
+
+.relative {
+    position: relative;
+}

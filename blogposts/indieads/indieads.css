@@ -9,9 +9,12 @@
 
 .ad-plot {
     transition: 0.2s ease-in-out;
+    border-radius: 0.2em;
+    overflow: hidden;
+    margin: 0 0.1em;
 }
 .ad-plot:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .indiead-img {

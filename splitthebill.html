@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Split The Bill</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="blogposts/splitthebill/pagefiles/splitthebillpage.css" media="screen">
+    <link rel="stylesheet" href="blogposts/splitthebill/pagefiles/splitthebillpage.css" media="print">
+
+    <link rel="stylesheet" href="blogposts/splitthebill/pagefiles/splitthebillheader.css" media="screen">
+    <link rel="stylesheet" href="blogposts/splitthebill/pagefiles/splitthebillheader.css" media="print">
+    
+    <!-- Google Fonts Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body id="background">
+
+    
+    <!-- load header in -->
+    <header id="header">
+        <table align="center" id="headertable">
+            <tr>
+                <td align="center" class="collapse-width">
+                    <table class="collapse-width">
+                        <tr>
+                            <td align="center" >
+                                <a class="return-home" >
+                                    <img src="blogposts/splitthebill/img/stb_title.png" style="height: 4em; margin-top: 1em;" />
+                                    <p id="bya1">by a1games</p>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </header>
+    
+    <div id="fill-page">
+        <div id="adding-container" >
+            <div id="people-adder">
+                <div id="person-input">
+                    <p class="input-title round-title">Add Person</p>
+                    <div class="oneliner">
+                        <p class="input-title">Name:</p>
+                        <input id="person-name-input" class="white-input" onkeydown="if (event.keyCode == 13) { addPersonOnClick() }"></input>
+                        
+                    </div>
+                    <button onclick="addPersonOnClick()" class="white-button">Submit</button>
+                </div>
+            </div>
+            <div id="payment-adder">
+                <div id="payment-holder">
+                    <p class="input-title round-title">Add Payment</p>
+                    <div class="oneliner">
+                        <select name="dropdown" id="payment-dropdown" >
+                        </select>
+                        <p class="input-title">has paid</p>
+                        <input id="payment-input" class="white-input" onkeydown="if (event.keyCode == 13) { addPaymentOnClick() }"></input>
+                    </div>
+                    <button onclick="addPaymentOnClick()" class="white-button">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="payment-order" hidden>
+        </div>
+        <div class="segment">
+            <p class="input-title round-title middle-title">Payments</p>
+            <div id="payments-holder" class="holder">
+                <div id="payment-template" class="person-info relative" hidden>
+                    <button class="info-p no-margin X" onclick="">X</button>
+                    <p class="person-name info-p no-margin round-title"></p>
+                    <p class="person-paid info-p no-margin">Paid: _</p>
+                </div>
+            </div>
+        </div>
+        <div class="segment">
+            <p class="input-title round-title middle-title">Participants</p>
+            <div id="people-holder" class="holder">
+                <div id="person-template" class="person-info relative" hidden>
+                    <p class="person-name info-p no-margin round-title">Name:</p>
+                    <p class="person-paid info-p no-margin">Paid: _</p>
+                    <p class="person-owed info-p no-margin">Owes: _</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <!-- js script -->
+    <script src="blogposts/splitthebill/pagefiles/splitthebill.js"></script>
+    
+        
+    <script>
+        let returnhomes = document.getElementsByClassName("return-home");
+        for (let i = 0; i < returnhomes.length; i++) {
+            returnhomes[i].href = "#";
+        }
+    </script>
+    
+</body>
+
+</html>
