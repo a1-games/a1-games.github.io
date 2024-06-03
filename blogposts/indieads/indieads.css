@@ -11,7 +11,8 @@
     transition: 0.2s ease-in-out;
     border-radius: 0.2em;
     overflow: hidden;
-    margin: 0 0.1em;
+    margin: 0 0.2em;
+    outline: 2px solid white;
 }
 .ad-plot:hover {
     transform: scale(1.1);
