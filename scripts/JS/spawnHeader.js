@@ -51,10 +51,10 @@ function SpawnHeader()
     //------------------------------------------------
 
 
-    let contact = SpawnHeaderName(headertab, "contact");
-    contact.onclick = () => {
+    //let contact = SpawnHeaderName(headertab, "contact");
+    //contact.onclick = () => {
         
-    }
+    //}
 
     let github = SpawnHeaderName(headertab, "github");
     github.onclick = () => {
