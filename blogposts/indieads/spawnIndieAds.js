@@ -45,7 +45,7 @@ function SpawnIndieAds()
     
     // scroll parent
     let scrollparent = document.createElement("div");
-    scrollparent.style = "margin: 0px; position: absolute; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
+    scrollparent.style = "margin: 0px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: row; align-items: center";
 
 
 
