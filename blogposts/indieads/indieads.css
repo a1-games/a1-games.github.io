@@ -6,9 +6,12 @@
     height: auto;
     user-select: none;
 }
-.indieads:hover {
-    transform: scale(1.1);
-    transition: 2s ease;
+
+.ad-plot {
+    transition: 0.2s ease-in-out;
+}
+.ad-plot:hover {
+    transform: scale(1.05);
 }
 
 .indiead-img {
@@ -27,6 +30,10 @@
     background: linear-gradient(0deg, rgb(121, 155, 130) 0%, rgb(228, 218, 204) 15%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgb(204, 217, 224) 85%, rgb(117, 126, 146) 100%);
 }
 
-
+.indieads-floater {
+    padding: 1em 2em;
+    background-color: #FFFFFF99;
+    border-radius: 1em;
+}
 
 

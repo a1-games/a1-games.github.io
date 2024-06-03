@@ -4,6 +4,7 @@ function AppendNewIndieAd(AdResolution, parent, extraclassnames)
     elem.className = "indieads " + `${extraclassnames}`;
     spawnIndieAd_ImageOnly(elem, AdResolution);
     parent.append(elem);
+    return elem;
 }
 
 
@@ -24,7 +25,7 @@ function SpawnIndieAds()
 
     // floating parent
     let floatparent = document.createElement("div");
-    floatparent.className = "multi-parent float-parent-right";
+    floatparent.className = "multi-parent float-parent-right indieads-floater";
     floatparent.onclick = () => {
         window.open("https://indieads.github.io/");
     };
@@ -49,9 +50,9 @@ function SpawnIndieAds()
 
 
     let adSpawns = [
-        function () { AppendNewIndieAd(AdResolutions.Portrait_374x448, scrollparent, "indiead-medium"); },
-        function () { AppendNewIndieAd(AdResolutions.Landscape_616x253, scrollparent, "indiead-medium"); },
-        function () { AppendNewIndieAd(AdResolutions.Portrait_600x900, scrollparent, "indiead-medium"); },
+        function () { return AppendNewIndieAd(AdResolutions.Portrait_374x448, scrollparent, "indiead-medium"); },
+        function () { return AppendNewIndieAd(AdResolutions.Landscape_616x253, scrollparent, "indiead-medium"); },
+        function () { return AppendNewIndieAd(AdResolutions.Portrait_600x900, scrollparent, "indiead-medium"); },
         function () {
             let three = document.createElement("div");
             AppendNewIndieAd(AdResolutions.Landscape_231x87, three, "indiead-medium");
@@ -59,6 +60,7 @@ function SpawnIndieAds()
             AppendNewIndieAd(AdResolutions.Banner_320x50, three, "indiead-medium");
             AppendNewIndieAd(AdResolutions.Landscape_616x253, three, "indiead-medium");
             scrollparent.append(three);
+            return three;
         },
         function () {
             let five = document.createElement("div");
@@ -66,6 +68,7 @@ function SpawnIndieAds()
             AppendNewIndieAd(AdResolutions.Landscape_616x253, five, "indiead-medium");
             AppendNewIndieAd(AdResolutions.Banner_320x50, five, "indiead-medium");
             scrollparent.append(five);
+            return five;
         },
         function () {
             let six = document.createElement("div");
@@ -73,6 +76,7 @@ function SpawnIndieAds()
             AppendNewIndieAd(AdResolutions.Landscape_231x87, six, "indiead-medium");
             AppendNewIndieAd(AdResolutions.Landscape_231x87, six, "indiead-medium");
             scrollparent.append(six);
+            return six;
         },
         function () {
             let nine = document.createElement("div");
@@ -81,6 +85,7 @@ function SpawnIndieAds()
             AppendNewIndieAd(AdResolutions.Landscape_231x87, nine, "indiead-medium");
             AppendNewIndieAd(AdResolutions.Banner_320x50, nine, "indiead-medium");
             scrollparent.append(nine);
+            return nine;
         },
     ];
 
@@ -93,7 +98,8 @@ function SpawnIndieAds()
     
     for (let i = 0; i < maxNeededAdPlots; i++) {
         let rnd = Math.floor(Math.random() * (adSpawns.length));
-        adSpawns[rnd]();
+        let adPlot = adSpawns[rnd]();
+        adPlot.classList.add("ad-plot");
     }
 
 
