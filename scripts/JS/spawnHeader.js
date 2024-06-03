@@ -18,28 +18,38 @@ function SpawnSpace(parent)
 function SpawnHeader()
 {
     
-    //let headerBuffer = document.createElement("div");
-    //headerBuffer.className = "header-buffer";
-    //MainContainer.prepend(headerBuffer);
-    
-    
     let headertab = document.createElement("div");
     headertab.className = "header-tab";
     MainContainer.prepend(headertab);
     
     SpawnSpace(headertab);
     
+
+    let realnamesection = SpawnMultiRow(headertab);
+
     let a1icon = document.createElement("img");
     a1icon.src = `files/IMG/headshot_transparent.png`;
     a1icon.classList.add("a1icon");
     a1icon.classList.add("showcase-img");
-    headertab.append(a1icon);
-    
-    SpawnHeaderName(headertab, "asbjørn ø. j.");
+    realnamesection.append(a1icon);
+    a1icon.onclick = () => {
+        ShowHidePersonalInfo();
+    };
 
+    let realname = SpawnHeaderName(realnamesection, "asbjørn ø. j.");
+    realname.onclick = () => {
+        ShowHidePersonalInfo();
+    };
+
+    // the tab that folds out when my name/img is clicked
+    let piContainer = SpawnPersonalInfo(realnamesection);
+
+    //------------------------------------------------
     let middlespace = document.createElement("div");
     middlespace.style = "width: 0; margin: 0 auto;";
     headertab.append(middlespace);
+    //------------------------------------------------
+
 
     let contact = SpawnHeaderName(headertab, "contact");
     contact.onclick = () => {
@@ -60,7 +70,6 @@ function SpawnHeader()
 
     SpawnSpace(headertab);
     
-
 
 
 }

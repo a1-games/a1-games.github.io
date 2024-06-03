@@ -17,3 +17,32 @@ function SpawnImage(blogpostname, imgname, parent)
     parent.append(image);
     return image;
 }
+
+
+
+function SpawnMultiRow(parent)
+{
+    let row = document.createElement("div");
+    row.style = "display: flex; flex-direction: row; position: relative;";
+    
+    parent.append(row);
+    return row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

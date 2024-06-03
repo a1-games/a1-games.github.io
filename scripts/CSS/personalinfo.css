@@ -1,0 +1,64 @@
+
+
+
+
+
+
+.pi-container {
+    position: absolute;
+    display: block;
+    top: 4em;
+    left: 0;
+
+    height: 10em;
+    width: 100%;
+
+    z-index: -1;
+
+    background-color: #f0fcffda;
+    border-radius: 0.25em;
+
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+
+.pi-folded {
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+}
+
+
+.clickable-link {
+    color: rgb(29, 129, 223) !important;
+    cursor: pointer !important;
+}
+
+.pi-text {
+    cursor: default;
+    position: relative;
+    display: block;
+
+    margin: 0.4em 0.8em;
+    font-size: 0.8em;
+
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 600;
+
+    text-align: left;
+}
+
+.pi-text-small {
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+
