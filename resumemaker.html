@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/fonts.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/fonts.css" media="print">
+    
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/blogPost.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/blogPost.css" media="print">
+    
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/headline.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/headline.css" media="print">
+    
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/cv.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/cv.css" media="print">
+
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/editing.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/editing.css" media="print">
+
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/infoAdding.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/infoAdding.css" media="print">
+    
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/information.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/information.css" media="print">
+
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/cv_customization.css" media="screen">
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/cv_customization.css" media="print">
+
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/tooltips.css" media="screen">
+    
+
+    <!-- Overwrite some stuff when printing the page -->
+    <link rel="stylesheet" href="blogposts/resumemaker/Assets/print_style.css" media="print">
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $(function() {
+            // load your own header if you have one else leave be or remove
+            //$("#header").load("header.html");
+
+            
+        });
+    </script>
+</head>
+<body id="body">
+    
+    <!-- If you want to add a header, uncomment this div
+    <div id="header" >
+    </div> -->
+
+
+    <div id="JS-edit-overlay">
+
+    </div>
+
+    <!-- Resume Editing -->
+    <div id="resume-editing-aligner">
+        <div id="resume-editing-container">
+
+            <!-- Image and Color picker -->
+            <div class="editing-container footspace pagewidth">
+                <div class=" multi-item-container" style="min-height: fit-content;">
+                    <div id="shortinfo-preview"  class="short-inf-container editing-container" style=" flex-direction: column; display: flex;"> 
+                        <div class="short-inf-background-image"></div>
+                        <div class="blackdrop"></div>
+                        <div class="short-inf-line"  style=" font-size: var(--fontsize-shortinfo);">
+                            <img class="short-inf-icon invert-icon" src="blogposts/resumemaker/Assets/icon_checkmark.png">
+                            <div class="inf-font short-inf" style="user-select: none;">
+                                Page Preview
+                            </div>
+                        </div>
+                        <div class="short-inf-line" style="filter: invert(1); font-size: var(--fontsize-shortinfo);">
+                            <img class="short-inf-icon invert-icon" src="blogposts/resumemaker/Assets/icon_checkmark.png">
+                            <div class="inf-font short-inf" style="user-select: none;">
+                                Print Preview
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class=" editing-container multi-item-container " style="display: flex; margin: 0;">
+                        <input id="edit-color-picker" type="color" value="#10C838" class="circle-option">
+                        <div class="editing-title">
+                            Select Primary Colour
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 1em;">
+
+                </div>
+                <div class=" editing-container">
+                    <div class="editing-title">
+                        Select Background Pattern
+                    </div>
+                    <div id="pattern-circles-scroller">
+                        <div id="pattern-circles-container" class="multi-item-container" style="margin: 0; padding: 4px;">
+                            <label for="edit-image-picker">
+                                <div class="circle-option editing-title clickable" style="background-color: #FFFFFF11; margin: 0;"> Upload </div>
+                            </label>
+                            <input id="edit-image-picker" type="file" accept="image/*" value="" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <!-- Page -->
+    <div id="personal_information" >
+    </div>
+
+    <div id="inf-aligner">
+
+        <!-- container for bullet point info -->
+        <div id="shortinf-container" >
+        </div>
+
+        <!-- container for information rows -->
+        <div id="inf-container" >
+        </div>
+
+    </div>
+
+    <!-- Tools -->
+    <script src="blogposts/resumemaker/Assets/editing/editingReferences.js"> </script>
+    <script src="blogposts/resumemaker/Assets/shortinfofiller.js"> </script>
+    <script src="blogposts/resumemaker/Assets/informationfiller.js"> </script>
+    <script src="blogposts/resumemaker/Assets/headlinefiller.js"> </script>
+    <script src="blogposts/resumemaker/Assets/fontEditing.js"> </script>
+    <script src="blogposts/resumemaker/Assets/editing/infoAdding.js"> </script>
+    <script src="blogposts/resumemaker/Assets/patternEditing.js"> </script>
+    <script src="blogposts/resumemaker/Assets/editing/directTextEditing.js"> </script>
+    <script src="blogposts/resumemaker/Assets/editing/directImageReplacing.js"> </script>
+    <script src="blogposts/resumemaker/Assets/tooltips.js"> </script>
+    <!-- Leave DL for last -->
+    <script src="blogposts/resumemaker/Assets/downloadEditing.js"> </script>
+    
+
+    <!-- Load CV Layout From File -->
+    <!-- You can make multiple tailored resumes and switch between them -->
+    <script src="blogposts/resumemaker/CV_Example.js"> </script>
+    <!--
+    <script src="CV_Engineer.js"> </script>
+    <script src="CV_GameDev.js"> </script>
+    <script src="CV_Astronaut.js"> </script>
+    <script src="CV_Fisherman.js"> </script>
+    -->
+        
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
