@@ -1,0 +1,50 @@
+
+
+
+:root {
+    /* Text Colors */
+    --information: #EEEEEE;
+    --shortinfo: #111111;
+    
+    /* Other Colors */
+    --shadowColor: #11111122;
+    /* Some nice colours I've found:
+        I suggest keeping "f6" as the opacity.
+        #2247e9f6; // blue
+        #11cfc6f6; // cyan
+        #11cf3af6; // green
+        #e09a16f6; // orange
+        #e016a3f6; // pink
+        #9c11d3f6; // purple
+        #e41d1df6; // red
+     */
+    --shortinfo-color: #11cf3af6;
+    --background-pattern: url("bckgrnd_pattern_02.png");
+}
+
+#pi-cv-link {
+    color: var(--shortinfo) !important;
+}
+
+.short-inf-container {
+    background-color: var(--shortinfo-color) !important;
+    box-shadow: 0 0.125em 0.375em -0.05em var(--shadowColor);
+}
+
+.short-inf-background-image {
+    background-image: var(--background-pattern);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.5em;
+}
+
+
+
+.information-container {
+    background-color: #FFFFFF11;
+}
+
+
+
+

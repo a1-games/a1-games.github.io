@@ -1,0 +1,5 @@
+
+
+add self-upload to bullet point icon switcher
+
+when switching to a flag icon, colors should not be inverted

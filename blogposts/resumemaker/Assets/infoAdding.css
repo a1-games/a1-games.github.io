@@ -1,0 +1,86 @@
+
+
+
+
+
+
+#shortinfo-adder {
+    background-color: var(--shortinfo-color);
+    border-radius: 0.5em;
+}
+
+#information-adder {
+    background-color: #FFFFFF11;
+    border-radius: 0.5em;
+
+}
+
+
+.titleFont {
+    font-family: 'Bebas Neue', 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.bulletPointAdderInput {
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+
+.inputField {
+    display: block;
+    height: auto;
+    width: 8em;
+    padding: 0.5em;
+    cursor: text;
+    border-radius: 0.25em;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+    user-select: none;
+    font-size: 22px;
+
+    outline: none;
+    border: none;
+}
+
+.infoAddButton {
+    display: block;
+    height: auto;
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+    user-select: none;
+}
+
+.light-trans {
+    background-color: #FFFFFF22;
+}
+
+
+.dark-trans {
+    background-color: #00000022;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
