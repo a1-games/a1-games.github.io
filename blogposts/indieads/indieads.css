@@ -13,6 +13,7 @@
     overflow: hidden;
     margin: 0 0.2em;
     outline: 2px solid white;
+    box-shadow: 0 0.4em 0.4em 0em rgba(0, 0, 0, 0.219);
 }
 .ad-plot:hover {
     transform: scale(1.1);
