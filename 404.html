@@ -1,0 +1,18 @@
+
+<script>
+
+    async function testForSubPage() {
+
+        let suburl = window.location.pathname;
+
+        let fetchfailed = false;
+
+
+        window.location = `blogposts/${suburl}/${suburl}.html`;
+
+
+    }
+
+    testForSubPage();
+
+</script>
