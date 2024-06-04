@@ -3,15 +3,26 @@
 
     async function testForSubPage() {
 
-        let suburl = window.location.pathname;
-
         let fetchfailed = false;
 
-        console.log(suburl)
+        // fetch the json game info file
+        fetch(`http://a1creator.com/blogposts${suburl}${suburl}.html`)
+            .then((response) => response.json())
+            // if conversion failed:
+            .catch((error) => {
+                window.location = "https://a1creator.com/";
+                // return doesn't work so i just set a bool instead
+                fetchfailed = true;
+            })
+            // if we didnt get an error:
+            .then((jsonresponse) =>  {
 
+                if (!fetchfailed)
+                {
+                    window.location = `blogposts${suburl}${suburl}.html`;
+                }
 
-        window.location = `blogposts${suburl}${suburl}.html`;
-
+            });
 
     }
 

@@ -17,7 +17,7 @@ headlinediv.id = "pi-headline";
 let headshot = document.createElement("img");
 headshot.id = "pi-headshot";
 headshot.style.cursor = "pointer";
-headshot.src = "blogposts/resumemaker/Assets/headshot_square.jpg";
+headshot.src = "Assets/headshot_square.jpg";
 headlinediv.append(headshot);
 
 

@@ -21,7 +21,7 @@ function SpawnToolTips()
 
 
 let tooltipsbox = document.createElement("div");
-tooltipsbox.className = "tooltips-container tt-minimized";
+tooltipsbox.className = "tooltips-container";
 
 document.body.prepend(tooltipsbox);
 
@@ -29,7 +29,7 @@ document.body.prepend(tooltipsbox);
 
 
 let minimizebox = document.createElement("div");
-minimizebox.className = "tooltip-minimize tooltip-maximize";
+minimizebox.className = "tooltip-minimize";
 minimizebox.onclick = () => {
     if (tooltipsbox.className.includes("tt-minimized"))
     {

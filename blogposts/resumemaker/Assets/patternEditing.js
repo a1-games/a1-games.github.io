@@ -63,7 +63,7 @@ function addPatternSeletor(patternDataObj, styleURL)
 
 for (let i = 0; i < patternDataObjs.length; i++) {
     addPatternSeletor(patternDataObjs[i],
-                      `url('blogposts/resumemaker/Assets/${patternDataObjs[i].filename}')`);
+                      `url('Assets/${patternDataObjs[i].filename}')`);
 }
 // mark the default pattern as selected
 selectPattern(patternDataObjs[2].element, `url('${patternDataObjs[2].filename}')`);
