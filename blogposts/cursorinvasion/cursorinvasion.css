@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+.curinv-background {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.curinv-tree {
+    display: block;
+    position: absolute;
+
+    z-index: 1;
+}
+
+
+
+.curinv-enemy {
+    display: block;
+    position: absolute;
+
+    transition-delay: 0.0s;
+    transition-property: top, left;
+    transition-timing-function: ease-out;
+}
+
+
+.spider {
+    transition-duration: 300ms;
+}
+
+
+.zombie {
+    transition-duration: 2000ms;
+}
+
+
+
+
