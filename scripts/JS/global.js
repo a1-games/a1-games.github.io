@@ -30,7 +30,15 @@ function SpawnMultiRow(parent)
 }
 
 
-
+function DownloadFile(filepath, filename)
+{
+    let a = document.createElement('a')
+    a.href = filepath;
+    a.download = filename;
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+}
 
 
 

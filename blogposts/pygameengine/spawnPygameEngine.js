@@ -34,10 +34,10 @@ function SpawnPygameEngine()
     rowparent.append(floatparent);
 
     
-    SpawnImage(`pygameengine`, `1.png`, parent);
     SpawnImage(`pygameengine`, `2.png`, parent);
     SpawnImage(`pygameengine`, `githubdesc.jpg`, parent);
     SpawnImage(`pygameengine`, `3.png`, parent);
+    SpawnImage(`pygameengine`, `1.png`, parent);
 
     
     

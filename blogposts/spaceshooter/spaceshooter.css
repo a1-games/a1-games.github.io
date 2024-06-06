@@ -1,0 +1,74 @@
+
+
+
+.laser-clip {
+    margin: 0;
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    right: 8em;
+
+
+    transform: translateY(-50%);
+    overflow: hidden;
+
+}
+.laser-container {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    width: fit-content;
+
+    animation: lasermove 10s linear infinite;
+}
+
+
+@keyframes lasermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+.laser-bullet {
+    margin: 0 10em;
+}
+
+
+.space-background {
+    width: 100vw;
+}
+
+
+
+
+.spaceship {
+    position: absolute;
+
+    top: 50%;
+    right: 4em;
+
+    transform: translate(0, -50%);
+
+}
+
+
+.madeinpge {
+    display: block;
+    position: absolute;
+
+    height: 1.5em;
+    z-index: 1;
+
+    bottom: -0.5em;
+    left: 2.25em;
+}

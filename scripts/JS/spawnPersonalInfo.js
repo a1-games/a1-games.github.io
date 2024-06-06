@@ -50,12 +50,7 @@ function SpawnPersonalInfo(parent)
     SpawnTextLine(piContainer, "", "").style.height = "0.2em";
 
     SpawnTextLine(piContainer, "Download my resume", "clickable-link").onclick = () => {
-        let a = document.createElement('a')
-        a.href = `files/CV/Asbjørn Johnsen - Resume.pdf`;
-        a.download = `Asbjørn Johnsen - Resume.pdf`;
-        document.body.appendChild(a)
-        a.click()
-        document.body.removeChild(a)
+        DownloadFile(`files/CV/Asbjørn Johnsen - Resume.pdf`, `Asbjørn Johnsen - Resume.pdf`);
     };
 
     SpawnTextLine(piContainer, "", "").style.height = "0.2em";
