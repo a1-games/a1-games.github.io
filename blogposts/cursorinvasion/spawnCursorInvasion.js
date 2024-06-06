@@ -54,8 +54,8 @@ function SpawnCursorInvasion()
     zombie.style.left = 800 + "px";
     zombie.style.top =  200 + "px";
 
-    let rowbox = rowparent.getBoundingClientRect();
     rowparent.onmousemove = (e) => {
+        let rowbox = rowparent.getBoundingClientRect();
         let mousepos = { x:e.pageX, y:e.pageY - (window.scrollY + rowbox.top) };
 
         spider.style.left = (mousepos.x - 20) + "px";
