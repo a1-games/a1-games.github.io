@@ -1,9 +1,5 @@
 
 
-
-
-
-
 .pi-container {
     position: absolute;
     display: block;
@@ -15,11 +11,14 @@
 
     z-index: -1;
 
-    background-color: #f0fcffda;
+    background-color: #ffffffcc;
     border-radius: 0.25em;
 
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     overflow: hidden;
+
+    box-shadow: 0 0.2em 1em 0.05em  var(--imgHover);
+    outline: 2px solid white;
 }
 
 .pi-folded {
@@ -27,11 +26,13 @@
     width: 0;
     top: 50%;
     left: 50%;
+    box-shadow: none;
+    outline: none;
 }
 
 
 .clickable-link {
-    color: rgb(29, 129, 223) !important;
+    color: var(--textHover) !important;
     cursor: pointer !important;
 }
 

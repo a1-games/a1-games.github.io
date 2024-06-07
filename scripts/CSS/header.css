@@ -56,11 +56,11 @@
 }
 
 .headername:hover {
-    text-shadow: 0 0 0.4em rgb(0, 126, 148);
+    text-shadow: 0 0 0.4em var(--textHover);
     cursor: pointer;
 }
 .a1icon:hover {
-    filter: drop-shadow(0 0 0.4em rgb(0, 126, 148));
+    filter: drop-shadow(0 0 0.4em var(--imgHover));
     cursor: pointer;
 }
 
