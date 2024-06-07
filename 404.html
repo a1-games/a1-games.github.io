@@ -7,12 +7,6 @@
 
         // fetch the json game info file
         fetch(`https://a1creator.com/blogposts${suburl}${suburl}.html`)
-            // if conversion failed:
-            .catch((error) => {
-                window.location = "https://a1creator.com/";
-                console.log("failed to find " + `blogposts${suburl}${suburl}.html`)
-                
-            })
             // if we didnt get an error:
             .then((response) =>  {
                 
@@ -22,7 +16,13 @@
                 }
                     
                 console.log(response)
-            });
+            })
+            // if conversion failed:
+            .catch((error) => {
+                window.location = "https://a1creator.com/";
+                console.log("failed to find " + `blogposts${suburl}${suburl}.html`)
+                
+            })
 
     }
 
