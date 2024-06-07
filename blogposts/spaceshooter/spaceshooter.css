@@ -66,9 +66,9 @@
     display: block;
     position: absolute;
 
-    height: 1.5em;
+    height: 3em;
     z-index: 1;
 
     bottom: -0.5em;
-    left: 2.25em;
+    left: 1em;
 }

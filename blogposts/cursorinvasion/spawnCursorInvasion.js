@@ -13,16 +13,25 @@ function SpawnCursorInvasion()
     // floating parent
     let floatparent = document.createElement("div");
     floatparent.className = "multi-parent float-parent-right";
-    floatparent.style = "z-index: 2";
+    floatparent.style = "z-index: 2; cursor: default;";
     rowparent.append(floatparent);
-    floatparent.onclick = () => {
-        window.open("https://a1games.fun/pygameplayer.html");
-    };
 
     
     // logo
     let logo = SpawnImage(`cursorinvasion`, `gamelogo.png`, floatparent);
     logo.className = "float-logo-rectangle";
+    logo.style.margin = "auto auto 3em auto";
+    logo.style.cursor = "pointer";
+    logo.onclick = () => {
+        window.open("https://a1games.fun/pygameplayer.html");
+    };
+    // made in
+    let madein = SpawnImage(`pygameengine`, `madeinpge.png`, floatparent);
+    madein.className = "madeinpge shape-shadow-black";
+    madein.style.cursor = "pointer";
+    madein.onclick = () => {
+        window.open("https://github.com/a1-games/PyGame-Engine");
+    };
 
 
     // trees

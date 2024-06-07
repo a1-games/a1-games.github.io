@@ -11,18 +11,19 @@ function SpawnSpaceShooter()
     let floatparent = document.createElement("div");
     floatparent.className = "multi-parent float-parent-left ";
     floatparent.style.cursor = "default";
+    rowparent.append(floatparent);
 
 
     // title
     let title = SpawnImage(`spaceshooter`, `title.png`, floatparent);
     title.className = "float-logo-rectangle shape-shadow-black";
-    title.style.margin = "auto auto 1.5em auto";
+    title.style.margin = "auto auto 3em auto";
     title.style.cursor = "pointer";
     title.onclick = () => {
         window.open("https://a1-games.itch.io/space-shooter");
     };
     // made in
-    let madein = SpawnImage(`spaceshooter`, `madeinpge.png`, floatparent);
+    let madein = SpawnImage(`pygameengine`, `madeinpge.png`, floatparent);
     madein.className = "madeinpge shape-shadow-black";
     madein.style.cursor = "pointer";
     madein.onclick = () => {
@@ -41,7 +42,6 @@ function SpawnSpaceShooter()
     
 
 
-    rowparent.append(floatparent);
 
     
     // scroll parent

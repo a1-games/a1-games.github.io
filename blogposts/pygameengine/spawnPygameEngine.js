@@ -14,20 +14,21 @@ function SpawnPygameEngine()
 
     // floating parent
     let floatparent = document.createElement("div");
-    floatparent.className = "multi-parent float-parent-left";
+    floatparent.className = "multi-parent float-parent-middle";
     floatparent.onclick = () => {
         window.open("https://github.com/a1-games/PyGame-Engine");
     };
 
-    // github logo
-    let githublogo = SpawnImage(`pygameengine`, `github.png`, floatparent);
-    githublogo.className = "float-logo-square";
+    
+    // title
+    let title = SpawnImage(`pygameengine`, `textlogo.png`, floatparent);
+    title.className = "float-logo-rectangle shape-shadow-black";
+    title.style.margin = "3em auto auto auto";
     
     // pygame x a1
     let pyxa1logo = SpawnImage(`pygameengine`, `pygameXa1.png`, floatparent);
-    pyxa1logo.className = "float-logo-rectangle";
-    pyxa1logo.style.margin = "auto auto auto 3em";
-
+    pyxa1logo.className = "shape-shadow-black";
+    pyxa1logo.style = "position: absolute; top: 2em; height: 2.5em; left: 6em; ";
     
 
 

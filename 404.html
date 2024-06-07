@@ -5,21 +5,18 @@
 
         let suburl = window.location.pathname;
 
-        let fetchfailed = false;
-
         // fetch the json game info file
         fetch(`https://a1creator.com/blogposts${suburl}${suburl}.html`)
             // if conversion failed:
             .catch((error) => {
                 window.location = "https://a1creator.com/";
                 console.log("failed to find " + `blogposts${suburl}${suburl}.html`)
-                // return doesn't work so i just set a bool instead
-                fetchfailed = true;
+                
             })
             // if we didnt get an error:
             .then((response) =>  {
                 
-                if (!fetchfailed)
+                if (response.ok)
                 {
                     window.location = `blogposts${suburl}${suburl}.html`;
                 }
