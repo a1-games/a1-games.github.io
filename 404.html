@@ -11,19 +11,20 @@
         fetch(`https://a1creator.com/blogposts${suburl}${suburl}.html`)
             // if conversion failed:
             .catch((error) => {
-                console.log("failed to find " + `blogposts${suburl}${suburl}.html`)
                 window.location = "https://a1creator.com/";
+                console.log("failed to find " + `blogposts${suburl}${suburl}.html`)
                 // return doesn't work so i just set a bool instead
                 fetchfailed = true;
             })
             // if we didnt get an error:
             .then((response) =>  {
-
+                
                 if (!fetchfailed)
                 {
                     window.location = `blogposts${suburl}${suburl}.html`;
                 }
-
+                    
+                console.log(response)
             });
 
     }

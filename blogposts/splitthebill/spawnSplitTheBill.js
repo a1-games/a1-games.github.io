@@ -11,7 +11,7 @@ function SpawnSplitTheBill()
     let floatparent = document.createElement("div");
     floatparent.className = "multi-parent float-parent-middle ";
     floatparent.onclick = () => {
-        window.open("splitthebill.html");
+        window.open("splitthebill");
     };
 
     // github logo
