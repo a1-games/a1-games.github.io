@@ -28,7 +28,7 @@ function SpawnHeader()
     let realnamesection = SpawnMultiRow(headertab);
 
     let a1icon = document.createElement("img");
-    a1icon.src = `files/IMG/headshot_transparent.png`;
+    a1icon.src = `files/IMG/headshot_ring.png`;
     a1icon.classList.add("a1icon");
     a1icon.classList.add("showcase-img");
     realnamesection.append(a1icon);
