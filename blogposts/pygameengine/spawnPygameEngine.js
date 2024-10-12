@@ -13,8 +13,7 @@ function SpawnPygameEngine()
     
 
     // floating parent
-    let floatparent = document.createElement("div");
-    floatparent.className = "multi-parent float-parent-middle";
+    let floatparent = SpawnFloatParent(rowparent, "middle");
     floatparent.onclick = () => {
         window.open("https://github.com/a1-games/PyGame-Engine");
     };
@@ -35,15 +34,35 @@ function SpawnPygameEngine()
     rowparent.append(floatparent);
 
     
+    function getSpaceX()
+    {
+        let space = document.createElement("div");
+        space.style.width = "1em";
+        return space;
+    }
+    function getSpaceY()
+    {
+        let space = document.createElement("div");
+        space.style.backgroundColor = "#161616";
+        space.style.height = "0.5em";
+        return space;
+    }
     SpawnImage(`pygameengine`, `2.png`, parent);
+
+    //parent.append(getSpaceX());
     SpawnImage(`pygameengine`, `githubdesc.jpg`, parent);
+    //parent.append(getSpaceX());
     SpawnImage(`pygameengine`, `3.png`, parent);
+    //parent.append(getSpaceX());
     SpawnImage(`pygameengine`, `1.png`, parent);
 
     
     
     rowparent.append(parent);
+
+    MainContainer.append(getSpaceY());
     MainContainer.append(rowparent);
+    MainContainer.append(getSpaceY());
 }
 
 SpawnPygameEngine();   

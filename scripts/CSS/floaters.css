@@ -74,7 +74,13 @@
 }
 
 
-
+.comment-box {
+    font-family: Roboto, sans-serif;
+    padding: 1em 1.2em;
+    background-color: #00000070;
+    border-radius: 1em;
+    color: white;
+}
 
 
 

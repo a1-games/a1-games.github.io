@@ -13,8 +13,7 @@ function SpawnSpaceVoyage()
     
 
     // floating parent
-    let floatparent = document.createElement("div");
-    floatparent.className = "multi-parent float-parent-middle";
+    let floatparent = SpawnFloatParent(rowparent, "middle");
     floatparent.onclick = () => {
         window.open("https://store.steampowered.com/app/2101690/Space_Voyage_The_Puzzle_Game/");
     };
@@ -27,8 +26,19 @@ function SpawnSpaceVoyage()
     let svlogo = SpawnImage(`spacevoyage`, `sv_logo.png`, floatparent);
     svlogo.className = "float-logo-rectangle shape-shadow-black";
 
+    // comment
+    SpawnCommentBox(
+        "I created my first Steam release alongside\n" +
+        "school while studying computer science.\n" +
+        "\n" +
+        "I programmed the whole game myself in Unity3D,\n" +
+        "including UI and the save file system.\n" +
+        "\n" +
+        "The assets are all paid third party products\n" +
+        "that I meticulously modified and put\n" +
+        "together to look cohesive.\n"
+        , floatparent);
 
-    rowparent.append(floatparent);
 
     
     SpawnImage(`spacevoyage`, `1.jpg`, parent);

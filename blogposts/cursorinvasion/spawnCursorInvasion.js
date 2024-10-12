@@ -5,7 +5,7 @@ function SpawnCursorInvasion()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-threequarters";
+    rowparent.className = "multi-parent showcase-row-half";
     
     SpawnImage(`cursorinvasion`, `background4.png`, rowparent).classList.add("curinv-background");
 

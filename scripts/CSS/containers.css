@@ -42,6 +42,11 @@
     overflow-y: hidden;
     overflow-x: hidden;
 }
+.showcase-row-smallest {
+    height: 10em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
 
 
