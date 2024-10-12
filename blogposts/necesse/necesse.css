@@ -6,11 +6,23 @@
 
 
 
+.intshipline {
+  display: flex;
+  flex-direction: column;
+  position: auto;
+  margin: auto;
 
+  font-size: 1.4em;
+  font-family: Roboto, snas-serif;
+  margin: auto;
+  color: rgba(166, 88, 255, 0.534);
+  font-weight: 500;
+
+}
 
 
 .necesse-slider {
-    animation: bannermove 60s linear infinite;
+    animation: bannermove 80s linear infinite;
 }
 
 @keyframes bannermove {

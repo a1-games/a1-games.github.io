@@ -9,7 +9,7 @@ function SpawnNecesse()
     
     // scrolling parent
     let parent = document.createElement("div");
-    parent.className = "multi-parent sv-slider";
+    parent.className = "multi-parent necesse-slider";
     
     
 
@@ -23,9 +23,8 @@ function SpawnNecesse()
     svlogo.className = "float-logo-rectangle shape-shadow-black";
     // internship
     let intshipline = document.createElement("div");
-    intshipline.style = "display: flex; flex-direction: column; position: auto; margin: auto;";
     intshipline.innerText = "Internship"
-    intshipline.style = "font-size: 1.4em; font-family: Roboto, sans-serif; margin: auto; color: #bdbdbd; font-weight: 500;";
+    intshipline.className = "intshipline";
     floatparentleft.append(intshipline);
 
 
