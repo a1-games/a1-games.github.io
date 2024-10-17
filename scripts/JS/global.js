@@ -23,12 +23,14 @@ function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
 
 
 
-function SpawnCommentBox(text, parent)
+function SpawnCommentBox(text, parent, bckgrndColor = "")
 {
     let box = document.createElement("div");
     box.innerText = text;
     box.className = "comment-box";
     box.style = "display: flex; flex-direction: row; position: relative;";
+    if (bckgrndColor != "")
+        box.style.backgroundColor = bckgrndColor;
     
     parent.append(box);
     return box;

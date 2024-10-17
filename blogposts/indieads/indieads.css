@@ -31,8 +31,7 @@
 
 
 .indieads-background {
-    background: rgb(235,235,235);
-    background: linear-gradient(0deg, rgb(130, 121, 155) 0%, rgb(211, 204, 228) 15%, rgba(255,255,255,1) 30%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(0deg, rgb(30, 29, 34) 0%, rgb(66, 64, 73) 15%, rgb(53, 50, 61) 30%, rgb(32, 30, 34) 100%);
 }
 
 .indieads-floater {

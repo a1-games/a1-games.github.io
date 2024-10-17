@@ -8,24 +8,28 @@ function SpawnResumeMaker()
     rowparent.className = "multi-parent showcase-row-threequarters stb-background";
 
     // floating parent
-    let floatparent = document.createElement("div");
-    floatparent.className = "multi-parent float-parent-middle ";
+    let floatparent = SpawnFloatParent(rowparent, "middle", false)
     floatparent.onclick = () => {
         window.open(`resumemaker`);
     };
 
-    // github logo
-    //let githublogo = SpawnImage(`indieads`, `handshake.png`, floatparent);
-    //githublogo.className = "float-logo-square";
+
+    // comment
+    SpawnCommentBox(
+        "A small tool with the essentials\n" +
+        "to make a nice resume.\n" +
+        "\n" +
+        "Fully customizable within a defined\n" +
+        "page layout.\n" +
+        "\n" +
+        "Download by printing to .pdf\n"
+        , floatparent);
+    
 
     // indieads
     let indadlogo = SpawnImage(`resumemaker`, `resume_maker_title.png`, floatparent);
     indadlogo.className = "float-logo-rectangle shape-shadow-black";
-    indadlogo.style.margin = "auto auto auto auto";
-
-    
-
-    rowparent.append(floatparent);
+    indadlogo.style.margin = "auto auto auto 2em";
 
     
     // scroll parent

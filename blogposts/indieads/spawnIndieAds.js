@@ -30,6 +30,23 @@ function SpawnIndieAds()
         window.open("https://indieads.github.io/");
     };
 
+    
+    // floating parent
+    let floatparentcomment = SpawnFloatParent(rowparent, "left", false)
+    
+    // comment
+    SpawnCommentBox(
+        "A collaborative advertisement API\n" +
+        "meant to allow indie developers to\n" +
+        "advertise completely free of cost.\n" +
+        "\n" +
+        "The payment for getting free advertisement\n" +
+        "is using the API in your own product.\n" +
+        "\n" +
+        "\"You give some, you get some\"\n"
+        , floatparentcomment, "#000000c0");
+    
+
     // indieads
     let indadlogo = SpawnImage(`indieads`, `indieadslogo.png`, floatparent);
     indadlogo.className = "float-logo-rectangle shape-shadow-black";
