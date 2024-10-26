@@ -75,16 +75,36 @@
 
 
 .comment-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
     font-family: Roboto, sans-serif;
     padding: 1em 1.2em;
     background-color: #00000070;
+    background: radial-gradient(circle, #000000FF 40%, #00000060 100%);
     border-radius: 1em;
     color: white;
+    z-index: 99;
+
+    min-width: 12em;
 }
 
 
 
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
 
+    
+    .float-parent-middle, .float-parent-left, .float-parent-right {
+        
+        flex-direction: column !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+    }
+}
 
 
 

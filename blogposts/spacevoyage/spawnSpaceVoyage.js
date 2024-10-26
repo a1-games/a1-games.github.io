@@ -18,12 +18,17 @@ function SpawnSpaceVoyage()
         window.open("https://store.steampowered.com/app/2101690/Space_Voyage_The_Puzzle_Game/");
     };
 
+    // logo box
+    let logobox = SpawnMultiRow(floatparent);
+    logobox.classList.add("spacevoyage-logobox");
+
+
     // steam logo
-    let steamlogo = SpawnImage(`spacevoyage`, `steamlogo.png`, floatparent);
+    let steamlogo = SpawnImage(`spacevoyage`, `steamlogo.png`, logobox);
     steamlogo.className = "float-logo-square";
     
     // sv logo
-    let svlogo = SpawnImage(`spacevoyage`, `sv_logo.png`, floatparent);
+    let svlogo = SpawnImage(`spacevoyage`, `sv_logo.png`, logobox);
     svlogo.className = "float-logo-rectangle shape-shadow-black";
 
     // comment

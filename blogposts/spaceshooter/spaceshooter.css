@@ -1,6 +1,37 @@
 
 
 
+
+
+
+
+
+
+
+
+.spaceshooter-background {
+    background-image: url("img/background.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.spaceship {
+    position: absolute;
+
+    top: 50%;
+    right: 4em;
+    width: 10em;
+
+    transform: translate(0, -50%);
+
+}
+.laser-bullet {
+    margin: 0 10em;
+    width: 4em;
+}
 .laser-clip {
     margin: 0;
     position: absolute;
@@ -25,7 +56,6 @@
     animation: lasermove 10s linear infinite;
 }
 
-
 @keyframes lasermove {
     0% {
       transform: translateX(0);
@@ -36,35 +66,9 @@
 }
 
 
-
-
-
-.laser-bullet {
-    margin: 0 10em;
-}
-
-
-.space-background {
-    width: 100vw;
-}
-
-
-
-
-.spaceship {
-    position: absolute;
-
-    top: 50%;
-    right: 4em;
-
-    transform: translate(0, -50%);
-
-}
-
-
 .madeinpge {
     display: block;
-    position: absolute;
+    position: relative;
 
     height: 3em;
     z-index: 1;
@@ -72,3 +76,34 @@
     bottom: -0.5em;
     left: 1em;
 }
+
+.spaceshooter-gameinfo {
+    margin: auto auto auto 20vw;
+}
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
+    .spaceshooter-gameinfo {
+        font-size: 0.75em;
+        margin-left: 1em;
+    }
+    
+    .ss-dl-button {
+        display: none;
+    }
+
+    
+
+    .spaceship {
+        right: 1em;
+        width: 4em;
+    }
+    .laser-bullet {
+        width: 2em;
+    }
+    .laser-clip {
+        right: 3em;
+    }
+}
+

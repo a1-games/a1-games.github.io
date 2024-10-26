@@ -6,3 +6,13 @@
 }
 
 
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
+    
+    
+    :root {
+        font-size: 13px;
+    }
+}
+

@@ -11,16 +11,16 @@ function SpawnCursorInvasion()
 
 
     // floating parent
-    let floatparent = document.createElement("div");
-    floatparent.className = "multi-parent float-parent-right";
-    floatparent.style = "z-index: 2; cursor: default;";
+    let floatparent = SpawnFloatParent(rowparent, "right");
+    floatparent.style.zIndex = 2;
+    floatparent.style.flexDirection = "column";
     rowparent.append(floatparent);
 
     
     // logo
     let logo = SpawnImage(`cursorinvasion`, `gamelogo.png`, floatparent);
     logo.className = "float-logo-rectangle";
-    logo.style.margin = "auto auto 3em auto";
+    //logo.style.margin = "auto auto 3em auto";
     logo.style.cursor = "pointer";
     logo.onclick = () => {
         window.open("https://a1games.fun/pygameplayer.html");
