@@ -48,7 +48,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/wall_of_ads.jpg);
-    filter: blur(0.4em) saturate(0.8);
+    filter: blur(0.35em) saturate(0.35);
 }
 
 
@@ -60,7 +60,7 @@
 }
 
 .indieads-logobox {
-    background-color: #ffffff46;
+    background-color: #ffffffab;
     border-radius: 1em;
     padding: 0 1em;
 

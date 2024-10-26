@@ -77,16 +77,16 @@
 .comment-box {
 
     font-family: Roboto, sans-serif;
-    background: radial-gradient(circle, #000000BB 40%, #00000077 101%);
+    background: radial-gradient(circle, #000000CC 40%, #00000077 101%);
     padding: 1em 1.2em;
     /*
     background-color: #000000AA;
     filter: drop-shadow(0em 0em 3em rgb(0, 0, 0)) ;
     */
     /*xoffset yoffset spread length*/
-    outline: 1px black;
-    -webkit-box-shadow: 0 0 0.75em 0.25em #000000BB;
-    box-shadow: 0 0 0.75em 0.25em #000000BB;
+    outline: 1px #000000CC;
+    -webkit-box-shadow: 0 0 0.75em 0.25em #000000CC;
+    box-shadow: 0 0 0.75em 0.25em #000000CC;
     border-radius: 1em;
     color: white;
     z-index: 99;
