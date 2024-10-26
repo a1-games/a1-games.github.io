@@ -11,7 +11,6 @@
     transition: 0.2s ease-in-out;
     border-radius: 0.2em;
     overflow: hidden;
-    /*height: fit-content;*/
     margin: 0 .5em;
     outline: 2px solid white;
     box-shadow: 0 0.4em 0.4em 0em rgba(0, 0, 0, 0.219);
@@ -26,7 +25,11 @@
 }
 
 .indieads-scrollparent {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     margin: 0;
 
     padding: 2em;
@@ -45,17 +48,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/wall_of_ads.jpg);
-    filter: blur(0.4em);
+    filter: blur(0.4em) saturate(0.8);
 }
 
 
 .indieads-floater {
     flex-direction: column;
     width: fit-content;
+    gap: 1em;
     right: 20vw !important;
 }
 
 .indieads-logobox {
+    background-color: #ffffff46;
+    border-radius: 1em;
+    padding: 0 1em;
+
     gap: 1em;
     font-size: 0.75em;  
 }
