@@ -21,35 +21,19 @@ function SpawnIndieAds()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-threequarters";
+    rowparent.className = "multi-parent showcase-row-threequarters indieads-background";
 
-    let background = document.createElement("div");
-    background.style = "position: absolute; width: 100%; height: 100%; margin: 0; padding: 0;"
-    background.className = " indieads-background";
-    rowparent.append(background);
-
-    
     // floating parent
-    let floatparent = SpawnFloatParent(rowparent, "right");
+    let floatparent = SpawnFloatParent(rowparent, "right", true);  
     floatparent.classList.add("indieads-floater");
+    //floatparent.className = "multi-parent float-parent-right indieads-floater";
     floatparent.onclick = () => {
         window.open("https://indieads.github.io/");
     };
 
-
-    // logo box
-    let logobox = SpawnMultiRow(floatparent);
-    logobox.classList.add("indieads-logobox");
-
-    // indieads logo
-    let ialogo = SpawnImage(`indieads`, `handshake.png`, logobox);
-    ialogo.className = "float-logo-square";
-
-    // indieads title
-    let indadlogo = SpawnImage(`indieads`, `indieadslogo.png`, logobox);
-    indadlogo.className = "float-logo-rectangle shape-shadow-black indieads-title";
-    indadlogo.style.margin = "auto";
-
+    
+    // floating parent
+    let floatparentcomment = SpawnFloatParent(rowparent, "left", false)
     
     // comment
     SpawnCommentBox(
@@ -61,15 +45,26 @@ function SpawnIndieAds()
         "is using the API in your own product.\n" +
         "\n" +
         "\"You give some, you get some\"\n"
-        , floatparent);
+        , floatparentcomment, "#000000c0");
     
 
+    // indieads
+    let indadlogo = SpawnImage(`indieads`, `indieadslogo.png`, floatparent);
+    indadlogo.className = "float-logo-rectangle shape-shadow-black";
+    indadlogo.style.margin = "auto 3em auto auto";
 
+    // github logo
+    let githublogo = SpawnImage(`indieads`, `handshake.png`, floatparent);
+    githublogo.className = "float-logo-square";
+    
+
+    rowparent.append(floatparent);
 
     
     // scroll parent
     let scrollparent = document.createElement("div");
-    scrollparent.className = "multi-row indieads-scrollparent";
+    scrollparent.style = "margin: 0px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: row; align-items: center";
+
 
 
     let adSpawns = [
@@ -129,8 +124,6 @@ function SpawnIndieAds()
 
     rowparent.append(scrollparent);
     MainContainer.append(rowparent);
-
-
 }
 
 SpawnIndieAds();   

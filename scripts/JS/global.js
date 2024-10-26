@@ -27,7 +27,7 @@ function SpawnCommentBox(text, parent, bckgrndColor = "")
 {
     let box = document.createElement("div");
     box.innerText = text;
-    box.className = "comment-box multi-row";
+    box.className = "comment-box multi-row ";
     if (bckgrndColor != "")
         box.style.backgroundColor = bckgrndColor;
     

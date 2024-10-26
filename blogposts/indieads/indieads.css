@@ -11,7 +11,8 @@
     transition: 0.2s ease-in-out;
     border-radius: 0.2em;
     overflow: hidden;
-    margin: 0 0.2em;
+    /*height: fit-content;*/
+    margin: 0 .5em;
     outline: 2px solid white;
     box-shadow: 0 0.4em 0.4em 0em rgba(0, 0, 0, 0.219);
 }
@@ -24,6 +25,14 @@
     display: block;
 }
 
+.indieads-scrollparent {
+    position: relative;
+    margin: 0;
+
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
 
 .indiead-medium {
     width: 10em;
@@ -31,13 +40,44 @@
 
 
 .indieads-background {
-    background: linear-gradient(0deg, rgb(30, 29, 34) 0%, rgb(66, 64, 73) 15%, rgb(53, 50, 61) 30%, rgb(32, 30, 34) 100%);
+    background: rgb(22, 22, 22);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/wall_of_ads.jpg);
+    filter: blur(0.4em);
 }
+
 
 .indieads-floater {
-    padding: 1em 2em;
-    background-color: #FFFFFF99;
-    border-radius: 1em;
+    flex-direction: column;
+    width: fit-content;
+    right: 20vw !important;
+}
+
+.indieads-logobox {
+    gap: 1em;
+    font-size: 0.75em;  
+}
+.indieads-title {
+    font-size: 0.75em;  
 }
 
 
+
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
+
+    .indieads-floater {
+        gap: 1em;
+        /*padding-top: 4em;*/
+    }
+
+    
+    .indieads-logobox {
+        font-size: 0.65em;  
+    }
+}
