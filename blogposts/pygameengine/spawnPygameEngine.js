@@ -12,31 +12,29 @@ function SpawnPygameEngine()
     
     
 
+
     // floating parent
-    let floatparent = SpawnFloatParent(rowparent, "middle");
+    let floatparent = SpawnFloatParent(rowparent, "middle", true);  
     floatparent.onclick = () => {
         window.open("https://github.com/a1-games/PyGame-Engine");
     };
 
 
-    // floating parent
-    let floatparentlogo = document.createElement("div");
-    floatparentlogo.style = "align-items: center; margin-right: 2em;";
-    floatparentlogo.className = `multi-parent`;
-    floatparent.append(floatparentlogo);
-    
-    // title
-    let title = SpawnImage(`pygameengine`, `textlogo.png`, floatparentlogo);
-    title.className = "float-logo-rectangle shape-shadow-black";
-    title.style.margin = "3em auto auto auto";
-    
+    // logo box
+    let logobox = SpawnMultiRow(floatparent);
+    logobox.style.flexDirection = "column";
+    //logobox.classList.add("spacevoyage-logobox");
+
     // pygame x a1
-    let pyxa1logo = SpawnImage(`pygameengine`, `pygameXa1.png`, floatparentlogo);
-    pyxa1logo.className = "shape-shadow-black";
-    pyxa1logo.style = "position: absolute; top: 2em; height: 2.5em; left: 6em; ";
+    let pyxa1logo = SpawnImage(`pygameengine`, `pygameXa1.png`, logobox);
+    pyxa1logo.className = "pygamexa1 shape-shadow-black";
+
+    // title
+    let title = SpawnImage(`pygameengine`, `textlogo.png`, logobox);
+    title.className = "float-logo-rectangle shape-shadow-black pygame-title";
     
     // comment
-    let commBox = SpawnCommentBox(
+    SpawnCommentBox(
         "PyGame Engine ( Not A Real Engine )\n" +
         "\n" +
         "A starting project for pygame which includes\n" +
@@ -49,11 +47,10 @@ function SpawnPygameEngine()
         "• Simplified game information file\n" +
         "• Easy sprite & text creation\n" +
         "and more"
-        , floatparent);
+        , logobox);
 
-    commBox.style.position = "relative";
+    
 
-    rowparent.append(floatparent);
 
     
     function getSpaceX()

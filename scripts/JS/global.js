@@ -27,7 +27,7 @@ function SpawnCommentBox(text, parent, bckgrndColor = "")
 {
     let box = document.createElement("div");
     box.innerText = text;
-    box.className = "comment-box";
+    box.className = "comment-box multi-row";
     if (bckgrndColor != "")
         box.style.backgroundColor = bckgrndColor;
     
@@ -50,7 +50,7 @@ function SpawnImage(blogpostname, imgname, parent)
 function SpawnMultiRow(parent)
 {
     let row = document.createElement("div");
-    row.style = "display: flex; flex-direction: row; position: relative;";
+    row.className = "multi-row";
     
     parent.append(row);
     return row;

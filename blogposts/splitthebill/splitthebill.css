@@ -17,7 +17,16 @@
 }
 
 
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
 
+    .stb-scroll {
+        left: -8em;
+    }
+    
+
+}
 
 
 

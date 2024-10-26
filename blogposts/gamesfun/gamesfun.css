@@ -5,21 +5,53 @@
 
 
 .gamesfun-title {
+    position: relative;
     height: 8em;
+    margin: auto 1em;
     width: 34em;
-    margin: auto 3em;
     object-fit: contain;
 }
 
 
 .gamesfun-game
 {
+    margin: auto 1em;
     height: 6em;
-    margin: auto 2em;
     border-radius: 0.5em;
-    outline: 0.25em solid white;
+    outline: 0.125em solid white;
 }
 
+
+.gamesfun-scroll {
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.gamesfun-align {
+    margin: auto 3em;
+}
+
+/* Smartphones (portrait) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
+
+    .gamesfun-title {
+        margin: auto auto;
+    }
+    .gamesfun-scroll {
+        width: 100vw;
+    }
+    .gamesfun-align {
+        font-size: 0.6em;
+        flex-direction: column !important;
+        gap: 0;
+        margin: auto 0;
+        /* The title font is misaligned and this makes up for it */
+        padding-bottom: 2em;
+    }
+}
 
 
 

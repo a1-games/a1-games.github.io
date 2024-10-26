@@ -14,6 +14,7 @@ function SpawnSpaceVoyage()
 
     // floating parent
     let floatparent = SpawnFloatParent(rowparent, "middle");
+    floatparent.classList.add("sv-floatparent");
     floatparent.onclick = () => {
         window.open("https://store.steampowered.com/app/2101690/Space_Voyage_The_Puzzle_Game/");
     };

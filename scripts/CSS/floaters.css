@@ -75,9 +75,6 @@
 
 
 .comment-box {
-    position: relative;
-    display: flex;
-    flex-direction: row;
 
     font-family: Roboto, sans-serif;
     padding: 1em 1.2em;
@@ -92,7 +89,7 @@
 
 
 
-/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
 @media screen and (max-width: 821px) {
     /* Styles */
 

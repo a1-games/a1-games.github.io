@@ -10,12 +10,11 @@
   display: flex;
   flex-direction: column;
   position: auto;
-  margin: auto;
+  margin: 0 auto 0.8em auto;
 
   font-size: 1.4em;
-  font-family: Roboto, snas-serif;
-  margin: auto;
-  color: rgba(166, 88, 255, 0.534);
+  font-family: Roboto, sans-serif;
+  color: rgba(110, 23, 209, 0.822);
   font-weight: 500;
 
 }
@@ -33,8 +32,6 @@
       transform: translateX(-50%);
     }
 }
-
-
 
 
 

@@ -57,17 +57,22 @@ function SpawnGamesFun()
 
     // scroll parent
     let scrollparent = document.createElement("div");
-    scrollparent.style = "cursor: pointer; margin: 0px; position: absolute; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
+    scrollparent.className = "gamesfun-scroll multi-row";
+    //scrollparent.style = "cursor: pointer; margin: 0px; position: relative; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
     scrollparent.onclick = () => {
         window.open("https://a1games.fun/");
     };
-
-    let title = SpawnImage(`gamesfun`, `textlogo.png`, scrollparent);
-    title.className = "shape-shadow-black gamesfun-title";
-
     SpawnRandomizedGames(scrollparent);
 
-    rowparent.append(scrollparent);
+    let aligner = SpawnMultiRow(rowparent)
+    aligner.classList.add("gamesfun-align");
+
+    let title = SpawnImage(`gamesfun`, `textlogo.png`, aligner);
+    title.className = "shape-shadow-black gamesfun-title";
+
+
+    aligner.append(scrollparent);
+    rowparent.append(aligner);
     MainContainer.append(rowparent);
 }
 

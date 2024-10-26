@@ -1,0 +1,20 @@
+
+
+
+
+.resmak-block {
+    width: 50em;
+    filter: blur(0.1em);
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
+
+    .resmak-scroll {
+        left: -8em;
+    }
+
+}
+

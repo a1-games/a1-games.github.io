@@ -33,8 +33,9 @@ function SpawnResumeMaker()
 
     
     // scroll parent
-    let scrollparent = document.createElement("div");
-    scrollparent.style = "margin: 0px; position: absolute; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
+    let scrollparent = SpawnMultiRow(rowparent);
+    scrollparent.classList.add("scroll-parent");
+    scrollparent.classList.add("resmak-scroll");
 
 
     SpawnImage(`resumemaker`, `1.png`, scrollparent).classList.add("resmak-block");
@@ -43,7 +44,6 @@ function SpawnResumeMaker()
     SpawnImage(`resumemaker`, `4.jpg`, scrollparent).classList.add("resmak-block");
 
 
-    rowparent.append(scrollparent);
     MainContainer.append(rowparent);
 }
 

@@ -18,21 +18,23 @@ function SpawnNecesse()
     floatparentleft.onclick = () => {
         window.open("https://necessegame.com/");
     };
+
+
+    // logo box
+    let logobox = SpawnMultiRow(floatparentleft);
+    logobox.style.flexDirection = "column";
+    //logobox.classList.add("spacevoyage-logobox");
+
     // necesse logo
-    let svlogo = SpawnImage(`necesse`, `necesse_logo.png`, floatparentleft);
-    svlogo.className = "float-logo-rectangle shape-shadow-black";
-    // internship
+    let neclogo = SpawnImage(`necesse`, `necesse_logo.png`, logobox);
+    neclogo.className = "float-logo-rectangle shape-shadow-black";
+
+    // internship line
     let intshipline = document.createElement("div");
     intshipline.innerText = "Internship"
     intshipline.className = "intshipline";
-    floatparentleft.append(intshipline);
-
-
+    logobox.append(intshipline);
     
-
-    // floating parent
-    let floatparentright = SpawnFloatParent(rowparent, "right", false)
-    floatparentright.style.marginRight = "4em";
     // comment
     SpawnCommentBox(
         "September 16 -> October 11, 2024\n" +
@@ -48,7 +50,7 @@ function SpawnNecesse()
         "• Necrotic Weapon Set\n" +
         "• Trenchcoat Goblin\n" +
         "• Randomly Generated Farm Houses\n"
-        , floatparentright);
+        , logobox);
 
 
     

@@ -2,16 +2,11 @@
 
 
 
-
-
-
-
 #main-container {
     overflow: auto;
     display: block;
     position: relative;
 }
-
 
 .multi-parent {
     position: relative;
@@ -24,6 +19,22 @@
     margin: 0;
     padding: 0;
 }
+
+.multi-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.scroll-parent {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-50%);
+    align-items: center;
+}
+
 
 
 .showcase-row-full {
