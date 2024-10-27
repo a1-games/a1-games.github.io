@@ -12,15 +12,6 @@ function GetMyAge()
 
 
 
-function SpawnTextLine(parent, text, extraclass)
-{
-    let name = document.createElement("div");
-    name.innerText = text;
-    name.className = `pi-text ${extraclass}`;
-    parent.append(name);
-    return name;
-}
-
 const piContainer = document.createElement("div");
 
 function ShowHidePersonalInfo()

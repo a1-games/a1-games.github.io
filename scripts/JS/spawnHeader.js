@@ -26,6 +26,7 @@ function SpawnHeader()
     
 
     let realnamesection = SpawnMultiRow(headertab);
+    realnamesection.style.position = "relative";
 
     let a1icon = document.createElement("img");
     a1icon.src = `files/IMG/headshot_ring.png`;

@@ -9,7 +9,6 @@ const MainContainer = document.getElementById("main-container");
 
 // FUNCTIONS
 
-
 function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
 {
     let floatparent = document.createElement("div");
@@ -19,6 +18,16 @@ function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
     floatparent.className = `multi-parent float-parent-${leftrightmiddle}`;
     parent.append(floatparent);
     return floatparent;
+}
+
+
+function SpawnTextLine(parent, text, extraclass)
+{
+    let name = document.createElement("div");
+    name.innerText = text;
+    name.className = `pi-text ${extraclass}`;
+    parent.append(name);
+    return name;
 }
 
 

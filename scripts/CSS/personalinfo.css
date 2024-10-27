@@ -54,6 +54,7 @@
 
 .pi-text-small {
     font-size: 0.7em;
+    min-height: 1em;
 }
 
 
