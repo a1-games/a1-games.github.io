@@ -21,6 +21,26 @@
     outline: 2px solid white;
 }
 
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    /* Styles */
+
+    .pi-container {
+        position:fixed;
+        font-size: 1.8em;
+        width: 90vw ;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pi-folded {
+        top: 1em !important;
+    }
+    
+}
+
+
 .pi-folded {
     height: 0;
     width: 0;

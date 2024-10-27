@@ -46,7 +46,7 @@ function SpawnPersonalInfo(parent)
 
     SpawnTextLine(piContainer, "", "").style.height = "0.2em";
 
-    SpawnTextLine(piContainer, "C# · Python · Javascript · HTML & CSS · SQL · JSON · Unity · Unity3D · MonoGame · PyGame · React.js · Node.js", "pi-text-small");
+    SpawnTextLine(piContainer, "C# · Java · Python · Javascript · HTML & CSS · SQL · JSON · Unity · Unity3D · MonoGame · PyGame · React.js · Node.js", "pi-text-small");
     SpawnTextLine(piContainer, "", "pi-text-small");
 
 
