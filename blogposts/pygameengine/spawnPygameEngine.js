@@ -19,11 +19,9 @@ function SpawnPygameEngine()
         window.open("https://github.com/a1-games/PyGame-Engine");
     };
 
-
     // logo box
     let logobox = SpawnMultiRow(floatparent);
-    logobox.style.flexDirection = "column";
-    //logobox.classList.add("spacevoyage-logobox");
+    logobox.classList.add("pygameengine-floatparent");
 
     // pygame x a1
     let pyxa1logo = SpawnImage(`pygameengine`, `pygameXa1.png`, logobox);

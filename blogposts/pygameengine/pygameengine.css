@@ -19,7 +19,11 @@
 }
 
 
-
+.pygameengine-floatparent {
+    font-size: 0.9em;
+    flex-direction: column !important;
+    margin-bottom: 1.5em;
+}
 
 
 
