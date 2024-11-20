@@ -1,6 +1,11 @@
 
 <script>
 
+    async function RedirectAndSetURLTitle(longURL, title, shortURL) {
+                window.location = `/${longURL}`;
+                window.history.pushState("I don't know what this string does", title, `/${shorturl}`);
+    }
+
     async function Redirect() {
 
         let suburl = window.location.pathname;
@@ -13,16 +18,26 @@
                 suburl == "/old-website/mtg"
             )
             {
-                window.location = `/scripts/HTML/MTG/mtg.html`;
+                RedirectAndSetURLTitle(`SCRIPTS/HTML/MTG/mtg.html`, "MTG", "mtg");
+                return;
+            }
+
+            if (suburl == "/sv" ||
+                suburl == "/spacevoyage" ||
+                suburl == "/spacegame" ||
+                suburl == "/old-website/spacevoyage"
+            )
+            {
+                RedirectAndSetURLTitle(`SCRIPTS/HTML/spacevoyage.html`, "Space Voyage", "spacevoyage");
                 return;
             }
 
 
-            //window.location = "https://a1creator.com/";
+            window.location = "https://a1creator.com/";
         }
         catch
         {
-                //window.location = "https://a1creator.com/";
+                window.location = "https://a1creator.com/";
                 console.log("failed to find " + `${suburl}.html`)
         }
 
