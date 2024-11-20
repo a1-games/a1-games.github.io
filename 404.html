@@ -3,7 +3,7 @@
 
     async function RedirectAndSetURLTitle(longURL, title, shortURL) {
                 window.location = `/${longURL}`;
-                window.history.pushState("I don't know what this string does", title, `/${shorturl}`);
+                window.history.pushState({}, title, new URL(`/${shorturl}`));
     }
 
     async function Redirect() {
