@@ -29,7 +29,7 @@ function SpawnHeader()
     realnamesection.style.position = "relative";
 
     let a1icon = document.createElement("img");
-    a1icon.src = `FILES/IMG/HEADSHOTS/headshot_ring.png`;
+    a1icon.src = `./FILES/IMG/HEADSHOTS/headshot_ring.png`;
     a1icon.classList.add("a1icon");
     a1icon.classList.add("showcase-img");
     realnamesection.append(a1icon);
@@ -43,7 +43,7 @@ function SpawnHeader()
     };
 
     // the tab that folds out when my name/img is clicked
-    let piContainer = SpawnPersonalInfo(realnamesection);
+    let _piContainer = SpawnPersonalInfo(realnamesection);
 
     //------------------------------------------------
     let middlespace = document.createElement("div");
