@@ -1,0 +1,52 @@
+#google-play-button {
+    /*button:*/
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0.4em 0 auto auto;
+    /*dsfdf*/
+    padding: 0.8em 1.4em;
+    vertical-align: middle;
+}
+.google-play-button-text {
+    /*button:*/
+    background: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 0;
+    border-color: #0d1117 !important;
+    padding: 0.8em 1.4em;
+    margin: 0 0.4em;
+    /*font adjustments:*/
+    text-align: center;
+    text-decoration: none;
+    color: inherit !important;
+    font-size: 1em;
+    font-family: Roboto;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.scalebutton-120 {
+    /*Why doesn't this work????*/
+    transform: scale(1.2);
+}
+#google-play-button-text-spacevoyageGreen:hover {
+    background-color: #89FFA4cc !important;
+}
+#google-play-button-text-spacevoyageBlue:hover {
+    background-color: #89F1FFcc !important;
+}
+#google-play-button-text-jumpingbacteria:hover {
+    background-color: #5fc3f5 !important;
+}
+#google-play-button-text-crab:hover {
+    background-color: #89CFF0 !important;
+}
+#google-play-button-text-a1gamesfun:hover {
+    background-color: #00fff25d !important;
+}
+#google-play-button-text-pygameengine:hover {
+    background-color: #a59c215d !important;
+}

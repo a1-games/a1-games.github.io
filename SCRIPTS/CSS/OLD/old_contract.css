@@ -1,0 +1,110 @@
+
+.layout-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#top-page-cover {
+    background-image: url("../images/bckgrnd03.png");
+    object-fit: none;
+}
+.th-text {
+    text-align: center;
+    font-size: 32px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.text-color-black {
+    background-color: transparent;
+    color: #000000 !important;
+}
+.footer-title {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1.4rem;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.footer-text {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1rem;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: normal;
+}
+.footer-link:hover {
+    color: #5fc3f5;
+}
+.youtube-link:hover {
+    color: red;
+}
+.twitch-link:hover {
+    color: rebeccapurple;
+}
+/*on mobile*/
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+    .bannericon {
+        height: 58px;
+        width: 58px;
+        margin: 0 4px;
+        border-radius: 8px;
+        box-shadow: 2px 2px gray;
+        cursor: pointer;
+    }
+    .bannericona1 {
+        height: 64px;
+        width: 64px;
+        padding: 6px 0;
+        border-radius: 10px;
+    }
+    .text-bubblegum {
+        font-family: BubblegumSans;
+        color: #83fe5b;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+        padding-top: 64px;
+        letter-spacing: 0.6rem;
+    }
+}
+
+/*on desktop*/
+@media (min-width: 767px) {
+    .hidden-desktop {
+        display: none;
+    }
+    .bannericon {
+        height: 64px;
+        width: 64px;
+        margin: 0 6px;
+        border-radius: 12px;
+        box-shadow: 2px 2px gray;
+        cursor: pointer;
+    }
+    .bannericona1 {
+        height: 84px;
+        width: 84px;
+        padding: 8px 0;
+        border-radius: 12px;
+    }
+    .text-bubblegum {
+        font-family: BubblegumSans;
+        color: #83fe5b;
+        font-size: 6rem;
+        text-align: center;
+        margin: 0;
+        padding-top: 64px;
+        letter-spacing: 0.6rem;
+    }
+}
+

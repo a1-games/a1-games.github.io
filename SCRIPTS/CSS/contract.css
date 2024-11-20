@@ -1,0 +1,102 @@
+
+/* Colorscheme */
+:root {
+    --c_Dark: #0d1117;
+    --c_Light: #f7faff;
+}
+
+/* Colorscheme Shorthands */
+.c-light {
+    color: var(--c_Light);
+}
+.bg-light {
+    background-color: var(--c_Light);
+}
+.c-dark {
+    color: var(--c_Dark);
+}
+.bg-dark {
+    background-color: var(--c_Dark);
+}
+
+
+
+/* ---------------- */
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+
+
+/* Size */
+.fullwidth, .fw, .w-100p, .width-100, .width-full {
+    width: 100%;
+}
+.width-auto, .w-auto, .w-a {
+    width: auto;
+}
+
+.fullheight, .fh, .h-100p, .height-100, .height-full {
+    height: 100%;
+}
+.height-auto, .h-auto, .h-a {
+    height: auto;
+}
+
+
+/* Edges */
+.no-padding, .p-0 {
+    padding: 0px !important;
+}
+.padding-auto, .p-a, .p-auto {
+    padding: auto !important;
+}
+
+.no-margin, .m-0 {
+    margin: 0px !important;
+}
+.no-margin-v, .m-v-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.no-margin-h, .m-h-0 {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.margin-auto, .m-a, .m-auto {
+    margin: auto !important;
+}
+
+
+/* Text */
+.center-text {
+    text-align: center;
+}
+
+
+
+/* Position */
+.true-center {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+/* Alignment */
+.flex {
+    display: flex;
+}
+.flex-col, .fd-col {
+    flex-direction: column;
+}
+.flex-row, .fd-row {
+    flex-direction: row;
+}
+.center-items-h {
+    justify-content: center;
+}
+.center-items-v{
+    align-items: center;
+}
+

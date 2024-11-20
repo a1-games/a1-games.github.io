@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+    <title>Space Voyage</title>
+    <link rel="stylesheet" href="../CSS/root.css" media="screen">
+    <link rel="stylesheet" href="../CSS/containers.css" media="screen">
+    <link rel="stylesheet" href="../CSS/floaters.css" media="screen">
+    <link rel="stylesheet" href="../../BLOGPOSTS/spacevoyage/spacevoyage.css" media="screen">
+    <link rel="stylesheet" href="../../SCRIPTS/CSS/loadfonts.css" media="screen">
+    <link rel="stylesheet" href="../../SCRIPTS/CSS/spacevoyage_page.css" media="screen">
+    <link rel="stylesheet" href="../../SCRIPTS/CSS/contract.css" media="screen">
+    <link rel="shortcut icon" href="../../FILES/IMG/ICON/a1Icon16px.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body >
+    <!-- load header in -->
+    <div id="images-container" style="position: relative; overflow: auto; display: block;"></div>
+
+    <script src="../JS/global.js"></script>
+    <script>
+        function SpawnSVImage(blogpostname, imgname, parent)
+        {
+            let image = document.createElement("img");
+            image.src = `../../BLOGPOSTS/spacevoyage/img/${imgname}`;
+            image.classList.add("showcase-img");
+            parent.append(image);
+            return image;
+        }
+        // keep it in a function as to not keep variables in memory
+        function SpawnSpaceVoyage()
+        {
+            // row parent
+            let rowparent = document.createElement("div");
+            rowparent.className = "multi-parent showcase-row-full";
+            
+            // scrolling parent
+            let parent = document.createElement("div");
+            parent.className = "multi-parent sv-slider";
+            
+            
+        
+            // floating parent
+            let floatparent = SpawnFloatParent(rowparent, "middle");
+            floatparent.classList.add("sv-floatparent");
+            floatparent.onclick = () => {
+                window.open("https://store.steampowered.com/app/2101690/Space_Voyage_The_Puzzle_Game/");
+            };
+        
+            // logo box
+            let logobox = SpawnMultiRow(floatparent);
+            logobox.classList.add("spacevoyage-logobox");
+        
+        
+            // steam logo
+            let steamlogo = SpawnSVImage(`spacevoyage`, `steamlogo.png`, logobox);
+            steamlogo.className = "float-logo-square";
+            
+            // sv logo
+            let svlogo = SpawnSVImage(`spacevoyage`, `sv_logo.png`, logobox);
+            svlogo.className = "float-logo-rectangle shape-shadow-black";
+        
+            
+            SpawnSVImage(`spacevoyage`, `1.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `2.gif`, parent);
+            SpawnSVImage(`spacevoyage`, `3.png`, parent);
+            SpawnSVImage(`spacevoyage`, `8.gif`, parent);
+            SpawnSVImage(`spacevoyage`, `6.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `7.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `11.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `9.jpg`, parent);
+        
+            // create the same row twice to make the infinite scroll work
+            SpawnSVImage(`spacevoyage`, `1.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `2.gif`, parent);
+            SpawnSVImage(`spacevoyage`, `3.png`, parent);
+            SpawnSVImage(`spacevoyage`, `8.gif`, parent);
+            SpawnSVImage(`spacevoyage`, `6.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `7.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `11.jpg`, parent);
+            SpawnSVImage(`spacevoyage`, `9.jpg`, parent);
+        
+            rowparent.append(parent);
+            
+            var imgcon = document.getElementById("images-container");
+            imgcon.append(rowparent);
+        }
+        
+        SpawnSpaceVoyage();   
+    </script>
+
+</div>
+
+<div class="flex center-items-h sv-display-row" style="background-color: #e0e5eb;">
+
+    <!-- Image -->
+    <div class="flex sv-banner">
+        <img src="../../FILES/IMG/old/spacevoyage/374x448_Thumbnail.png" class="sv-banner-portrait">
+        <img src="../../FILES/IMG/old/spacevoyage/460x215_Thumbnail.png" class="sv-banner-landscape">
+    </div>
+
+    <!-- Info -->
+    <div class="flex fd-col center-items-h m-h-0" style="padding: 1rem; margin: auto; background-color:none;">
+        <h5 class=" true-center" style="font-size: 1.25rem; font-family: RobotoLight,sans-serif; letter-spacing: 0.12rem;">a1games presents:</h5>
+        <h2 class=" true-center" style="font-size: 2.25rem; margin-bottom: 1.6rem; font-weight: bold;font-family: Ethnocentric;">Space Voyage</h2>
+        <p class=" center-text" style="font-size: 1rem; font-family: RobotoLight,sans-serif;">Try the demo on Steam now!</p>
+        <div id="link-button" class="m-auto">
+            <a id="steam-redirect" class="link-button-text link-button-text-spacevoyageGreen" href="steam://store/2101690" target="_blank">open in steam</a>
+            <a class="link-button-text link-button-text-spacevoyageGreen" href="https://store.steampowered.com/app/2101690" target="_blank">in browser</a>
+        </div>
+        <p class=" center-text" style="font-size: 1rem; font-family: RobotoLight,sans-serif; margin-top: 2rem;">Old version on itch.io</p>
+        <div id="link-button" class="m-auto">
+            <a class="link-button-text link-button-text-spacevoyageBlue" href="https://a1creator.itch.io/spacevoyage" target="_blank">ITCH.IO</a>
+        </div>
+    </div>
+
+</div>
+<!-- FOOTER -->
+<footer style="background-color: #4d4d4d;" id="footer"> </footer>
+
+
+<div style="background-image: url(images/spacevoyage/bckg.png); background-repeat: no-repeat; background-size: cover; ">
+    <div>
+        <h3 class="text-sv-title c-light center-text" style="font-family: Ethnocentric; ">Thank You</h3>
+    </div>
+</div>
+
+
+</body>
+
+</html>

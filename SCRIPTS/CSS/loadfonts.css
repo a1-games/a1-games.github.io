@@ -1,0 +1,43 @@
+
+
+
+@font-face {
+    font-family: BubblegumSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../FILES/FONTS/BubblegumSans-Regular.otf);
+    src: url(../../FILES/FONTS/BubblegumSans-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../FILES/FONTS/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoLight;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../FILES/FONTS/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: RobotoThin;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../FILES/FONTS/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    src: url(../../FILES/FONTS/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    src: url(../../FILES/FONTS/Roboto-Bold.ttf);
+}
+
+@import url(//fonts.google.com/specimen/Bubblegum+Sans);
+@import url(//fonts.google.com/specimen/Roboto);

@@ -1,0 +1,238 @@
+
+/*on mobile*/
+@media (max-width: 600px) {
+    html {
+        overflow-x: hidden;
+        /*font-size: 2.5vw;*/
+    }
+}
+
+
+#header {
+    background-image: none;
+    padding: 0px;
+}
+
+.white {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.blob-skins {
+    height: 218px;
+    width: 218px;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.layout-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#top-page-index {
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    object-fit: none;
+}
+
+.th-text-a1 {
+    text-align: left;
+    font-size: 32px;
+    margin: 0 0 0 1.6rem;
+}
+.true-center {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.th-text {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.text-color-black {
+    background-color: transparent;
+    color: #000000 !important;
+}
+.text-color-socials {
+    background-color: transparent;
+    color: #C8C8C8;
+}
+
+.footer-title {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1.4rem;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.footer-text {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 1rem;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: normal;
+}
+.footer-link:hover {
+    color: #5fc3f5;
+}
+
+.showcase-strip {
+    margin: auto;
+    text-align: center;
+}
+
+
+/*on mobile*/
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+    .bannericon {
+        height: 58px;
+        width: 58px;
+        margin: 0 4px;
+        border-radius: 8px;
+        box-shadow: 2px 2px gray;
+        cursor: pointer;
+    }
+    .bannericona1 {
+        height: 64px;
+        width: 64px;
+        padding: 6px 0;
+        border-radius: 10px;
+    }
+    .text-bubblegum-index {
+        font-family: RobotoLight;
+        color: #e0e5eb;
+        font-size: 3.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 3rem;
+        letter-spacing: 0.4rem;
+    }
+    .showcase-strip {
+        padding: 3rem 0;
+    }
+}
+
+/*on desktop*/
+@media (min-width: 767px) {
+    .hidden-desktop {
+        display: none;
+    }
+    .bannericon {
+        height: 64px;
+        width: 64px;
+        margin: 0 6px;
+        border-radius: 12px;
+        box-shadow: 2px 2px gray;
+        cursor: pointer;
+    }
+    .bannericona1 {
+        height: 84px;
+        width: 84px;
+        padding: 8px 0;
+        border-radius: 12px;
+    }
+    .text-bubblegum-index {
+        font-family: RobotoLight;
+        color: #e0e5eb;
+        font-size: 6rem;
+        text-align: center;
+        margin: 0;
+        padding: 5rem;
+        letter-spacing: 0.4rem;
+    }
+    .showcase-strip {
+        padding: 5rem 0;
+    }
+}
+
+@keyframes bannermove {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50);
+    }
+}
+
+.slideshow {
+    display: flex;
+    position: relative;
+    animation-name: bannermove;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: BubblegumSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/BubblegumSans-Regular.otf);
+    src: url(fonts/BubblegumSans-Regular.ttf);
+}
+@font-face {
+    font-family: Ethnocentric;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/ethnocentric.otf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoLight;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: RobotoThin;
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@import url(//fonts.google.com/specimen/Bubblegum+Sans);
+@import url(//fonts.google.com/specimen/Roboto);

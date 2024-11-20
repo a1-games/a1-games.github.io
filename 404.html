@@ -1,31 +1,46 @@
 
 <script>
 
-    async function testForSubPage() {
+    async function Redirect() {
 
         let suburl = window.location.pathname;
 
-        // fetch the json game info file
-        fetch(`https://a1creator.com/blogposts${suburl}${suburl}.html`)
-            // if we didnt get an error:
-            .then((response) =>  {
-                
-                if (response.ok)
-                {
-                    window.location = `blogposts${suburl}${suburl}.html`;
-                }
-                    
-                console.log(response)
-            })
-            // if conversion failed:
-            .catch((error) => {
+        try
+        {
+            if (suburl == "/mtg" ||
+                suburl == "/freemtg" ||
+                suburl == "/old-website/mtg"
+            )
+            {
+                window.location = `/scripts/HTML/MTG/mtg.html`;
+                return;
+            }
+
+
+            window.location = "https://a1creator.com/";
+        }
+        catch
+        {
                 window.location = "https://a1creator.com/";
-                console.log("failed to find " + `blogposts${suburl}${suburl}.html`)
+                console.log("failed to find " + `${suburl}.html`)
+        }
+
+        // fetch the json game info file
+        //fetch(`https://a1creator.com/blogposts${suburl}${suburl}.html`)
+            // if we didnt get an error:
+            //.then((response) =>  {
                 
-            })
+                //if (response.ok)
+                //{
+                //}
+            //})
+            // if conversion failed:
+            //.catch((error) => {
+                
+            //})
 
     }
 
-    testForSubPage();
+    Redirect();
 
 </script>
