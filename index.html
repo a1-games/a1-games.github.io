@@ -5,96 +5,80 @@
     <title>a1games</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <!-- Local Stylesheets -->
-    <link rel="stylesheet" href="./SCRIPTS/CSS/containers.css" media="screen">
-    <link rel="stylesheet" href="./SCRIPTS/CSS/containers.css" media="print">
-
-    <link rel="stylesheet" href="./SCRIPTS/CSS/root.css" media="screen">
-    <link rel="stylesheet" href="./SCRIPTS/CSS/root.css" media="print">
-
-    <link rel="stylesheet" href="./SCRIPTS/CSS/floaters.css" media="screen">
-    <link rel="stylesheet" href="./SCRIPTS/CSS/floaters.css" media="print">
-
-    <link rel="stylesheet" href="./SCRIPTS/CSS/header.css" media="screen">
-    <link rel="stylesheet" href="./SCRIPTS/CSS/header.css" media="print">
-
-    <link rel="stylesheet" href="./SCRIPTS/CSS/personalinfo.css" media="screen">
-    <link rel="stylesheet" href="./SCRIPTS/CSS/personalinfo.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/necesse/necesse.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/necesse/necesse.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/pygameengine/pygameengine.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/pygameengine/pygameengine.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/spacevoyage/spacevoyage.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/spacevoyage/spacevoyage.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/indieads/indieads.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/indieads/indieads.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/splitthebill/splitthebill.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/splitthebill/splitthebill.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/resumemaker/resumemaker.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/resumemaker/resumemaker.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/spaceshooter/spaceshooter.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/spaceshooter/spaceshooter.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/cursorinvasion/cursorinvasion.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/cursorinvasion/cursorinvasion.css" media="print">
-
-    <link rel="stylesheet" href="./BLOGPOSTS/gamesfun/gamesfun.css" media="screen">
-    <link rel="stylesheet" href="./BLOGPOSTS/gamesfun/gamesfun.css" media="print">
-    
 
     <!-- Indie Ads Fetch-->
     <script src="https://indieads.github.io/indieads.js"></script>
 
+    <!-- Injected Stylesheets -->
+
 </head>
-<body style="margin: 0; ">
-    
-    
+<!-- Dark background color so loading the page isn't a fucking flashbang -->
+<body style="margin: 0; background-color: rgb(31, 31, 31);">
+    <!-- Container for everything -->
+    <div id="main-container"> </div>
 
-    <!-- container for blogpost rows -->
-    <div id="main-container">
+    <!------------->
+    <!-- PRELOAD -->
+    <!------------->
+    <script src="./SCRIPTS/JS/global.js">
+    </script>
+    <script>
+        // Global Styles
+        InsertStyling("root");
+        InsertStyling("contract");
+        InsertStyling("containers");
+        InsertStyling("floaters");
+        InsertStyling("header");
+        InsertStyling("personalinfo");
+        InsertStyling("scrollbar");
+        // Blogpost Styles
+        InsertBlogpostStyling("spacevoyage");
+        InsertBlogpostStyling("resumemaker");
+        InsertBlogpostStyling("androidapps");
+        InsertBlogpostStyling("necesse");
+        InsertBlogpostStyling("indieads");
+        InsertBlogpostStyling("spaceShooter");
+        InsertBlogpostStyling("pygameengine");
+        InsertBlogpostStyling("cursorinvasion");
+        InsertBlogpostStyling("splitthebill");
+        InsertBlogpostStyling("gamesfun");
+    </script>
 
-    </div>
-    
+    <!-------------->
+    <!-- SPAWNING -->
+    <!-------------->
 
-
-    <!-- preload -->
-    <script src="./SCRIPTS/JS/global.js"></script>
-    <!-- personal info needs to be before header! -->
+    <!-- Personal info needs to be before header! -->
     <script src="./SCRIPTS/JS/spawnPersonalInfo.js"></script>
     <script src="./SCRIPTS/JS/spawnHeader.js"></script>
 
-
-
-
     
-    <!-- blog posts -->
-
-    
+    <!-- BLOGPOSTS -->
     <script src="./BLOGPOSTS/spacevoyage/spawnSpaceVoyage.js"></script>
+    
+    <script src="./BLOGPOSTS/androidapps/spawnAndroidApps.js"></script>
+
     <script src="./BLOGPOSTS/resumemaker/spawnResumeMaker.js"></script>
+
     <script src="./BLOGPOSTS/necesse/spawnNecesse.js"></script>
+
     <script src="./BLOGPOSTS/indieads/spawnIndieAds.js"></script>
     <script src="./BLOGPOSTS/indieads/indieadsloader.js"></script>
+
     <script src="./BLOGPOSTS/spaceshooter/spawnSpaceShooter.js"></script>
+
     <script src="./BLOGPOSTS/pygameengine/spawnPygameEngine.js"></script>
+
     <script src="./BLOGPOSTS/cursorinvasion/spawnCursorInvasion.js"></script>
+
     <script src="./BLOGPOSTS/splitthebill/spawnSplitTheBill.js"></script>
+
     <script src="./BLOGPOSTS/gamesfun/spawnGamesFun.js"></script>
+
     <!--
     
     -->
-
-
-
-
 
 </body>
 

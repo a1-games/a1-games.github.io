@@ -1,0 +1,188 @@
+
+.android-apps-box {
+    overflow-x: auto;
+}
+
+.android-app-box {
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+
+    max-width: 21em;
+    height: auto;
+    padding: 1em;
+    margin: 0;
+    
+    background-color: transparent;
+}
+.android-app-box:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+
+.android-app-icon {
+    position: absolute;
+    display: block;
+
+    width: 9em;
+    height: 9em;
+
+    border-radius: 1em;
+    
+    box-shadow: -0.05em 0.25em 0.5em 0.25em rgba(0, 0, 0, 0.466);
+}
+.android-app-icon-fake {
+    /* 144 (icon) + 32+1em (title)*/
+    height: calc(9em + 32px + 1em) !important;
+    /*Width is 0 when empty so padding is a dumb fix for that*/
+    width: 0 !important;
+    padding: 0;
+    padding-right: 9em;
+}
+.android-app-titlebox {
+    position: absolute;
+    display: flex;
+
+    flex-direction: column;
+
+    bottom: 0;
+    width: 9em;
+    height: auto;
+    max-height: 32px;
+    padding: 0;
+    padding-bottom: 1em;
+
+}
+.android-app-title {
+    line-height: 16px;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    color: var(--textColor);
+    font-family: Roboto, sans-serif;
+    font-size: 0.9em;
+}
+.android-app-title-under {
+    line-height: 16px;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.android-app-descbox {
+    position: relative;
+    display: block;
+    padding: 0;
+
+    width: 11em;
+    overflow: hidden;
+
+    transition: width 0.25s ease-in, padding 1s ;
+}
+.android-app-textbox {
+    position: relative;
+    display: block;
+    width: 11em;
+}
+
+.android-app-desc {
+    position: relative;
+    display: block;
+
+    margin: 0 0 0 1em;
+
+    word-break: normal;
+    text-align: left;
+    font-weight: 500;
+    color: var(--textColor);
+    font-family: Roboto, sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.025em;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gp-floatparent {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--c_Dark_Hover);
+    white-space: nowrap;
+}
+
+.gp-arrow {
+    height: 3em;
+    width: 3em;
+    margin-right: 1em;
+}
+
+.gp-text {
+    
+    margin-right: 12px;
+
+    font-weight: 700;
+    font-size: 2em;
+    font-family: Roboto, sans-serif;
+    color: var(--textColor);
+}
+.gpt-g {
+    font-weight: 700;
+}
+.gpt-p {
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 421px) {
+        
+
+    .android-apps-box {
+        font-size: 0.7em !important;
+    }
+
+
+}
+
+@media screen and (max-width: 821px) {
+        
+    .gp-floatparent {
+        flex-direction: row !important;
+    }
+
+    .android-apps-box {
+        font-size: 0.9em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .android-app-box {
+        width: 9em;
+        height: 9em;
+    }
+
+    .android-app-titlebox {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

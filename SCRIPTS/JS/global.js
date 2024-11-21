@@ -9,6 +9,35 @@ const MainContainer = document.getElementById("main-container");
 
 // FUNCTIONS
 
+function InsertBlogpostStyling(blogpostName)
+{
+    InsertStyling("root", `./BLOGPOSTS/${blogpostName}/${blogpostName}.css`)
+}
+
+function InsertStyling(filename, overwritepath = "")
+{
+    var linkElem = document.createElement("link");
+    linkElem.rel = "stylesheet";
+
+    linkElem.href = `./SCRIPTS/CSS/${filename}.css`;
+    if (overwritepath != "")
+        linkElem.href = overwritepath;
+
+    linkElem.media = "screen";
+    document.head.append(linkElem);
+
+    var linkElem_p = document.createElement("link");
+    linkElem_p.rel = "stylesheet";
+
+    linkElem.href = `./SCRIPTS/CSS/${filename}.css`;
+    if (overwritepath != "")
+        linkElem.href = overwritepath;
+
+    linkElem_p.media = "print";
+    document.head.append(linkElem_p);
+}
+
+
 function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
 {
     let floatparent = document.createElement("div");

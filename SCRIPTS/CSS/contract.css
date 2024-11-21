@@ -1,8 +1,10 @@
 
 /* Colorscheme */
 :root {
-    --c_Dark: #0d1117;
-    --c_Light: #f7faff;
+    --c_Dark: rgb(31, 31, 31);
+    --c_Dark_Hover: rgb(43, 43, 43);
+    --c_Light: #e6e6e6;
+    --c_Light_Hover: #f5f5f5;
 }
 
 /* Colorscheme Shorthands */
@@ -27,21 +29,65 @@ body {
     margin: 0px;
 }
 
+.hidden, .hide {
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    color: transparent !important;
+    background-color: transparent !important;
+}
+.minimized, .minim {
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.minimized-h {
+    width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.minimized-v {
+    height: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.no-select, .disable-select {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 
 
 /* Size */
-.fullwidth, .fw, .w-100p, .width-100, .width-full {
-    width: 100%;
+.fullwidth, .fw, .w-100p, .w-100, .width-100, .width-full {
+    min-width: 100% !important;
 }
 .width-auto, .w-auto, .w-a {
-    width: auto;
+    width: auto !important;
+}
+.fit-content, .fit-c {
+    width: fit-content !important;
 }
 
-.fullheight, .fh, .h-100p, .height-100, .height-full {
-    height: 100%;
+.fullheight, .fh, .h-100p,  .h-100, .height-100, .height-full {
+    min-height: 100% !important;
 }
 .height-auto, .h-auto, .h-a {
-    height: auto;
+    height: auto !important;
 }
 
 
@@ -98,5 +144,10 @@ body {
 }
 .center-items-v{
     align-items: center;
+}
+.center-items{
+    justify-content: center;
+    align-items: center;
+    gap: 0;
 }
 

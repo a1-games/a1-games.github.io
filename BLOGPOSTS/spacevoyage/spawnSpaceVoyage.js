@@ -2,6 +2,7 @@
 // keep it in a function as to not keep variables in memory
 function SpawnSpaceVoyage()
 {
+
     // row parent
     let rowparent = document.createElement("div");
     rowparent.className = "multi-parent showcase-row-full";
