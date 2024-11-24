@@ -9,6 +9,21 @@ const MainContainer = document.getElementById("main-container");
 
 // FUNCTIONS
 
+function SpawnDiv(parent, classes = "")
+{
+    let name = document.createElement("div");
+    name.className = `${classes}`;
+    parent.append(name);
+    return name;
+}
+function SpawnElement(parent, elemType, classes = "")
+{
+    let name = document.createElement(elemType);
+    name.className = `${classes}`;
+    parent.append(name);
+    return name;
+}
+
 function InsertBlogpostStyling(blogpostName)
 {
     InsertStyling("root", `./BLOGPOSTS/${blogpostName}/${blogpostName}.css`)
@@ -50,11 +65,11 @@ function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
 }
 
 
-function SpawnTextLine(parent, text, extraclass)
+function SpawnTextLine(parent, text, extraclasses = "")
 {
     let name = document.createElement("div");
     name.innerText = text;
-    name.className = `pi-text ${extraclass}`;
+    name.className = `${extraclasses}`;
     parent.append(name);
     return name;
 }

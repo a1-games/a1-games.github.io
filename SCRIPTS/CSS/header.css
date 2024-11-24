@@ -50,17 +50,20 @@
 
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    letter-spacing: 0.05em;
     color: white;
     text-shadow: 0 0 0.4em #000000FF;
 
 }
 
 .headername:hover {
-    text-shadow: 0 0 0.4em var(--textHover);
+    text-shadow: 0 0 0.4em var(--c_Link_Hover);
+    -webkit-text-stroke: 1px var(--c_Link_Hover);
+    paint-order: stroke fill;
     cursor: pointer;
 }
 .a1icon:hover {
-    filter: drop-shadow(0 0 0.4em var(--imgHover));
+    filter: drop-shadow(0 0 0.4em var(--c_Link_Hover));
     cursor: pointer;
 }
 

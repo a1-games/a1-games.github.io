@@ -1,6 +1,6 @@
 
 
-function SpawnHeaderName(parent, text, extraclass)
+function SpawnHeaderName(parent, text, extraclass = "")
 {
     let name = document.createElement("div");
     name.innerText = text;
@@ -18,9 +18,10 @@ function SpawnSpace(parent)
 function SpawnHeader()
 {
     
-    let headertab = document.createElement("div");
-    headertab.className = "header-tab";
-    MainContainer.prepend(headertab);
+    let blockHeader = SpawnDiv(MainContainer);
+    blockHeader.style.height = "6em";
+
+    let headertab = SpawnDiv(MainContainer, "header-tab");
     
     SpawnSpace(headertab);
     

@@ -1,6 +1,7 @@
 
 .android-apps-box {
     overflow-x: auto;
+    background-color: var(--c_Dark);
 }
 
 .android-app-box {
@@ -63,7 +64,7 @@
     vertical-align: middle;
     font-weight: 700;
     letter-spacing: 0.075em;
-    color: var(--textColor);
+    color: var(--c_Text_Light);
     font-family: Roboto, sans-serif;
     font-size: 0.9em;
 }
@@ -98,7 +99,7 @@
     word-break: normal;
     text-align: left;
     font-weight: 500;
-    color: var(--textColor);
+    color: var(--c_Text_Light);
     font-family: Roboto, sans-serif;
     font-size: 0.8em;
     letter-spacing: 0.025em;
@@ -110,7 +111,7 @@
 .gp-floatparent {
     padding: 1em;
     border-radius: 1em;
-    background-color: var(--c_Dark_Hover);
+    background-color: var(--c_Dark);
     white-space: nowrap;
 }
 
@@ -127,7 +128,7 @@
     font-weight: 700;
     font-size: 2em;
     font-family: Roboto, sans-serif;
-    color: var(--textColor);
+    color: var(--c_Text_Light);
 }
 .gpt-g {
     font-weight: 700;

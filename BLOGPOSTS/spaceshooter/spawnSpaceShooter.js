@@ -46,7 +46,7 @@ function SpawnSpaceShooter()
     dlgame.style.zIndex = 98;
     dlgame.style.cursor = "pointer";
     dlgame.onclick = () => {
-        DownloadFile(`blogposts/spaceshooter/Space Shooter Online.exe`, `Space Shooter Online.exe`);
+        DownloadFile(`BLOGPOSTS/spaceshooter/Space Shooter Online.exe`, `Space Shooter Online.exe`);
     };
     
 

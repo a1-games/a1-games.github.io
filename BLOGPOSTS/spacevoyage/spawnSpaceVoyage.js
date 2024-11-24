@@ -5,7 +5,7 @@ function SpawnSpaceVoyage()
 
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-full";
+    rowparent.className = "multi-parent showcase-row-threequarters";
     
     // scrolling parent
     let parent = document.createElement("div");
@@ -76,7 +76,43 @@ function SpawnSpaceVoyage()
 SpawnSpaceVoyage();   
     
     
+function SpawnSpaceVoyageInfo()
+{
+
+    // row parent
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters sv-display-row");
     
+    // scrolling parent
+    let imgParent = SpawnDiv(rowparent, "flex sv-banner");
+
+
+    let img1 = SpawnElement(imgParent, "img", "sv-banner-portrait");
+    img1.src = "FILES/IMG/old/spacevoyage/374x448_Thumbnail.png";
+    
+    let img2 = SpawnElement(imgParent, "img", "sv-banner-landscape");
+    img2.src = "FILES/IMG/old/spacevoyage/460x215_Thumbnail.png";
+    
+    imgParent.append(img1);
+    imgParent.append(img2);
+
+
+
+    
+    // scrolling parent
+    let infoParent = SpawnDiv(rowparent, "sv-info-container");
+
+    SpawnTextLine(infoParent, "a1games presents", "sv-presents");
+    SpawnTextLine(infoParent, "Space Voyage", "sv-ethno");
+
+    SpawnTextLine(infoParent, "Try the demo on Steam now!", "sv-small-title");
+
+    SpawnTextLine(infoParent, "Old version on itch.io", "sv-small-title");
+    
+    
+    MainContainer.append(rowparent);
+}
+
+SpawnSpaceVoyageInfo();   
     
     
     

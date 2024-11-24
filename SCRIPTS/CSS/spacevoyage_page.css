@@ -50,22 +50,49 @@ body {
 
 
 .sv-banner {
-    margin: 4em;
-    margin-left: 0;
+    margin: auto;
+    margin-right: 4em;
     border-radius: 0.75em;
     overflow: hidden;
 }
 
+.sv-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 0;
+    padding: 1em;
+    background-color: transparent;
+    color: var(--c_Text_Dark);
+}
 
+.sv-presents {
+    font-size: 1.25rem;
+    font-family: RobotoLight, sans-serif;
+    letter-spacing: 0.05rem;
+}
 
+.sv-ethno {
+    font-size: 2.25rem;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    font-family: Ethnocentric;
+}
+.sv-small-title {
+    font-size: 1rem;
+    font-family: RobotoLight,sans-serif;
+}
 
 .sv-display-row {
     flex-direction: row;
+    background-color: var(--c_Light);
 }
 
 .sv-banner-portrait {
-    height: 24em;
-    width: 19em;
+    height: 18em;
+    width: 14em;
 }
 .sv-banner-landscape {
     height: 10em;

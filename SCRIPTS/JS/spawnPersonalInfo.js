@@ -32,22 +32,24 @@ function SpawnPersonalInfo(parent)
     piContainer.className = "pi-container pi-folded";
     parent.append(piContainer);
     
+    let keepSizeContainer = SpawnDiv(piContainer, "pi-keepsize");
 
 
-    SpawnTextLine(piContainer, `${GetMyAge()} years old, He/Him`);
-    SpawnTextLine(piContainer, `Aarhus Denmark`);
-    SpawnTextLine(piContainer, `Coding, Game Development`);
+    SpawnTextLine(keepSizeContainer, `${GetMyAge()} years old, He/Him`, "pi-text");
+    SpawnTextLine(keepSizeContainer, `Aarhus Denmark`, "pi-text");
+    SpawnTextLine(keepSizeContainer, `Coding, Game Development`, "pi-text");
 
-    SpawnTextLine(piContainer, "", "").style.height = "0.2em";
+    SpawnTextLine(keepSizeContainer, "", "pi-text").style.height = "0.2em";
 
-    SpawnTextLine(piContainer, "Download my resume", "clickable-link").onclick = () => {
+    SpawnTextLine(keepSizeContainer, "Download my resume", "pi-text clickable-link").onclick = () => {
         DownloadFile(`FILES/CV/A_J_Resume.pdf`, `Asbjørn Johnsen - Resume.pdf`);
     };
 
-    SpawnTextLine(piContainer, "", "").style.height = "0.2em";
+    SpawnTextLine(keepSizeContainer, "", "pi-text").style.height = "0.2em";
 
-    SpawnTextLine(piContainer, "C# · Java · Python · Javascript · HTML & CSS · SQL · JSON · Unity · Unity3D · MonoGame · PyGame · React.js · Node.js", "pi-text-small");
-    SpawnTextLine(piContainer, "", "pi-text-small");
+    SpawnTextLine(keepSizeContainer, "C# · Java · Python · Javascript · HTML & CSS · SQL · JSON · Unity · Unity3D · MonoGame · PyGame · React.js · Node.js", "pi-text pi-text-small");
+    
+    SpawnTextLine(keepSizeContainer, "", "pi-text").style.height = "0.2em";
 
 
     return piContainer;

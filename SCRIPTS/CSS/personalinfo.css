@@ -4,21 +4,26 @@
     position: absolute;
     display: block;
     top: 4em;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    height: 10em;
-    width: 100%;
+    height: 10.5em;
+    width: 12em;
 
     z-index: -1;
 
-    background-color: #ffffffcc;
+    background-color: var(--c_Light);
     border-radius: 0.25em;
 
     transition: 0.5s ease-in-out;
     overflow: hidden;
 
-    box-shadow: 0 0.2em 1em 0.05em  var(--imgHover);
+    box-shadow: 0 0.2em 1em 0.05em  var(--c_Dark);
     outline: 2px solid white;
+}
+.pi-keepsize {
+    height: 10.5em;
+    width: 12em;
 }
 
 
@@ -31,11 +36,9 @@
         font-size: 1.8em;
         width: 90vw ;
 
-        left: 50%;
-        transform: translateX(-50%);
     }
     .pi-folded {
-        top: 1em !important;
+        top: 2em !important;
     }
     
 }
@@ -52,7 +55,7 @@
 
 
 .clickable-link {
-    color: var(--textHover) !important;
+    color: var(--c_Link_Hover) !important;
     cursor: pointer !important;
 }
 
@@ -64,8 +67,8 @@
     margin: 0.4em 0.8em;
     font-size: 0.8em;
 
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    color: var(--c_Text_Dark);
+    font-family: RobotoLight, sans-serif;
 
     font-weight: 600;
 
