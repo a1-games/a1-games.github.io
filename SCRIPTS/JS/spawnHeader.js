@@ -18,8 +18,7 @@ function SpawnSpace(parent)
 function SpawnHeader()
 {
     
-    let blockHeader = SpawnDiv(MainContainer);
-    blockHeader.style.height = "6em";
+    let headerBuffer = SpawnDiv(MainContainer, "header-buffer");
 
     let headertab = SpawnDiv(MainContainer, "header-tab");
     

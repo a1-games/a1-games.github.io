@@ -8,7 +8,8 @@
 /* keep this the same height as header-tab !! */
 .header-buffer {
     height: 6em;
-    background: linear-gradient(0deg, rgba(117, 126, 146) 0%, rgba(204, 217, 224) 50%, rgba(255,255,255,1) 100%);
+    background-image: url("../../FILES/IMG/old/spacevoyage/bckg.png");
+    background-size: cover;
 }
 
 .header-tab {
@@ -43,7 +44,7 @@
 
 .headername {
     width: auto;
-    height: 1em;
+    height: auto;
     margin: auto 1em;
 
     text-align: center;
@@ -51,7 +52,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
-    color: white;
+    color: var(--c_Text_Light);
     text-shadow: 0 0 0.4em #000000FF;
 
 }

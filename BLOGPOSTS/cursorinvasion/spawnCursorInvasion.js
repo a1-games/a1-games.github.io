@@ -7,7 +7,7 @@ function SpawnCursorInvasion()
     let rowparent = document.createElement("div");
     rowparent.className = "multi-parent showcase-row-half";
     
-    SpawnImage(`cursorinvasion`, `background4.png`, rowparent).classList.add("curinv-background");
+    SpawnBlogpostImage(`cursorinvasion`, `background4.png`, rowparent).classList.add("curinv-background");
 
 
     // floating parent
@@ -18,7 +18,7 @@ function SpawnCursorInvasion()
 
     
     // logo
-    let logo = SpawnImage(`cursorinvasion`, `gamelogo.png`, floatparent);
+    let logo = SpawnBlogpostImage(`cursorinvasion`, `gamelogo.png`, floatparent);
     logo.className = "float-logo-rectangle";
     //logo.style.margin = "auto auto 3em auto";
     logo.style.cursor = "pointer";
@@ -26,7 +26,7 @@ function SpawnCursorInvasion()
         window.open("https://a1games.fun/pygameplayer.html");
     };
     // made in
-    let madein = SpawnImage(`pygameengine`, `madeinpge.png`, floatparent);
+    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, floatparent);
     madein.className = "madeinpge shape-shadow-black";
     madein.style.cursor = "pointer";
     madein.onclick = () => {
@@ -36,28 +36,28 @@ function SpawnCursorInvasion()
 
     // trees
 
-    let tree1 = SpawnImage(`cursorinvasion`, `tree.png`, rowparent);
+    let tree1 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
     tree1.classList.add("curinv-tree");
     tree1.style = "left: 25vw; top: 74px;";
 
-    let tree2 = SpawnImage(`cursorinvasion`, `tree.png`, rowparent);
+    let tree2 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
     tree2.classList.add("curinv-tree");
     tree2.style = "left: 35vw; bottom: 74px;";
 
-    let tree3 = SpawnImage(`cursorinvasion`, `tree.png`, rowparent);
+    let tree3 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
     tree3.classList.add("curinv-tree");
     tree3.style = "left: 65vw; bottom: 180px;";
     
     
         
     
-    let spider = SpawnImage(`cursorinvasion`, `spider.png`, rowparent);
+    let spider = SpawnBlogpostImage(`cursorinvasion`, `spider.png`, rowparent);
     spider.classList.add("curinv-enemy");
     spider.classList.add("spider");
     spider.style.left = 300 + "px";
     spider.style.top =  100 + "px";
 
-    let zombie = SpawnImage(`cursorinvasion`, `zombie.png`, rowparent);
+    let zombie = SpawnBlogpostImage(`cursorinvasion`, `zombie.png`, rowparent);
     zombie.classList.add("curinv-enemy");
     zombie.classList.add("zombie");
     zombie.style.left = 800 + "px";

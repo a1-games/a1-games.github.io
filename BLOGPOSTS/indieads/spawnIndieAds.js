@@ -42,11 +42,11 @@ function SpawnIndieAds()
     logobox.classList.add("indieads-logobox");
 
     // indieads logo
-    let ialogo = SpawnImage(`indieads`, `handshake.png`, logobox);
+    let ialogo = SpawnBlogpostImage(`indieads`, `handshake.png`, logobox);
     ialogo.className = "float-logo-square";
 
     // indieads title
-    let indadlogo = SpawnImage(`indieads`, `indieadslogo.png`, logobox);
+    let indadlogo = SpawnBlogpostImage(`indieads`, `indieadslogo.png`, logobox);
     indadlogo.className = "float-logo-rectangle shape-shadow-black indieads-title";
     indadlogo.style.margin = "auto";
 

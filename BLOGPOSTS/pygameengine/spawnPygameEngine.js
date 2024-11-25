@@ -24,11 +24,11 @@ function SpawnPygameEngine()
     logobox.classList.add("pygameengine-floatparent");
 
     // pygame x a1
-    let pyxa1logo = SpawnImage(`pygameengine`, `pygameXa1.png`, logobox);
+    let pyxa1logo = SpawnBlogpostImage(`pygameengine`, `pygameXa1.png`, logobox);
     pyxa1logo.className = "pygamexa1 shape-shadow-black";
 
     // title
-    let title = SpawnImage(`pygameengine`, `textlogo.png`, logobox);
+    let title = SpawnBlogpostImage(`pygameengine`, `textlogo.png`, logobox);
     title.className = "float-logo-rectangle shape-shadow-black pygame-title";
     
     // comment
@@ -64,14 +64,14 @@ function SpawnPygameEngine()
         space.style.height = "0.5em";
         return space;
     }
-    SpawnImage(`pygameengine`, `2.png`, parent);
+    SpawnBlogpostImage(`pygameengine`, `2.png`, parent);
 
     //parent.append(getSpaceX());
-    SpawnImage(`pygameengine`, `githubdesc.jpg`, parent);
+    SpawnBlogpostImage(`pygameengine`, `githubdesc.jpg`, parent);
     //parent.append(getSpaceX());
-    SpawnImage(`pygameengine`, `3.png`, parent);
+    SpawnBlogpostImage(`pygameengine`, `3.png`, parent);
     //parent.append(getSpaceX());
-    SpawnImage(`pygameengine`, `1.png`, parent);
+    SpawnBlogpostImage(`pygameengine`, `1.png`, parent);
 
     
     

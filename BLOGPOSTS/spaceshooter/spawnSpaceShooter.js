@@ -23,7 +23,7 @@ function SpawnSpaceShooter()
 
 
     // title
-    let title = SpawnImage(`spaceshooter`, `title.png`, gameIcon_Parent);
+    let title = SpawnBlogpostImage(`spaceshooter`, `title.png`, gameIcon_Parent);
     title.className = "float-logo-rectangle shape-shadow-black";
     //title.style.margin = "auto auto 3em auto";
     title.style.cursor = "pointer";
@@ -31,7 +31,7 @@ function SpawnSpaceShooter()
         window.open("https://a1-games.itch.io/space-shooter");
     };
     // made in
-    let madein = SpawnImage(`pygameengine`, `madeinpge.png`, gameIcon_Parent);
+    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, gameIcon_Parent);
     madein.className = "madeinpge shape-shadow-black";
     madein.style.cursor = "pointer";
     madein.onclick = () => {
@@ -40,7 +40,7 @@ function SpawnSpaceShooter()
     
     
     // download
-    let dlgame = SpawnImage(`spaceshooter`, `downloadIcon.png`, gameInfo_Parent);
+    let dlgame = SpawnBlogpostImage(`spaceshooter`, `downloadIcon.png`, gameInfo_Parent);
     dlgame.className = "shape-shadow-black ss-dl-button";
     dlgame.style.margin = "auto auto auto 8em";
     dlgame.style.zIndex = 98;
@@ -57,7 +57,7 @@ function SpawnSpaceShooter()
     let scrollparent = document.createElement("div");
     scrollparent.style = "margin: 0px; position: absolute; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
     rowparent.append(scrollparent);
-    //SpawnImage(`spaceshooter`, `background.png`, scrollparent).classList.add("space-background");
+    //SpawnBlogpostImage(`spaceshooter`, `background.png`, scrollparent).classList.add("space-background");
 
 
 
@@ -70,23 +70,23 @@ function SpawnSpaceShooter()
     laserscroll.className = "laser-container";
     laserclip.append(laserscroll);
 
-    SpawnImage(`spaceshooter`, `spaceship3.png`, rowparent).classList.add("spaceship");
+    SpawnBlogpostImage(`spaceshooter`, `spaceship3.png`, rowparent).classList.add("spaceship");
 
-    SpawnImage(`spaceshooter`, `laserbullet_1.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_2.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_3.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_4.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_5.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_6.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_7.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_1.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_2.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_3.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_4.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_5.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_6.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_7.png`, laserscroll).classList.add("laser-bullet");
 
-    SpawnImage(`spaceshooter`, `laserbullet_1.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_2.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_3.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_4.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_5.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_6.png`, laserscroll).classList.add("laser-bullet");
-    SpawnImage(`spaceshooter`, `laserbullet_7.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_1.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_2.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_3.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_4.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_5.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_6.png`, laserscroll).classList.add("laser-bullet");
+    SpawnBlogpostImage(`spaceshooter`, `laserbullet_7.png`, laserscroll).classList.add("laser-bullet");
 
 
 

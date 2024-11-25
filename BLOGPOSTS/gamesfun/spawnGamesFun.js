@@ -67,7 +67,7 @@ function SpawnGamesFun()
     let aligner = SpawnMultiRow(rowparent)
     aligner.classList.add("gamesfun-align");
 
-    let title = SpawnImage(`gamesfun`, `textlogo.png`, aligner);
+    let title = SpawnBlogpostImage(`gamesfun`, `textlogo.png`, aligner);
     title.className = "shape-shadow-black gamesfun-title";
 
 

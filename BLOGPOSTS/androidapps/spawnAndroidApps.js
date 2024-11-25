@@ -3,12 +3,11 @@
 function SpawnAndroidApps()
 {
     // row parent
-    let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-threequarters";
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters");
     
     // scrolling parent
     let parent = document.createElement("div");
-    parent.className = "multi-parent fw fh flex center-items android-apps-box";
+    parent.className = "multi-parent fw fh flex center-items android-apps-container";
     
     BuildAppVisual(parent, "crabzoo", "Crab Zoo", "Incremental Clicker",
         "I gave myself one week to create an android game " +
@@ -73,7 +72,6 @@ function SpawnAndroidApps()
     }
 
     rowparent.append(parent);
-    MainContainer.append(rowparent);
 }
 
 SpawnAndroidApps();   
@@ -84,7 +82,7 @@ SpawnAndroidApps();
 function BuildAppVisual(parent, appname, apptitle, undertitle, description, hideOnSpawn = true)
 {
     let containingBox = document.createElement("div");
-    containingBox.className = "android-app-box true-center no-select"
+    containingBox.className = "android-app-box no-select"
 
     // absolute image
     let icon = document.createElement("img");

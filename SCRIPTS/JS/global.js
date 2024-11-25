@@ -7,23 +7,34 @@ const MainContainer = document.getElementById("main-container");
 
 
 
-// FUNCTIONS
+// NON-SPECIFIC
+function SpawnElement(parent, elemType, classes = "")
+{
+    let elem = document.createElement(elemType);
+    elem.className = `${classes}`;
+    parent.append(elem);
+    return elem;
+}
 
 function SpawnDiv(parent, classes = "")
 {
-    let name = document.createElement("div");
-    name.className = `${classes}`;
-    parent.append(name);
-    return name;
-}
-function SpawnElement(parent, elemType, classes = "")
-{
-    let name = document.createElement(elemType);
-    name.className = `${classes}`;
-    parent.append(name);
-    return name;
+    let div = document.createElement("div");
+    div.className = `${classes}`;
+    parent.append(div);
+    return div;
 }
 
+function SpawnImage(parent, src, classes = "")
+{
+    let image = document.createElement("img");
+    image.src = src;
+    image.className = classes;
+    parent.append(image);
+    return image;
+}
+
+
+// PROJECT SPECIFIC
 function InsertBlogpostStyling(blogpostName)
 {
     InsertStyling("root", `./BLOGPOSTS/${blogpostName}/${blogpostName}.css`)
@@ -89,7 +100,7 @@ function SpawnCommentBox(text, parent, bckgrndColor = "")
 }
 
 
-function SpawnImage(blogpostname, imgname, parent)
+function SpawnBlogpostImage(blogpostname, imgname, parent)
 {
     let image = document.createElement("img");
     image.src = `BLOGPOSTS/${blogpostname}/img/${imgname}`;

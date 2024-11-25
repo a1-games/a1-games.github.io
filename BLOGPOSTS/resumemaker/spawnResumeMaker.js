@@ -27,7 +27,7 @@ function SpawnResumeMaker()
     
 
     // indieads
-    let indadlogo = SpawnImage(`resumemaker`, `resume_maker_title.png`, floatparent);
+    let indadlogo = SpawnBlogpostImage(`resumemaker`, `resume_maker_title.png`, floatparent);
     indadlogo.className = "float-logo-rectangle shape-shadow-black";
     indadlogo.style.margin = "auto auto auto 2em";
 
@@ -38,10 +38,10 @@ function SpawnResumeMaker()
     scrollparent.classList.add("resmak-scroll");
 
 
-    SpawnImage(`resumemaker`, `1.png`, scrollparent).classList.add("resmak-block");
-    SpawnImage(`resumemaker`, `2.png`, scrollparent).classList.add("resmak-block");
-    SpawnImage(`resumemaker`, `3.png`, scrollparent).classList.add("resmak-block");
-    SpawnImage(`resumemaker`, `4.jpg`, scrollparent).classList.add("resmak-block");
+    SpawnBlogpostImage(`resumemaker`, `1.png`, scrollparent).classList.add("resmak-block");
+    SpawnBlogpostImage(`resumemaker`, `2.png`, scrollparent).classList.add("resmak-block");
+    SpawnBlogpostImage(`resumemaker`, `3.png`, scrollparent).classList.add("resmak-block");
+    SpawnBlogpostImage(`resumemaker`, `4.jpg`, scrollparent).classList.add("resmak-block");
 
 
     MainContainer.append(rowparent);

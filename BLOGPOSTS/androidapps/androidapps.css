@@ -1,5 +1,5 @@
 
-.android-apps-box {
+.android-apps-container {
     overflow-x: auto;
     background-color: var(--c_Dark);
 }
@@ -146,7 +146,7 @@
 @media screen and (max-width: 421px) {
         
 
-    .android-apps-box {
+    .android-apps-container {
         font-size: 0.7em !important;
     }
 
@@ -159,7 +159,7 @@
         flex-direction: row !important;
     }
 
-    .android-apps-box {
+    .android-apps-container {
         font-size: 0.9em;
         display: flex;
         flex-wrap: wrap;

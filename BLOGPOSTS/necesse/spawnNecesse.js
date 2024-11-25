@@ -26,7 +26,7 @@ function SpawnNecesse()
     //logobox.classList.add("spacevoyage-logobox");
 
     // necesse logo
-    let neclogo = SpawnImage(`necesse`, `necesse_logo.png`, logobox);
+    let neclogo = SpawnBlogpostImage(`necesse`, `necesse_logo.png`, logobox);
     neclogo.className = "float-logo-rectangle shape-shadow-black";
 
     // internship line
@@ -54,30 +54,30 @@ function SpawnNecesse()
 
 
     
-    SpawnImage(`necesse`, `1.jpg`, parent);
-    SpawnImage(`necesse`, `2.jpg`, parent);
-    SpawnImage(`necesse`, `3.jpg`, parent);
-    SpawnImage(`necesse`, `4.jpg`, parent);
-    SpawnImage(`necesse`, `5.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `3.png`, parent);
-    //SpawnImage(`spacevoyage`, `8.gif`, parent);
-    //SpawnImage(`spacevoyage`, `6.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `7.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `11.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `9.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `1.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `2.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `3.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `4.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `5.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `3.png`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `8.gif`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `6.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `7.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `11.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `9.jpg`, parent);
 
     // create the same row twice to make the infinite scroll work
-    SpawnImage(`necesse`, `1.jpg`, parent);
-    SpawnImage(`necesse`, `2.jpg`, parent);
-    SpawnImage(`necesse`, `3.jpg`, parent);
-    SpawnImage(`necesse`, `4.jpg`, parent);
-    SpawnImage(`necesse`, `5.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `3.png`, parent);
-    //SpawnImage(`spacevoyage`, `8.gif`, parent);
-    //SpawnImage(`spacevoyage`, `6.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `7.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `11.jpg`, parent);
-    //SpawnImage(`spacevoyage`, `9.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `1.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `2.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `3.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `4.jpg`, parent);
+    SpawnBlogpostImage(`necesse`, `5.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `3.png`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `8.gif`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `6.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `7.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `11.jpg`, parent);
+    //SpawnBlogpostImage(`spacevoyage`, `9.jpg`, parent);
 
     
     rowparent.append(parent);

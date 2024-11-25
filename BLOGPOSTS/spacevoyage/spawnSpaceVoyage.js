@@ -21,17 +21,19 @@ function SpawnSpaceVoyage()
     };
 
     // logo box
-    let logobox = SpawnMultiRow(floatparent);
-    logobox.classList.add("spacevoyage-logobox");
+    //let logobox = SpawnMultiRow(floatparent);
+    //logobox.classList.add("spacevoyage-logobox");
 
 
     // steam logo
-    let steamlogo = SpawnImage(`spacevoyage`, `steamlogo.png`, logobox);
-    steamlogo.className = "float-logo-square";
+    //let steamlogo = SpawnBlogpostImage(`spacevoyage`, `steamlogo.png`, logobox);
+    //steamlogo.className = "float-logo-square";
     
     // sv logo
-    let svlogo = SpawnImage(`spacevoyage`, `sv_logo.png`, logobox);
-    svlogo.className = "float-logo-rectangle shape-shadow-black";
+    //let svlogo = SpawnBlogpostImage(`spacevoyage`, `sv_logo.png`, logobox);
+    //svlogo.className = "float-logo-rectangle shape-shadow-black";
+
+
 
     // comment
     SpawnCommentBox(
@@ -48,24 +50,24 @@ function SpawnSpaceVoyage()
 
 
     
-    SpawnImage(`spacevoyage`, `1.jpg`, parent);
-    SpawnImage(`spacevoyage`, `2.gif`, parent);
-    SpawnImage(`spacevoyage`, `3.png`, parent);
-    SpawnImage(`spacevoyage`, `8.gif`, parent);
-    SpawnImage(`spacevoyage`, `6.jpg`, parent);
-    SpawnImage(`spacevoyage`, `7.jpg`, parent);
-    SpawnImage(`spacevoyage`, `11.jpg`, parent);
-    SpawnImage(`spacevoyage`, `9.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `1.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `2.gif`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `3.png`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `8.gif`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `6.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `7.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `11.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `9.jpg`, parent);
 
     // create the same row twice to make the infinite scroll work
-    SpawnImage(`spacevoyage`, `1.jpg`, parent);
-    SpawnImage(`spacevoyage`, `2.gif`, parent);
-    SpawnImage(`spacevoyage`, `3.png`, parent);
-    SpawnImage(`spacevoyage`, `8.gif`, parent);
-    SpawnImage(`spacevoyage`, `6.jpg`, parent);
-    SpawnImage(`spacevoyage`, `7.jpg`, parent);
-    SpawnImage(`spacevoyage`, `11.jpg`, parent);
-    SpawnImage(`spacevoyage`, `9.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `1.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `2.gif`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `3.png`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `8.gif`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `6.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `7.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `11.jpg`, parent);
+    SpawnBlogpostImage(`spacevoyage`, `9.jpg`, parent);
 
     
     
@@ -73,7 +75,6 @@ function SpawnSpaceVoyage()
     MainContainer.append(rowparent);
 }
 
-SpawnSpaceVoyage();   
     
     
 function SpawnSpaceVoyageInfo()
@@ -104,15 +105,27 @@ function SpawnSpaceVoyageInfo()
     SpawnTextLine(infoParent, "a1games presents", "sv-presents");
     SpawnTextLine(infoParent, "Space Voyage", "sv-ethno");
 
-    SpawnTextLine(infoParent, "Try the demo on Steam now!", "sv-small-title");
+    SpawnTextLine(infoParent, "Get it on steam or try it on itch.io", "sv-small-title");
 
-    SpawnTextLine(infoParent, "Old version on itch.io", "sv-small-title");
-    
+
+    let iconsContainer = SpawnDiv(infoParent, "flex fd-h")
+    // steam logo
+    let steamlogo = SpawnImage(iconsContainer, `FILES/IMG/ICON/steam.png`, "clickable-logo-small");
+    steamlogo.onclick = () => {
+        window.open("https://store.steampowered.com/app/2101690/Space_Voyage_The_Puzzle_Game/");
+    };
+    // steam logo
+    let itchlogo = SpawnImage(iconsContainer, `FILES/IMG/ICON/itch.png`, "clickable-logo-small");
+    itchlogo.onclick = () => {
+        window.open("https://a1creator.itch.io/spacevoyage");
+    };
+
     
     MainContainer.append(rowparent);
 }
 
 SpawnSpaceVoyageInfo();   
+SpawnSpaceVoyage();   
     
     
     

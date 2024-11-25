@@ -1,0 +1,16 @@
+
+.clickable-logo-small {
+    height: 3em;
+    width: 3em;
+    margin: 1em;
+    cursor: pointer;
+
+    border-radius: 1.5em;
+    filter: drop-shadow(-1px 1px 1px var(--c_Dark));
+}
+
+
+
+
+
+
