@@ -1,6 +1,7 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* import completely destroys loading time
+@import url(//fonts.google.com/specimen/Bubblegum+Sans);
+@import url(//fonts.google.com/specimen/Roboto);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
 
 @font-face {
     font-family: BubblegumSans;
@@ -46,5 +47,3 @@
     src: url(../../FILES/FONTS/Roboto-Bold.ttf);
 }
 
-@import url(//fonts.google.com/specimen/Bubblegum+Sans);
-@import url(//fonts.google.com/specimen/Roboto);

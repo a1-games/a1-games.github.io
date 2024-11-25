@@ -37,7 +37,7 @@ function SpawnImage(parent, src, classes = "")
 // PROJECT SPECIFIC
 function InsertBlogpostStyling(blogpostName)
 {
-    InsertStyling("root", `./BLOGPOSTS/${blogpostName}/${blogpostName}.css`)
+    InsertStyling("undefined", `./BLOGPOSTS/${blogpostName}/${blogpostName}.css`)
 }
 
 function InsertStyling(filename, overwritepath = "")

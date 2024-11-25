@@ -19,7 +19,7 @@ function SpawnSplitTheBill()
     //githublogo.className = "float-logo-square";
 
     // indieads
-    let indadlogo = SpawnImage(`splitthebill`, `stb_title.png`, floatparent);
+    let indadlogo = SpawnBlogpostImage(`splitthebill`, `stb_title.png`, floatparent);
     indadlogo.className = "float-logo-rectangle shape-shadow-black";
     indadlogo.style.margin = "auto auto auto auto";
 
@@ -34,9 +34,9 @@ function SpawnSplitTheBill()
     scrollparent.classList.add("stb-scroll");
 
 
-    SpawnImage(`splitthebill`, `1.png`, scrollparent).classList.add("stb-block");
-    SpawnImage(`splitthebill`, `2.png`, scrollparent).classList.add("stb-block");
-    SpawnImage(`splitthebill`, `3.png`, scrollparent).classList.add("stb-block");
+    SpawnBlogpostImage(`splitthebill`, `1.png`, scrollparent).classList.add("stb-block");
+    SpawnBlogpostImage(`splitthebill`, `2.png`, scrollparent).classList.add("stb-block");
+    SpawnBlogpostImage(`splitthebill`, `3.png`, scrollparent).classList.add("stb-block");
 
 
     rowparent.append(scrollparent);
