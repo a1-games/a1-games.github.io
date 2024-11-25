@@ -69,6 +69,7 @@
     font-size: 0.9em;
 }
 .android-app-title-under {
+    font-family: RobotoLight, sans-serif;
     line-height: 16px;
     font-size: 0.6em;
     font-weight: 300;
@@ -100,7 +101,7 @@
     text-align: left;
     font-weight: 500;
     color: var(--c_Text_Light);
-    font-family: Roboto, sans-serif;
+    font-family: RobotoLight, sans-serif;
     font-size: 0.8em;
     letter-spacing: 0.025em;
 
