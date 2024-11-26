@@ -5,7 +5,7 @@ function SpawnNecesse()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-full";
+    rowparent.className = "multi-parent showcase-row-full necesse-showcase";
     
     // scrolling parent
     let parent = document.createElement("div");

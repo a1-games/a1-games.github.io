@@ -1,7 +1,6 @@
 
 .android-apps-container {
     overflow-x: auto;
-    background-color: var(--c_Dark);
 }
 
 .android-app-box {
@@ -18,8 +17,8 @@
     background-color: transparent;
 }
 .android-app-box:hover {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 0.5em;
+    background-color: var(--c_Light_Hover);
+    border-radius: 1em;
     cursor: pointer;
 }
 
@@ -32,8 +31,9 @@
     height: 9em;
 
     border-radius: 1em;
-    
-    box-shadow: -0.05em 0.25em 0.5em 0.25em rgba(0, 0, 0, 0.466);
+
+    box-shadow: 0 1px 2px 0 var(--c_Dark), 0 1px 3px 1px #FFFFFF00;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
 }
 .android-app-icon-fake {
     /* 144 (icon) + 32+1em (title)*/
@@ -64,15 +64,14 @@
     vertical-align: middle;
     font-weight: 700;
     letter-spacing: 0.075em;
-    color: var(--c_Text_Light);
     font-family: Roboto, sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 .android-app-title-under {
     font-family: RobotoLight, sans-serif;
     line-height: 16px;
-    font-size: 0.6em;
-    font-weight: 300;
+    font-size: 0.7em;
+    font-weight: 500;
 }
 
 .android-app-descbox {
@@ -100,7 +99,6 @@
     word-break: normal;
     text-align: left;
     font-weight: 500;
-    color: var(--c_Text_Light);
     font-family: RobotoLight, sans-serif;
     font-size: 0.8em;
     letter-spacing: 0.025em;
@@ -108,12 +106,12 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-
-.gp-floatparent {
-    padding: 1em;
-    border-radius: 1em;
-    background-color: var(--c_Dark);
+.android-info-container {
     white-space: nowrap;
+    cursor: pointer;
+}
+.gp-container {
+    padding: 2em 0 3em 0;
 }
 
 .gp-arrow {
@@ -123,13 +121,12 @@
 }
 
 .gp-text {
-    
+    margin: auto;
     margin-right: 12px;
-
+    text-align: center;
     font-weight: 700;
     font-size: 2em;
     font-family: Roboto, sans-serif;
-    color: var(--c_Text_Light);
 }
 .gpt-g {
     font-weight: 700;
@@ -158,6 +155,9 @@
         
     .gp-floatparent {
         flex-direction: row !important;
+    }
+    .gp-container {
+        padding: 1em 0 2em 0;
     }
 
     .android-apps-container {

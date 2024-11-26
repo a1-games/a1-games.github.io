@@ -67,10 +67,12 @@ function InsertStyling(filename, overwritepath = "")
 function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
 {
     let floatparent = document.createElement("div");
-    floatparent.style = "align-items: center;";
+    floatparent.style.alignItems = "center";
+    floatparent.className = `flex m-auto multi-parent float-parent-${leftrightmiddle}`;
     if (multicolum)
-        floatparent.style = "display: flex; flex-direction: column; position: auto; margin: auto; align-items: center;";
-    floatparent.className = `multi-parent float-parent-${leftrightmiddle}`;
+        floatparent.classList.add("fd-v");
+    else
+        floatparent.classList.add("fd-h");
     parent.append(floatparent);
     return floatparent;
 }

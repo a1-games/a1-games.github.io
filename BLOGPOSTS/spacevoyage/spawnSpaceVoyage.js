@@ -81,7 +81,7 @@ function SpawnSpaceVoyageInfo()
 {
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters sv-display-row");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit sv-display-row");
     
     // scrolling parent
     let imgParent = SpawnDiv(rowparent, "flex sv-banner");
@@ -100,13 +100,15 @@ function SpawnSpaceVoyageInfo()
 
     
     // scrolling parent
-    let infoParent = SpawnDiv(rowparent, "sv-info-container");
+    let infoParent = SpawnDiv(rowparent, "info-container c-f-d");
 
+    SpawnDiv(infoParent, "p-em-half hidden-pc");
     SpawnTextLine(infoParent, "a1games presents", "sv-presents");
     SpawnTextLine(infoParent, "Space Voyage", "sv-ethno");
-
+    SpawnDiv(infoParent, "p-em-half");
     SpawnTextLine(infoParent, "Get it on steam or try it on itch.io", "sv-small-title");
 
+    SpawnDiv(infoParent, "p-em-half");
 
     let iconsContainer = SpawnDiv(infoParent, "flex fd-h")
     // steam logo

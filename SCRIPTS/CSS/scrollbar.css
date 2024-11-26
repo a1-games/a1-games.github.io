@@ -5,7 +5,7 @@
 /* width */
 ::-webkit-scrollbar {
     scrollbar-width: thin;
-    background-color: var(--c_Dark);
+    background-color: var(--c_Light);
     -webkit-overflow-scrolling: touch;
     /*display:none;*/
 }
@@ -15,19 +15,19 @@
 }*/
 /* Handle */
 ::-webkit-scrollbar-thumb:horizontal {
-    background: var(--c_Light);
+    background: var(--c_Dark);
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:vertical {
-    background: var(--c_Light);
+    background: var(--c_Dark);
     border-radius: 2px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:horizontal:hover {
-    background: var(--c_Light_Hover);
+    background: var(--c_Dark_Hover);
 }
 ::-webkit-scrollbar-thumb:vertical:hover {
-    background: var(--c_Light_Hover);
+    background: var(--c_Dark_Hover);
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar {

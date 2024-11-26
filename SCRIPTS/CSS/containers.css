@@ -1,11 +1,32 @@
 
 
 
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    .info-container {
+        margin-left: auto !important;
+    }
+}
+
+
+
+
 
 #main-container {
     overflow: auto;
     display: block;
     position: relative;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 0;
+    background-color: transparent;
+    white-space: nowrap;
 }
 
 .multi-parent {
@@ -38,27 +59,31 @@
 
 
 
+.showcase-row-nolimit,
+.showcase-row-full,
+.showcase-row-threequarters,
+.showcase-row-half,
+.showcase-row-smallest
+{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.showcase-row-nolimit {
+    height: auto;
+    margin: 3em 0;
+}
 .showcase-row-full {
     height: 32em;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
-
 .showcase-row-threequarters {
     height: 24em;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
-
 .showcase-row-half {
     height: 16em;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 .showcase-row-smallest {
     height: 10em;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 

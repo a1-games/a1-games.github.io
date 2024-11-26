@@ -3,11 +3,13 @@
 function SpawnAndroidApps()
 {
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit flex fd-v");
     
-    // scrolling parent
+    SpawnAndroidAppsInfo(rowparent);   
+    
+
     let parent = document.createElement("div");
-    parent.className = "multi-parent fw fh flex center-items android-apps-container";
+    parent.className = "multi-parent fw flex center-items android-apps-container";
     
     BuildAppVisual(parent, "crabzoo", "Crab Zoo", "Incremental Clicker",
         "I gave myself one week to create an android game " +
@@ -52,37 +54,17 @@ function SpawnAndroidApps()
         ""
     );
 
-    let floatparent = SpawnFloatParent(rowparent, "left");
-    floatparent.classList.add("gp-floatparent");
 
-    let gp_arrow = document.createElement("img");
-    gp_arrow.src = "./BLOGPOSTS/androidapps/img/gp-arrow.png";
-    gp_arrow.className = "gp-arrow";
-    floatparent.append(gp_arrow);
-    let gp_text_g = document.createElement("div");
-    gp_text_g.innerText = "Google";
-    gp_text_g.className = "gp-text gpt-g";
-    floatparent.append(gp_text_g);
-    let gp_text_p = document.createElement("div");
-    gp_text_p.innerText = "Play";
-    gp_text_p.className = "gp-text gpt-p";
-    floatparent.append(gp_text_p);
-    floatparent.onclick = () => {
-        window.open("https://play.google.com/store/apps/dev?id=6416564246254503009");
-    }
 
     rowparent.append(parent);
 }
 
-SpawnAndroidApps();   
-    
-    
     
     
 function BuildAppVisual(parent, appname, apptitle, undertitle, description, hideOnSpawn = true)
 {
     let containingBox = document.createElement("div");
-    containingBox.className = "android-app-box no-select"
+    containingBox.className = "android-app-box no-select c-f-d"
 
     // absolute image
     let icon = document.createElement("img");
@@ -137,6 +119,57 @@ function BuildAppVisual(parent, appname, apptitle, undertitle, description, hide
     parent.append(containingBox);
     return containingBox;
 }
+    
+    
+    
+function SpawnGooglePlayLogo(parent)
+{
+    let flexcontainer = SpawnDiv(parent, "flex fd-r");
+    let gp_arrow = document.createElement("img");
+    gp_arrow.src = "./BLOGPOSTS/androidapps/img/gp-arrow.png";
+    gp_arrow.className = "clickable-logo-small";
+    flexcontainer.append(gp_arrow);
+    let gp_text_g = document.createElement("div");
+    gp_text_g.innerText = "Google";
+    gp_text_g.className = "gp-text gpt-g";
+    flexcontainer.append(gp_text_g);
+    let gp_text_p = document.createElement("div");
+    gp_text_p.innerText = "Play";
+    gp_text_p.className = "gp-text gpt-p";
+    flexcontainer.append(gp_text_p);
+    flexcontainer.onclick = () => {
+        window.open("https://play.google.com/store/apps/dev?id=6416564246254503009");
+    }
+    return flexcontainer;
+}
+    
+function SpawnAndroidAppsInfo(parentContainer)
+{
+    
+    let flexrow = SpawnDiv(parentContainer, "flex m-auto center-items android-info-container gp-container");
+    
+
+    // icon
+    let img1 = SpawnElement(flexrow, "img", "clickable-logo-medium");
+    img1.src = "FILES/IMG/ICON/a1.png";
+
+
+    // scrolling parent
+    let infoParent = SpawnDiv(flexrow, "info-container c-f-d no-sedect m-0");
+    
+    let gp_logo = SpawnGooglePlayLogo(infoParent);
+
+    SpawnDiv(infoParent, "p-em-quarter hidden-mobile");
+    SpawnTextLine(infoParent, "Published Android Developer", "sv-presents");
+
+    SpawnTextLine(infoParent, "Hover an app icon to read more", "sv-small-title hidden-mobile");
+
+
+    
+}
+
+SpawnAndroidApps();   
+    
     
     
     

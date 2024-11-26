@@ -2,7 +2,10 @@
 
 
 
-
+.necesse-showcase {
+  border-radius: 2em;
+  margin: 1em;
+}
 
 
 
@@ -12,11 +15,11 @@
   position: auto;
   margin: 0 auto 0.8em auto;
 
-  font-size: 1.4em;
-  font-family: Roboto, sans-serif;
-  color: rgba(110, 23, 209, 0.822);
-  font-weight: 500;
-
+  font-size: 1.2em;
+  font-family: RobotoLight, sans-serif;
+  color: rgba(146, 78, 223, 0.822);
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 

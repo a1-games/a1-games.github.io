@@ -65,18 +65,6 @@
     display: none;
 }
 
-.sv-info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-left: 0;
-    padding: 1em;
-    background-color: transparent;
-    color: var(--c_Text_Dark);
-    white-space: nowrap;
-}
 
 .sv-presents {
     font-size: 1.25rem;
@@ -86,7 +74,6 @@
 
 .sv-ethno {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
     font-weight: bold;
     font-family: Ethnocentric;
 }
@@ -97,7 +84,6 @@
 
 .sv-display-row {
     flex-direction: row;
-    background-color: var(--c_Light);
 }
 
 
@@ -111,7 +97,6 @@
 
     .sv-banner {
         margin: auto;
-        margin-top: 2em;
     }
 
     #steam-redirect {
@@ -126,9 +111,6 @@
     }
 
 
-    .sv-info-container {
-        margin-left: auto;
-    }
 }
 
 
