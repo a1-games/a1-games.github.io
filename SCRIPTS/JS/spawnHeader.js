@@ -18,7 +18,9 @@ function SpawnSpace(parent)
 function SpawnHeader()
 {
     
-    let headerBuffer = SpawnDiv(MainContainer, "header-buffer");
+    let headerBuffer = document.createElement("div");
+    headerBuffer.className = "header-buffer";
+    MainContainer.prepend(headerBuffer);
 
     let headertab = SpawnDiv(MainContainer, "header-tab");
     
