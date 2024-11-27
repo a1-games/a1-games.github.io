@@ -7,19 +7,14 @@ function SpawnSpaceShooter()
     let rowparent = document.createElement("div");
     rowparent.className = "multi-parent showcase-row-half spaceshooter-background";
 
-    
-    // floating children
-    let gameInfo_Parent = SpawnMultiRow(rowparent);
-    gameInfo_Parent.classList.add("spaceshooter-gameinfo");
-    //rowparent.append(gameInfo_Parent);
+    // floating parent
+    let floatparent = SpawnFloatParent(rowparent, "left")
 
-    let gameIcon_Parent = document.createElement("div");
-    gameIcon_Parent.style.margin = "auto";
-    gameInfo_Parent.append(gameIcon_Parent);
+
 
 
     // title
-    let title = SpawnBlogpostImage(`spaceshooter`, `title.png`, gameIcon_Parent);
+    let title = SpawnBlogpostImage(`spaceshooter`, `title.png`, floatparent);
     title.className = "float-logo-rectangle shape-shadow-black";
     //title.style.margin = "auto auto 3em auto";
     title.style.cursor = "pointer";
@@ -29,9 +24,9 @@ function SpawnSpaceShooter()
     
     
     // download
-    let dlgame = SpawnBlogpostImage(`spaceshooter`, `downloadIcon.png`, gameInfo_Parent);
+    let dlgame = SpawnBlogpostImage(`spaceshooter`, `downloadIcon.png`, rowparent);
     dlgame.className = "shape-shadow-black ss-dl-button";
-    dlgame.style.margin = "auto auto auto 8em";
+    dlgame.style.margin = "auto 20vw auto auto";
     dlgame.style.zIndex = 98;
     dlgame.style.cursor = "pointer";
     dlgame.onclick = () => {
@@ -39,14 +34,6 @@ function SpawnSpaceShooter()
     };
     
 
-
-
-    
-    // scroll parent
-    let scrollparent = document.createElement("div");
-    scrollparent.style = "margin: 0px; position: absolute; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
-    rowparent.append(scrollparent);
-    //SpawnBlogpostImage(`spaceshooter`, `background.png`, scrollparent).classList.add("space-background");
 
 
 

@@ -20,20 +20,19 @@
 
 
 
-
 .spaceship {
     position: absolute;
 
     top: 50%;
     right: 4em;
-    width: 10em;
+    width: 7em;
 
     transform: translate(0, -50%);
 
 }
 .laser-bullet {
     margin: 0 10em;
-    width: 4em;
+    width: 3em;
 }
 .laser-clip {
     margin: 0;
@@ -69,23 +68,13 @@
 }
 
 
-.spaceshooter-gameinfo {
-    margin: auto auto auto 20vw;
-}
-
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 821px) {
     /* Styles */
-    .spaceshooter-gameinfo {
-        font-size: 0.75em;
-        margin-left: 1em;
-    }
     
     .ss-dl-button {
         display: none;
     }
-
-    
 
     .spaceship {
         right: 1em;
