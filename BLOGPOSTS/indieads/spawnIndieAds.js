@@ -53,7 +53,8 @@ function SpawnIndieAds()
     
     // comment
     SpawnCommentBox(
-        "A collaborative advertisement API\n" +
+        "IndieAds is a proof of concept for\n" +
+        "a collaborative advertisement API\n" +
         "meant to allow indie developers to\n" +
         "advertise completely free of cost.\n" +
         "\n" +

@@ -84,7 +84,7 @@ function SpawnSpaceVoyageInfo()
     let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit sv-display-row");
     
     // scrolling parent
-    let imgParent = SpawnDiv(rowparent, "flex sv-banner");
+    let imgParent = SpawnDiv(rowparent, "flex banner-img-container");
 
 
     let img1 = SpawnElement(imgParent, "img", "sv-banner-portrait");
@@ -98,11 +98,11 @@ function SpawnSpaceVoyageInfo()
 
 
 
+    SpawnDiv(rowparent, "p-em-half hidden-pc");
     
     // scrolling parent
     let infoParent = SpawnDiv(rowparent, "info-container c-f-d");
 
-    SpawnDiv(infoParent, "p-em-half hidden-pc");
     SpawnTextLine(infoParent, "a1games presents", "sv-presents");
     SpawnTextLine(infoParent, "Space Voyage", "sv-ethno");
     SpawnDiv(infoParent, "p-em-half");

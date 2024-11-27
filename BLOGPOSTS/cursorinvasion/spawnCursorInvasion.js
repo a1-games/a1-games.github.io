@@ -1,6 +1,5 @@
 
 
-
 function SpawnCursorInvasion()
 {
     // row parent
@@ -23,7 +22,7 @@ function SpawnCursorInvasion()
     //logo.style.margin = "auto auto 3em auto";
     logo.style.cursor = "pointer";
     logo.onclick = () => {
-        window.open("https://a1games.fun/pygameplayer.html");
+        window.open("https://a1games.fun/cursor_invasion");
     };
     // made in
     let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, floatparent);
@@ -64,13 +63,15 @@ function SpawnCursorInvasion()
     zombie.style.top =  200 + "px";
 
     let tics = 0;
-    rowparent.onmousemove = (e) => {
+    MainContainer.onmousemove = (e) => {
         tics++;
         if (tics <= 12) return;
         tics = 0;
 
         let rowbox = rowparent.getBoundingClientRect();
         let mousepos = { x:e.pageX, y:e.pageY - (window.scrollY + rowbox.top) };
+        mousepos.x = clamp(mousepos.x, 0, rowbox.width);
+        mousepos.y = clamp(mousepos.y, 0, rowbox.height);
 
         spider.style.left = (mousepos.x - 20) + "px";
         spider.style.top =  (mousepos.y - 20) + "px";

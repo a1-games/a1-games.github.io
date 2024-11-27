@@ -16,6 +16,7 @@
     margin: 0 auto;
     height: 5em !important;
     width: 22em !important;
+    filter: drop-shadow(-1px 1px 1px var(--c_Dark));
 }
 
 
@@ -25,8 +26,10 @@
     margin-bottom: 1.5em;
 }
 
-
-
+.pygame-banner {
+    height: 22em;
+    width: 22em;
+}
 
 
 

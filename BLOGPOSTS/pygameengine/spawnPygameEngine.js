@@ -1,38 +1,10 @@
 
-// keep it in a function as to not keep variables in memory
-function SpawnPygameEngine()
+    
+    
+function SpawnPygameEngineInfo()
 {
-    // row parent
-    let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-threequarters";
-    
-    // scrolling parent
-    let parent = document.createElement("div");
-    parent.className = "multi-parent ";
-    
-    
-
-
-    // floating parent
-    let floatparent = SpawnFloatParent(rowparent, "middle", true);  
-    floatparent.onclick = () => {
-        window.open("https://github.com/a1-games/PyGame-Engine");
-    };
-
-    // logo box
-    let logobox = SpawnMultiRow(floatparent);
-    logobox.classList.add("pygameengine-floatparent");
-
-    // pygame x a1
-    let pyxa1logo = SpawnBlogpostImage(`pygameengine`, `pygameXa1.png`, logobox);
-    pyxa1logo.className = "pygamexa1 shape-shadow-black";
-
-    // title
-    let title = SpawnBlogpostImage(`pygameengine`, `textlogo.png`, logobox);
-    title.className = "float-logo-rectangle shape-shadow-black pygame-title";
-    
-    // comment
-    SpawnCommentBox(
+    // put this somewhere it makes sense
+    /*SpawnCommentBox(
         "PyGame Engine ( Not A Real Engine )\n" +
         "\n" +
         "A starting project for pygame which includes\n" +
@@ -45,49 +17,55 @@ function SpawnPygameEngine()
         "• Simplified game information file\n" +
         "• Easy sprite & text creation\n" +
         "and more"
-        , logobox);
+        , logobox);*/
 
+    // row parent
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit sv-display-row");
     
+    // scrolling parent
+    let imgParent = SpawnDiv(rowparent, "flex banner-img-container");
 
 
-    
-    function getSpaceX()
-    {
-        let space = document.createElement("div");
-        space.style.width = "1em";
-        return space;
-    }
-    function getSpaceY()
-    {
-        let space = document.createElement("div");
-        space.style.backgroundColor = "#161616";
-        space.style.height = "0.5em";
-        return space;
-    }
-    SpawnBlogpostImage(`pygameengine`, `2.png`, parent);
-
-    //parent.append(getSpaceX());
-    SpawnBlogpostImage(`pygameengine`, `githubdesc.jpg`, parent);
-    //parent.append(getSpaceX());
-    SpawnBlogpostImage(`pygameengine`, `3.png`, parent);
-    //parent.append(getSpaceX());
-    SpawnBlogpostImage(`pygameengine`, `1.png`, parent);
-
+    let img1 = SpawnElement(imgParent, "img", "pygame-banner");
+    img1.src = "BLOGPOSTS/pygameengine/img/githubdesc.jpg";
     
     
-    rowparent.append(parent);
+    imgParent.append(img1);
 
-    MainContainer.append(getSpaceY());
+
+
+    SpawnDiv(rowparent, "p-em-half hidden-pc");
+    
+    // scrolling parent
+    let infoParent = SpawnDiv(rowparent, "info-container c-f-d");
+
+
+    // pygame x a1
+    let pyxa1logo = SpawnBlogpostImage(`pygameengine`, `pygameXa1.png`, infoParent);
+    pyxa1logo.className = "pygamexa1 ";
+
+    // title
+    let title = SpawnBlogpostImage(`pygameengine`, `textlogo.png`, infoParent);
+    title.className = "float-logo-rectangle pygame-title";
+
+    SpawnTextLine(infoParent, "Game engine framework for making games in python", "sv-small-title");
+
+    SpawnDiv(infoParent, "p-em-half");
+
+    let iconsContainer = SpawnDiv(infoParent, "flex fd-h")
+    // github logo
+    let githublogo = SpawnImage(iconsContainer, `FILES/IMG/ICON/github.png`, "clickable-logo-small");
+    githublogo.onclick = () => {
+        window.open("https://github.com/a1-games/PyGame-Engine");
+    };
+
+    
     MainContainer.append(rowparent);
-    MainContainer.append(getSpaceY());
 }
-
-SpawnPygameEngine();   
     
     
     
-    
-    
+SpawnPygameEngineInfo();
     
     
     

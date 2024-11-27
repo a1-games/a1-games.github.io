@@ -6,10 +6,20 @@
     .info-container {
         margin-left: auto !important;
     }
+    .banner-img-container {
+        margin-right: auto !important;
+    }
 }
 
 
 
+
+.banner-img-container {
+    margin: auto;
+    margin-right: 4em;
+    border-radius: 0.75em;
+    overflow: hidden;
+}
 
 
 #main-container {

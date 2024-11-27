@@ -48,12 +48,6 @@
 }
 
 
-.sv-banner {
-    margin: auto;
-    margin-right: 4em;
-    border-radius: 0.75em;
-    overflow: hidden;
-}
 
 .sv-banner-portrait {
     height: 18em;
@@ -95,9 +89,6 @@
         flex-direction: column;
     }
 
-    .sv-banner {
-        margin: auto;
-    }
 
     #steam-redirect {
         display: none;
