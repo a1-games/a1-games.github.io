@@ -18,7 +18,7 @@ function SpawnPygameEngineInfo()
         , logobox);*/
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col ");
     
     // scrolling parent
     let imgParent = SpawnDiv(rowparent, "flex banner-img-container");
@@ -67,15 +67,16 @@ SpawnPygameEngineInfo();
     
 function SpawnPyGameShowcases()
 {
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit fd-c");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit pge-showcase");
+    let displayParent = SpawnDiv(rowparent, "pge-display flex fd-c m-a");
     
     let cursorinvation = SpawnCursorInvasion();
-    rowparent.append(cursorinvation);
+    displayParent.append(cursorinvation);
     
     // fake space to account for the pictures missing block
-    SpawnDiv(rowparent, "p-em-one");
+    SpawnDiv(displayParent, "p-em-one");
     // made in pygame
-    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, rowparent);
+    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, displayParent);
     madein.className = "madeinpge icon-shadow";
     madein.style.cursor = "pointer";
     madein.onclick = () => {
@@ -84,7 +85,7 @@ function SpawnPyGameShowcases()
 
 
     let spaceshooter = SpawnSpaceShooter();   
-    rowparent.append(spaceshooter);
+    displayParent.append(spaceshooter);
 
 
 

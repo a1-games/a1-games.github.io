@@ -2,25 +2,28 @@
 
 /* PC ----------- */
 @media screen and (min-width: 821px) {
-    .pge-showcase {
-        width: 65%;
-        margin: 0 auto;
+    .pge-display {
+        width: 65vw;
     }
 }
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 821px) {
     .pge-showcase {
-        margin: 0 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 }
 
 
 
-
-
-
 .pge-showcase {
+
+}
+
+
+.pge-display {
     border-radius: 2em;
+    overflow: hidden;
 }
 
 .pygamexa1 {

@@ -5,11 +5,7 @@ function SpawnSpaceShooter()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half pge-showcase spaceshooter-background";
-
-    // floating parent
-    let floatparent = SpawnFloatParent(rowparent, "middle")
-
+    rowparent.className = "multi-parent showcase-row-half spaceshooter-background";
 
     
     // floating children

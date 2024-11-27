@@ -4,7 +4,7 @@ function SpawnCursorInvasion()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half pge-showcase";
+    rowparent.className = "multi-parent showcase-row-half";
     
     SpawnBlogpostImage(`cursorinvasion`, `background4.png`, rowparent).classList.add("curinv-background");
 
@@ -63,7 +63,7 @@ function SpawnCursorInvasion()
         let rowbox = rowparent.getBoundingClientRect();
         console.log(rowbox.x);
         let mousepos = { x:e.pageX - rowbox.x, y:e.pageY - (window.scrollY + rowbox.top) };
-        mousepos.x = clamp(mousepos.x, 0, rowbox.x + rowbox.width);
+        mousepos.x = clamp(mousepos.x, 0, rowbox.width);
         mousepos.y = clamp(mousepos.y, 0, rowbox.height);
 
         spider.style.left = (mousepos.x - 20) + "px";
