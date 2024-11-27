@@ -5,9 +5,16 @@
 
 
 
+/* Smartphones (landscape) ----------- */
+@media screen and (min-width: 821px) {
+    /* Styles */
 
+    .spaceshooter-background {
+        margin-left: auto !important;
+    }
+    
 
-
+}
 
 .spaceshooter-background {
     background-image: url("img/background.png");
@@ -65,17 +72,6 @@
     }
 }
 
-
-.madeinpge {
-    display: block;
-    position: relative;
-
-    height: 3em;
-    z-index: 1;
-
-    bottom: -0.5em;
-    left: 1em;
-}
 
 .spaceshooter-gameinfo {
     margin: auto auto auto 20vw;

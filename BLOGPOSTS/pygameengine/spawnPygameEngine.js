@@ -1,6 +1,4 @@
 
-    
-    
 function SpawnPygameEngineInfo()
 {
     // put this somewhere it makes sense
@@ -20,13 +18,13 @@ function SpawnPygameEngineInfo()
         , logobox);*/
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit sv-display-row");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col");
     
     // scrolling parent
     let imgParent = SpawnDiv(rowparent, "flex banner-img-container");
 
 
-    let img1 = SpawnElement(imgParent, "img", "pygame-banner");
+    let img1 = SpawnElement(imgParent, "img", "pygame-banner hidden-mobile");
     img1.src = "BLOGPOSTS/pygameengine/img/githubdesc.jpg";
     
     
@@ -34,7 +32,6 @@ function SpawnPygameEngineInfo()
 
 
 
-    SpawnDiv(rowparent, "p-em-half hidden-pc");
     
     // scrolling parent
     let infoParent = SpawnDiv(rowparent, "info-container c-f-d");
@@ -68,4 +65,31 @@ function SpawnPygameEngineInfo()
 SpawnPygameEngineInfo();
     
     
+function SpawnPyGameShowcases()
+{
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit fd-c");
     
+    let cursorinvation = SpawnCursorInvasion();
+    rowparent.append(cursorinvation);
+    
+    // fake space to account for the pictures missing block
+    SpawnDiv(rowparent, "p-em-one");
+    // made in pygame
+    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, rowparent);
+    madein.className = "madeinpge icon-shadow";
+    madein.style.cursor = "pointer";
+    madein.onclick = () => {
+        window.open("https://github.com/a1-games/PyGame-Engine");
+    };
+
+
+    let spaceshooter = SpawnSpaceShooter();   
+    rowparent.append(spaceshooter);
+
+
+
+
+
+}
+
+SpawnPyGameShowcases();

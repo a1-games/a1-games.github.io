@@ -5,7 +5,7 @@ function SpawnSpaceShooter()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half spaceshooter-background";
+    rowparent.className = "multi-parent showcase-row-half pge-showcase spaceshooter-background";
 
     // floating parent
     let floatparent = SpawnFloatParent(rowparent, "middle")
@@ -29,13 +29,6 @@ function SpawnSpaceShooter()
     title.style.cursor = "pointer";
     title.onclick = () => {
         window.open("https://a1-games.itch.io/space-shooter");
-    };
-    // made in
-    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, gameIcon_Parent);
-    madein.className = "madeinpge shape-shadow-black";
-    madein.style.cursor = "pointer";
-    madein.onclick = () => {
-        window.open("https://github.com/a1-games/PyGame-Engine");
     };
     
     
@@ -91,8 +84,7 @@ function SpawnSpaceShooter()
 
 
 
-    MainContainer.append(rowparent);
+    return rowparent;
 }
 
-SpawnSpaceShooter();   
     

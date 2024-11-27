@@ -9,8 +9,16 @@
     .banner-img-container {
         margin-right: auto !important;
     }
+    .dynamic-row-col {
+        flex-direction: column !important;
+    }
+
 }
 
+
+.dynamic-row-col {
+    flex-direction: row ;
+}
 
 
 

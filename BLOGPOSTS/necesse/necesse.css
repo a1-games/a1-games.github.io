@@ -4,7 +4,7 @@
 
 .necesse-showcase {
   border-radius: 2em;
-  margin: 1em;
+  margin: 0 2em;
 }
 
 
@@ -34,6 +34,20 @@
     100% {
       transform: translateX(-50%);
     }
+}
+
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+  /* Styles */
+
+  .necesse-showcase {
+    margin: 0 0.5em;
+  }
+
+
+  
 }
 
 

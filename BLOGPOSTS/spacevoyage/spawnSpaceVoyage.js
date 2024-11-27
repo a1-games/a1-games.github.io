@@ -81,7 +81,7 @@ function SpawnSpaceVoyageInfo()
 {
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit sv-display-row");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col");
     
     // scrolling parent
     let imgParent = SpawnDiv(rowparent, "flex banner-img-container");

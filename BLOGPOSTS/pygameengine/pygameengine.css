@@ -1,8 +1,27 @@
 
 
+/* PC ----------- */
+@media screen and (min-width: 821px) {
+    .pge-showcase {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    .pge-showcase {
+        margin: 0 0.5em;
+    }
+}
 
 
 
+
+
+
+.pge-showcase {
+    border-radius: 2em;
+}
 
 .pygamexa1 {
     position: relative;
@@ -33,3 +52,14 @@
 
 
 
+.madeinpge {
+    display: block;
+    position: absolute;
+
+    height: 3em;
+    z-index: 1;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -222,10 +222,10 @@ body {
 .flex {
     display: flex !important;
 }
-.flex-col, .fd-col, .fd-v {
+.flex-col, .fd-col, .fd-v, .fd-c {
     flex-direction: column !important;
 }
-.flex-row, .fd-row, .fd-h {
+.flex-row, .fd-row, .fd-h, .fd-r {
     flex-direction: row !important;
 }
 .center-items-h {

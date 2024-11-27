@@ -4,7 +4,7 @@ function SpawnCursorInvasion()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half";
+    rowparent.className = "multi-parent showcase-row-half pge-showcase";
     
     SpawnBlogpostImage(`cursorinvasion`, `background4.png`, rowparent).classList.add("curinv-background");
 
@@ -24,31 +24,23 @@ function SpawnCursorInvasion()
     logo.onclick = () => {
         window.open("https://a1games.fun/cursor_invasion");
     };
-    // made in
-    let madein = SpawnBlogpostImage(`pygameengine`, `madeinpge.png`, floatparent);
-    madein.className = "madeinpge shape-shadow-black";
-    madein.style.cursor = "pointer";
-    madein.onclick = () => {
-        window.open("https://github.com/a1-games/PyGame-Engine");
-    };
 
 
     // trees
 
-    let tree1 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
-    tree1.classList.add("curinv-tree");
-    tree1.style = "left: 25vw; top: 74px;";
-
+    
     let tree2 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
     tree2.classList.add("curinv-tree");
-    tree2.style = "left: 35vw; bottom: 74px;";
-
+    tree2.style = "left: 5em; bottom: 74px;";
+    
     let tree3 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
     tree3.classList.add("curinv-tree");
-    tree3.style = "left: 65vw; bottom: 180px;";
-    
-    
+    tree3.style = "left: 25em; bottom: 20px;";
         
+    let tree1 = SpawnBlogpostImage(`cursorinvasion`, `tree.png`, rowparent);
+    tree1.classList.add("curinv-tree");
+    tree1.style = "left: 18em; top: 34px;";
+
     
     let spider = SpawnBlogpostImage(`cursorinvasion`, `spider.png`, rowparent);
     spider.classList.add("curinv-enemy");
@@ -69,8 +61,9 @@ function SpawnCursorInvasion()
         tics = 0;
 
         let rowbox = rowparent.getBoundingClientRect();
-        let mousepos = { x:e.pageX, y:e.pageY - (window.scrollY + rowbox.top) };
-        mousepos.x = clamp(mousepos.x, 0, rowbox.width);
+        console.log(rowbox.x);
+        let mousepos = { x:e.pageX - rowbox.x, y:e.pageY - (window.scrollY + rowbox.top) };
+        mousepos.x = clamp(mousepos.x, 0, rowbox.x + rowbox.width);
         mousepos.y = clamp(mousepos.y, 0, rowbox.height);
 
         spider.style.left = (mousepos.x - 20) + "px";
@@ -83,10 +76,9 @@ function SpawnCursorInvasion()
     }
     
     
-    MainContainer.append(rowparent);
+    return rowparent;
 }
 
-SpawnCursorInvasion();
 
 
 

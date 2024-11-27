@@ -9,11 +9,15 @@
 {
     margin: 0 1em;
     cursor: pointer;
+    overflow: visible;
 
     filter: drop-shadow(-1px 1px 1px var(--c_Dark));
 }
 
 
+.icon-shadow {
+    filter: drop-shadow(-1px 1px 1px var(--c_Dark));
+}
 
 
 .clickable-logo-small, .icon-small, .icon-s {
