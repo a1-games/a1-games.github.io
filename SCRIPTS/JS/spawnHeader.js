@@ -31,7 +31,8 @@ function SpawnHeader()
     realnamesection.style.position = "relative";
 
     let a1icon = document.createElement("img");
-    a1icon.src = `./FILES/IMG/HEADSHOTS/headshot_ring.png`;
+    //a1icon.src = `./FILES/IMG/HEADSHOTS/headshot_ring.png`;
+    a1icon.src = `./FILES/IMG/HEADSHOTS/blackwhitesquare_small_close.jpg`;
     a1icon.classList.add("a1icon");
     a1icon.classList.add("showcase-img");
     realnamesection.append(a1icon);
