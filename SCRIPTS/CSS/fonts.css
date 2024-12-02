@@ -11,6 +11,12 @@
     src: url(../../FILES/FONTS/BubblegumSans-Regular.ttf);
 }
 @font-face {
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../FILES/FONTS/Lexend-All.ttf);
+}
+@font-face {
     font-family: Ethnocentric;
     font-style: normal;
     font-weight: normal;

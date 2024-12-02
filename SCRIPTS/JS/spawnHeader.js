@@ -40,7 +40,7 @@ function SpawnHeader()
         ShowHidePersonalInfo();
     };
 
-    let realname = SpawnHeaderName(realnamesection, "asbjørn ø. j.");
+    let realname = SpawnHeaderName(realnamesection, "Asbjørn Ø. J.");
     realname.onclick = () => {
         ShowHidePersonalInfo();
     };
@@ -60,13 +60,13 @@ function SpawnHeader()
         
     //}
 
-    let github = SpawnHeaderName(headertab, "github");
+    let github = SpawnHeaderName(headertab, "Github");
     github.onclick = () => {
         window.open("https://github.com/a1-games");
     }
 
 
-    let linkedin = SpawnHeaderName(headertab, "linkedin");
+    let linkedin = SpawnHeaderName(headertab, "Linkedin");
     linkedin.onclick = () => {
         window.open("https://www.linkedin.com/in/a1creator/");
     }
