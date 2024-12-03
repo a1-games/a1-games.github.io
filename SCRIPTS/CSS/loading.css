@@ -1,0 +1,46 @@
+
+
+
+
+.loading-screen {
+    position: fixed;
+    display: block;
+    
+    z-index: 99999;
+
+    width: 110vw;
+    height: 150vh;
+
+    left: -5vw;
+    bottom: -30vh;
+
+    background: rgb(26,26,26);
+    background: linear-gradient(137deg, var(--c_Dark) 36%, var(--c_Dark_Hover) 100%);
+    
+    overflow: hidden;
+
+    transition-timing-function: linear;
+    transition-property: height;
+    transition-duration: 1s;
+
+}
+
+.loading-screen.minimized {
+    border-radius: 25em 25em 0 0;
+    width: 110vw !important;
+}
+
+.loading-icon {
+    position: absolute;
+    display: block;
+    
+    z-index: 99999;
+
+    transform: translate(-50%, 50%);
+
+    left: 55vw;
+    bottom: 80vh;
+
+}
+
+

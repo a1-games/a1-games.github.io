@@ -61,7 +61,6 @@ function SpawnCursorInvasion()
         tics = 0;
 
         let rowbox = rowparent.getBoundingClientRect();
-        console.log(rowbox.x);
         let mousepos = { x:e.pageX - rowbox.x, y:e.pageY - (window.scrollY + rowbox.top) };
         mousepos.x = clamp(mousepos.x, 0, rowbox.width);
         mousepos.y = clamp(mousepos.y, 0, rowbox.height);

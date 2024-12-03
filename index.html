@@ -16,16 +16,19 @@
 <!-- Dark background color so loading the page isn't a fucking flashbang -->
 <body class="m-0 c-bg-l">
     <!-- Container for everything -->
-    <div id="main-container"> </div>
+    <div id="main-container">
+    </div>
 
     <!------------->
     <!-- PRELOAD -->
     <!------------->
-    <script src="./SCRIPTS/JS/global.js">
-    </script>
+    <script src="./SCRIPTS/JS/global.js"> </script>
+    <script src="./SCRIPTS/JS/spawnLoadingScreen.js"></script>
+
     <script>
         // Global Styles
         InsertStyling("fonts");
+        InsertStyling("loading");
         InsertStyling("contract");
         InsertStyling("containers");
         InsertStyling("floaters");
