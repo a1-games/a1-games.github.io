@@ -4,8 +4,7 @@
 function SpawnResumeMaker()
 {
     // row parent
-    let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-threequarters stb-background";
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters stb-background");
 
     // floating parent
     let floatparent = SpawnFloatParent(rowparent, "middle", false)
@@ -44,8 +43,8 @@ function SpawnResumeMaker()
     SpawnBlogpostImage(`resumemaker`, `4.jpg`, scrollparent).classList.add("resmak-block");
 
 
-    MainContainer.append(rowparent);
+    return rowparent;
 }
 
-SpawnResumeMaker();   
+//SpawnResumeMaker();   
     

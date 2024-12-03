@@ -50,8 +50,7 @@ function AddGameImage(gamename, parent)
 function SpawnGamesFun()
 {
     // row parent
-    let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half";
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-half");
     rowparent.style.backgroundImage = `url('https://a1games.fun/files/img/mariobck.jpeg')`;
     rowparent.style.backgroundPosition = `center`;
 
@@ -73,8 +72,9 @@ function SpawnGamesFun()
 
     aligner.append(scrollparent);
     rowparent.append(aligner);
-    MainContainer.append(rowparent);
+    
+    return rowparent;
 }
 
-SpawnGamesFun();   
+//SpawnGamesFun();   
     

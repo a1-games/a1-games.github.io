@@ -4,8 +4,7 @@
 function SpawnSplitTheBill()
 {
     // row parent
-    let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half stb-background";
+    let rowparent = SpawnDiv(MainContainer, " multi-parent showcase-row-half stb-background");
 
     // floating parent
     let floatparent = document.createElement("div");
@@ -40,8 +39,10 @@ function SpawnSplitTheBill()
 
 
     rowparent.append(scrollparent);
-    MainContainer.append(rowparent);
+    
+    
+    return rowparent;
 }
 
-SpawnSplitTheBill();   
+//SpawnSplitTheBill();   
     

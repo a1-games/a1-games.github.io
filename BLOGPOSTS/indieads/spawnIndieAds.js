@@ -20,8 +20,7 @@ function AppendNewIndieAd(AdResolution, parent, extraclassnames)
 function SpawnIndieAds()
 {
     // row parent
-    let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-threequarters";
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters");
 
     let background = document.createElement("div");
     background.style = "position: absolute; width: 100%; height: 100%; margin: 0; padding: 0;"
@@ -129,10 +128,9 @@ function SpawnIndieAds()
 
 
     rowparent.append(scrollparent);
-    MainContainer.append(rowparent);
 
-
+    return rowparent;
 }
 
-SpawnIndieAds();   
+//SpawnIndieAds();   
     

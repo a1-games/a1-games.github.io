@@ -57,7 +57,6 @@ function SpawnPygameEngineInfo()
     };
 
     
-    MainContainer.append(rowparent);
 }
     
     

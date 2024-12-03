@@ -1,0 +1,66 @@
+
+.jsproj-showcase {
+    /**/
+    display: flex;
+    flex-direction: column;
+}
+
+.jsproj-title {
+    font-family: Lexend, Roboto, sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    margin: auto !important;
+    padding: 1em 1.7em;
+    border-radius: 0.4em;
+    background-color: var(--c_Light_Hover);
+    margin-bottom: 1em !important;
+}
+
+
+.jsproj-grid {
+    display: grid;
+    grid-column: auto;
+    columns: 2;
+    gap: 1em;
+}
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    .jsproj-grid {
+        columns: 1 !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
