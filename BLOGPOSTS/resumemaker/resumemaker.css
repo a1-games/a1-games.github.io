@@ -1,12 +1,17 @@
 
 
-
+.resmak-showcase {
+    flex-direction: column !important;
+}
 
 .resmak-block {
     width: 50em;
     filter: blur(0.1em);
 }
 
+.resmak-scroll {
+    left: -8em;
+}
 
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 821px) {

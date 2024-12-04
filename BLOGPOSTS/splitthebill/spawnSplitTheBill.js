@@ -4,13 +4,14 @@
 function SpawnSplitTheBill()
 {
     // row parent
-    let rowparent = SpawnDiv(MainContainer, " multi-parent showcase-row-half stb-background");
+    let rowparent = SpawnDiv(MainContainer, " multi-parent stb-background");
 
     // floating parent
     let floatparent = document.createElement("div");
     floatparent.className = "multi-parent float-parent-middle ";
     floatparent.onclick = () => {
-        window.open("splitthebill");
+        window.open("./BLOGPOSTS/splitthebill/splitthebill.html");
+        window.history.pushState("example.com/foo");
     };
 
     // github logo

@@ -15,7 +15,7 @@
 
 .gamesfun-game
 {
-    margin: auto 1em;
+    margin: 0;
     height: 6em;
     border-radius: 0.5em;
     outline: 0.125em solid white;
@@ -29,30 +29,33 @@
 }
 
 
+
+.gamesfun-title {
+    margin: auto auto;
+}
+.gamesfun-scroll {
+    width: fit-content;
+    display: grid;
+    margin: auto;
+
+
+    grid-auto-flow: row;
+    gap: 1em;
+
+    grid-template-rows: auto auto;
+
+    grid-template-columns: auto auto;
+
+
+}
 .gamesfun-align {
-    margin: auto 3em;
+    font-size: 0.6em;
+    flex-direction: column !important;
+    gap: 0;
+    margin: auto 0;
+    /* The title font is misaligned and this makes up for it */
+    padding-bottom: 2em;
 }
-
-/* Smartphones (portrait) ----------- */
-@media screen and (max-width: 821px) {
-    /* Styles */
-
-    .gamesfun-title {
-        margin: auto auto;
-    }
-    .gamesfun-scroll {
-        width: 100vw;
-    }
-    .gamesfun-align {
-        font-size: 0.6em;
-        flex-direction: column !important;
-        gap: 0;
-        margin: auto 0;
-        /* The title font is misaligned and this makes up for it */
-        padding-bottom: 2em;
-    }
-}
-
 
 
 

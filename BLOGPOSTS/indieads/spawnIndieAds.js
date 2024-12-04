@@ -9,7 +9,10 @@ function AppendNewIndieAd(AdResolution, parent, extraclassnames)
 
 
 
-
+function SpawnIndieAdsSculpture(parent)
+{
+    let container = SpawnDiv(parent, "multi-parent");
+}
 
 
 
@@ -20,12 +23,8 @@ function AppendNewIndieAd(AdResolution, parent, extraclassnames)
 function SpawnIndieAds()
 {
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent");
 
-    let background = document.createElement("div");
-    background.style = "position: absolute; width: 100%; height: 100%; margin: 0; padding: 0;"
-    background.className = " indieads-background";
-    rowparent.append(background);
 
     
     // floating parent

@@ -4,10 +4,10 @@
 function SpawnResumeMaker()
 {
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-threequarters stb-background");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent ");
 
     // floating parent
-    let floatparent = SpawnFloatParent(rowparent, "middle", false)
+    let floatparent = SpawnFloatParent(rowparent, "middle", true)
     floatparent.onclick = () => {
         window.open(`BLOGPOSTS/resumemaker/resumemaker.html`);
     };

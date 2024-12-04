@@ -19,18 +19,41 @@
 
 .jsproj-grid {
     display: grid;
-    grid-column: auto;
-    columns: 2;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+
+
+
+
+    grid-auto-flow: column;
     gap: 1em;
+
+    grid-template-rows: auto auto;
+
+    grid-template-columns: 50% 50%;
+
 }
 
+.jsproj-grid-item {
+    width: 28em;
+    height: 24em;
+
+    border-radius: 1em;
+
+    margin: auto;
+
+    overflow: hidden;
+    flex-direction: column !important;
+}
 
 
 
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 821px) {
     .jsproj-grid {
-        columns: 1 !important;
+        grid-template-columns: 100%;
+        grid-auto-flow: row;
     }
 
 }

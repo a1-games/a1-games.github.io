@@ -50,24 +50,25 @@ function AddGameImage(gamename, parent)
 function SpawnGamesFun()
 {
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-half");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent fd-c");
     rowparent.style.backgroundImage = `url('https://a1games.fun/files/img/mariobck.jpeg')`;
     rowparent.style.backgroundPosition = `center`;
+
+    let aligner = SpawnMultiRow(rowparent)
+    aligner.classList.add("gamesfun-align");
+    aligner.classList.add("clickable");
+    aligner.onclick = () => {
+        window.open("https://a1games.fun/");
+    };
+
+    let title = SpawnBlogpostImage(`gamesfun`, `textlogo.png`, aligner);
+    title.className = "shape-shadow-black gamesfun-title";
 
     // scroll parent
     let scrollparent = document.createElement("div");
     scrollparent.className = "gamesfun-scroll multi-row";
-    //scrollparent.style = "cursor: pointer; margin: 0px; position: relative; top: 50%; transform: translateY(-50%); display: flex; flex-direction: row; align-items: center";
-    scrollparent.onclick = () => {
-        window.open("https://a1games.fun/");
-    };
     SpawnRandomizedGames(scrollparent);
 
-    let aligner = SpawnMultiRow(rowparent)
-    aligner.classList.add("gamesfun-align");
-
-    let title = SpawnBlogpostImage(`gamesfun`, `textlogo.png`, aligner);
-    title.className = "shape-shadow-black gamesfun-title";
 
 
     aligner.append(scrollparent);

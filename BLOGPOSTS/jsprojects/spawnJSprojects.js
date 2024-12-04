@@ -14,15 +14,19 @@ function SpawnJsProjectsInfo()
     let gridbox = SpawnDiv(rowparent, "jsproj-grid");
     
     let splitthebill = SpawnSplitTheBill();
+    splitthebill.classList.add("jsproj-grid-item");
     gridbox.append(splitthebill);
 
-    let indieads = SpawnIndieAds();
-    gridbox.append(indieads);
+    //let indieads = SpawnIndieAds();
+    //indieads.classList.add("jsproj-grid-item");
+    //gridbox.append(indieads);
 
     let resumemaker = SpawnResumeMaker();   
+    resumemaker.classList.add("jsproj-grid-item");
     gridbox.append(resumemaker);
 
     let gamesfun = SpawnGamesFun();
+    gamesfun.classList.add("jsproj-grid-item");
     gridbox.append(gamesfun);
 }
     
