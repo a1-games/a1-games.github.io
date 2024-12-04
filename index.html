@@ -93,6 +93,26 @@
     <script src="./SCRIPTS/JS/spawnHeader.js"></script>
 
 
+    <script>
+        // this is a temporary fix because having no footer looks weird
+
+
+        let _footer = SpawnDiv(MainContainer, "footer");
+        _footer.className = "flex footer true-center center-text m-auto";
+        _footer.style.backgroundColor = "var(--c_Dark)";
+        _footer.style.color = "var(--c_Text_Light)";
+        _footer.style.padding = "2em 0";
+        let _footerText = SpawnDiv(_footer, "footer-text");
+        _footerText.className = "flex footer-text true-center center-text m-auto";
+        _footerText.innerText = "asbjorn15johnsen@gmail.com     |     +45 50 46 38 28";
+        _footerText.style.fontFamily = "RobotoLight";
+        _footerText.style.fontWeight = "200";
+        _footerText.style.letterSpacing = "0.05em";
+        _footerText.style.fontSize = "0.75em";
+
+
+
+    </script>
 
 
 </body>

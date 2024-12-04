@@ -28,7 +28,6 @@ function SpawnResumeMaker()
     // indieads
     let indadlogo = SpawnBlogpostImage(`resumemaker`, `resume_maker_title.png`, floatparent);
     indadlogo.className = "float-logo-rectangle shape-shadow-black";
-    indadlogo.style.margin = "auto auto auto 2em";
 
     
     // scroll parent
