@@ -38,9 +38,9 @@ function SpawnResumeMaker()
 
 
     SpawnBlogpostImage(`resumemaker`, `1.png`, scrollparent).classList.add("resmak-block");
-    SpawnBlogpostImage(`resumemaker`, `2.png`, scrollparent).classList.add("resmak-block");
-    SpawnBlogpostImage(`resumemaker`, `3.png`, scrollparent).classList.add("resmak-block");
-    SpawnBlogpostImage(`resumemaker`, `4.jpg`, scrollparent).classList.add("resmak-block");
+    //SpawnBlogpostImage(`resumemaker`, `2.png`, scrollparent).classList.add("resmak-block");
+    //SpawnBlogpostImage(`resumemaker`, `3.png`, scrollparent).classList.add("resmak-block");
+    //SpawnBlogpostImage(`resumemaker`, `4.jpg`, scrollparent).classList.add("resmak-block");
 
 
     return rowparent;

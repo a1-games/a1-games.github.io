@@ -17,9 +17,9 @@ function SpawnJsProjectsInfo()
     splitthebill.classList.add("jsproj-grid-item");
     gridbox.append(splitthebill);
 
-    //let indieads = SpawnIndieAds();
-    //indieads.classList.add("jsproj-grid-item");
-    //gridbox.append(indieads);
+    let indieads = SpawnIndieAds();
+    indieads.classList.add("jsproj-grid-item");
+    gridbox.append(indieads);
 
     let resumemaker = SpawnResumeMaker();   
     resumemaker.classList.add("jsproj-grid-item");

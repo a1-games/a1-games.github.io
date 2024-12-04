@@ -35,8 +35,8 @@ function SpawnSplitTheBill()
 
 
     SpawnBlogpostImage(`splitthebill`, `1.png`, scrollparent).classList.add("stb-block");
-    SpawnBlogpostImage(`splitthebill`, `2.png`, scrollparent).classList.add("stb-block");
-    SpawnBlogpostImage(`splitthebill`, `3.png`, scrollparent).classList.add("stb-block");
+    //SpawnBlogpostImage(`splitthebill`, `2.png`, scrollparent).classList.add("stb-block");
+    //SpawnBlogpostImage(`splitthebill`, `3.png`, scrollparent).classList.add("stb-block");
 
 
     rowparent.append(scrollparent);

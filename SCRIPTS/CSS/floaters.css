@@ -4,8 +4,8 @@
 
 
 .float-logo-square {
-    width: 7em;
-    height: 7em;
+    width: 5em;
+    height: 5em;
 
     object-fit: contain;
     user-select: none;
