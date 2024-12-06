@@ -7,28 +7,12 @@
 .stb-background {
     background: rgb(255, 255, 255);
     background: linear-gradient(68deg, rgb(21, 21, 26) 12%, rgb(21, 21, 26) 94%);
-}
-
-
-
-.stb-block {
-    height: 15em;
-    margin: auto 0.5em;
-}
-
-
-/* Smartphones (portrait) ----------- */
-@media screen and (max-width: 821px) {
-    /* Styles */
-
-    .stb-scroll {
-        left: -8em;
-    }
     
-
+    background-image: url("./img/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-
 
 
 

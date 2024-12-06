@@ -1,6 +1,6 @@
 
 .indieads-showcase {
-
+    overflow: visible;
 }
 
 
@@ -62,6 +62,8 @@
     margin: 0;
     padding: 0;
 
+    overflow: visible;
+
 }
 
 .indiead-display {
@@ -75,7 +77,7 @@
 }
 
 .indieads-display-600 {
-    width: 10em;
+    width: 9em;
     left: 0.5em;
     top: 50%;
     z-index: 0;
@@ -84,36 +86,34 @@
 }
 
 .indieads-display-616 {
-    width: 18em;
-    right: 0.5em;
-    top: 50%;
-    z-index: 0;
+    width: 13em;
+    right: 1em;
+    top: 0.5em;
+    z-index: 3;
 
-    transform: translate(0, -50%);
 }
 
 .indieads-display-460 {
     width: 12em;
-    left: 3em;
+    right: 0;
     bottom: 1em;
-    z-index: 1;
+    z-index: 2;
 
 }
 .indieads-display-231 {
     width: 10em;
 
-    right: 1em;
-    bottom: 1em;
-    z-index: 2;
+    left: 7.5em;
+    bottom: 0.5em;
+    z-index: 1;
 }
 .indieads-display-350 {
     width: 11em;
 
-    top: 1.5em;
-    left: 50%;
-    z-index: 3;
+    top: 2em;
+    left: 6.25em;
+    z-index: 4;
 
-    transform: translate(-50%, 0);
 }
 
 
