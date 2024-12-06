@@ -51,8 +51,8 @@ function SpawnGamesFun()
 {
     // row parent
     let rowparent = SpawnDiv(MainContainer, "multi-parent fd-c");
-    rowparent.style.backgroundImage = `url('https://a1games.fun/files/img/mariobck.jpeg')`;
-    rowparent.style.backgroundPosition = `center`;
+    //rowparent.style.backgroundImage = `url('https://a1games.fun/files/img/mariobck.jpeg')`;
+    //rowparent.style.backgroundPosition = `center`;
 
     let aligner = SpawnMultiRow(rowparent)
     aligner.classList.add("gamesfun-align");
@@ -62,7 +62,7 @@ function SpawnGamesFun()
     };
 
     let title = SpawnBlogpostImage(`gamesfun`, `textlogo.png`, aligner);
-    title.className = "shape-shadow-black gamesfun-title";
+    title.className = "icon-shadow gamesfun-title";
 
     // scroll parent
     let scrollparent = document.createElement("div");
