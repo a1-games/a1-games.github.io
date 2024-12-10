@@ -13,7 +13,7 @@ function SpawnAndroidApps()
     
     BuildAppVisual(parent, "crabzoo", "Crab Zoo", "Incremental Clicker",
         "I gave myself one week to create an android game " +
-        "from zero to release.\n\nThis product taught me alot " +
+        "from zero to release.\n\nThis project taught me alot " +
         "about saving many different objects at once locally, " +
         "and calculating offline progression when the player " +
         "returns to the game. "
