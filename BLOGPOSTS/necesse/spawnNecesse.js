@@ -47,8 +47,9 @@ function SpawnNecesse()
         "Pictures include things I created:\n" +
         "• Witch & Evil Witch Castle\n" +
         "• Randomly Generated Cave Rivers With Bridges\n" +
+        "• Full Witch Armor Set + Broom Mount\n" +
         "• Necrotic Weapon Set\n" +
-        "• Trenchcoat Goblin\n" +
+        "• Suspiciously Tall Goblin\n" +
         "• Randomly Generated Farm Houses\n"
         , logobox);
 
