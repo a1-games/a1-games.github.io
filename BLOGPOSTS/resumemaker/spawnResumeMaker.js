@@ -10,6 +10,7 @@ function SpawnResumeMaker()
     let floatparent = SpawnFloatParent(rowparent, "middle", true)
     floatparent.onclick = () => {
         window.open(`BLOGPOSTS/resumemaker/web-resume-generator/index.html`);
+        window.history.pushState('resumemaker', 'Resume Maker', '/resumemaker');
     };
 
 
