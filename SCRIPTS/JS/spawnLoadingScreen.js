@@ -11,7 +11,7 @@ function SpawnLoadingScreen()
     // Hide after 1.5 seconds
     setTimeout(() => {
         loadingScreen.classList.add("minimized");
-    }, 1000);
+    }, 1500);
 }
 
 

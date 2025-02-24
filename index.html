@@ -24,10 +24,31 @@
     <!------------->
     <!-- PRELOAD -->
     <!------------->
-    <script src="./SCRIPTS/JS/global.js"> </script>
-    <script src="./SCRIPTS/JS/spawnLoadingScreen.js"></script>
+
+    <div id="loading-screen" class="loading-screen">
+        <img src="./FILES/IMG/ICON/loading.gif" class="loading-icon">
+    </div>
 
     <script>
+                    
+        function SpawnLoading_Screen()
+        {
+            let loadingScreen = document.getElementById("loading-screen");
+
+            // Hide after 1.5 seconds
+            setTimeout(() => {
+                loadingScreen.classList.add("minimized");
+            }, 1250);
+        }
+
+
+        SpawnLoading_Screen();
+    </script>
+
+    <script src="./SCRIPTS/JS/global.js"> </script>
+
+    <script>
+        
         // Global Styles
         InsertStyling("fonts");
         InsertStyling("contract");
