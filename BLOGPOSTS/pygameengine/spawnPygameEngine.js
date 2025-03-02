@@ -21,7 +21,7 @@ function SpawnPygameEngineInfo()
     let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col ");
     
     // scrolling parent
-    let imgParent = SpawnDiv(rowparent, "flex banner-img-container");
+    let imgParent = SpawnDiv(rowparent, "flex banner-img-container m-r-0");
 
 
     let img1 = SpawnElement(imgParent, "img", "pygame-banner hidden-mobile");
@@ -34,7 +34,7 @@ function SpawnPygameEngineInfo()
 
     
     // scrolling parent
-    let infoParent = SpawnDiv(rowparent, "info-container c-f-d");
+    let infoParent = SpawnDiv(rowparent, "info-container c-f-d m-l-em-3");
 
 
     // pygame x a1

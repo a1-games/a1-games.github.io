@@ -7,17 +7,24 @@ function AppendNewIndieAd(AdResolution, parent, extraclassnames)
     return elem;
 }
 
-
-
-function SpawnIndieAdsSculpture(parent)
+function _ReloadAd(resolution, resNr)
 {
-    let container = SpawnDiv(parent, "multi-parent");
+    let elem = document.body.getElementsByClassName("indieads indiead-display indieads-display-"+`${resNr}`)[0];
+    elem.innerHTML = "";
+    spawnIndieAd_ImageOnly(elem, resolution);
 }
 
-
-
-
-
+function SetNextReload()
+{
+    setTimeout(() => {
+        SetNextReload();
+        _ReloadAd(AdResolutions.Portrait_600x900, 600);
+        _ReloadAd(AdResolutions.Landscape_616x353, 616);
+        _ReloadAd(AdResolutions.Landscape_460x215, 460);
+        _ReloadAd(AdResolutions.Landscape_231x87, 231);
+        _ReloadAd(AdResolutions.Banner_320x50, 350);
+    }, 3500);
+}
 
 // keep it in a function as to not keep variables in memory
 function SpawnIndieAds()
@@ -66,6 +73,7 @@ function SpawnIndieAds()
     comment.classList.add("indieads-comment");
 
 
+    SetNextReload();
 
 
     return rowparent;

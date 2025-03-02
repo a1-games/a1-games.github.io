@@ -4,7 +4,7 @@ function SpawnCursorInvasion()
 {
     // row parent
     let rowparent = document.createElement("div");
-    rowparent.className = "multi-parent showcase-row-half";
+    rowparent.className = "multi-parent showcase-row-half  of-v-h";
     
     SpawnBlogpostImage(`cursorinvasion`, `background4.png`, rowparent).classList.add("curinv-background");
 
@@ -42,13 +42,13 @@ function SpawnCursorInvasion()
     tree1.style = "left: 18em; top: 34px;";
 
     
-    let spider = SpawnBlogpostImage(`cursorinvasion`, `spider.png`, rowparent);
+    let spider = SpawnBlogpostImage(`cursorinvasion`, `spider.png`, rowparent, " ");
     spider.classList.add("curinv-enemy");
     spider.classList.add("spider");
     spider.style.left = 300 + "px";
     spider.style.top =  100 + "px";
 
-    let zombie = SpawnBlogpostImage(`cursorinvasion`, `zombie.png`, rowparent);
+    let zombie = SpawnBlogpostImage(`cursorinvasion`, `zombie.png`, rowparent, "hidden-mobile");
     zombie.classList.add("curinv-enemy");
     zombie.classList.add("zombie");
     zombie.style.left = 800 + "px";

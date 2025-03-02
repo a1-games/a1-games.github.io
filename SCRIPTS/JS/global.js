@@ -90,24 +90,22 @@ function SpawnTextLine(parent, text, extraclasses = "")
 
 
 
-function SpawnCommentBox(text, parent, bckgrndColor = "")
+function SpawnCommentBox(text, parent, extraclasses = "")
 {
     let box = document.createElement("div");
     box.innerText = text;
-    box.className = "comment-box multi-row ";
-    if (bckgrndColor != "")
-        box.style.backgroundColor = bckgrndColor;
+    box.className = "comment-box multi-row " + `${extraclasses}`;
     
     parent.append(box);
     return box;
 }
 
 
-function SpawnBlogpostImage(blogpostname, imgname, parent)
+function SpawnBlogpostImage(blogpostname, imgname, parent, extraclasses = "")
 {
     let image = document.createElement("img");
     image.src = `BLOGPOSTS/${blogpostname}/img/${imgname}`;
-    image.classList.add("showcase-img");
+    image.className = "showcase-img " + `${extraclasses}`;
     parent.append(image);
     return image;
 }
@@ -135,6 +133,13 @@ function DownloadFile(filepath, filename)
 }
 
 
+function _AddClassesFromClassString(element, classString)
+{
+    let classArray = classString.split(" "); // Split string into an array of class names
+    for (let i = 0; i < classArray.length; i++) {
+        element.classList.add(classArray[i]); // Add each class to the element
+    }
+}
 
 
 

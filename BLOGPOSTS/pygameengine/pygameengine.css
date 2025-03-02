@@ -23,7 +23,7 @@
 
 .pge-display {
     border-radius: 2em;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .pygamexa1 {

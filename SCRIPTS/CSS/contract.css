@@ -137,6 +137,25 @@ body {
     cursor: pointer !important;
 }
 
+/* Overflow */
+.overflow-hidden, .of-h {
+    overflow: hidden !important;
+}
+.overflow-visible, .of-v {
+    overflow: visible !important;
+}
+.overflow-v-visible, .overflow-y-visible, .of-v-v, .of-y-v {
+    overflow-y: visible !important;
+}
+.overflow-v-hidden, .overflow-y-hidden, .of-v-h, .of-y-h {
+    overflow-y: hidden !important;
+}
+.overflow-h-visible, .overflow-x-visible, .of-h-v, .of-x-v {
+    overflow-x: visible !important;
+}
+.overflow-h-hidden, .overflow-x-hidden, .of-h-h, .of-x-h {
+    overflow-x: hidden !important;
+}
 
 /* Size */
 .fullwidth, .fw, .w-100p, .w-100, .width-100, .width-full {
@@ -165,32 +184,6 @@ body {
     padding: auto !important;
 }
 
-.no-margin, .m-0 {
-    margin: 0px !important;
-}
-.no-margin-v, .m-v-0 {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-.no-margin-h, .m-h-0 {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-}
-.margin-auto, .m-a, .m-auto {
-    margin: auto !important;
-}
-
-/* Margin with sizes */
-
-.margin-1em, .m-em-one, .m-em-1 {
-    margin: 1em !important;
-}
-.margin-halfem, .m-em-half {
-    margin: 0.5em !important;
-}
-.margin-quarterem, .m-em-quarter {
-    margin: 0.25em !important;
-}
 
 /* Padding with sizes */
 

@@ -6,10 +6,12 @@ function SpawnSpaceVoyage()
     // row parent
     let rowparent = document.createElement("div");
     rowparent.className = "multi-parent showcase-row-threequarters";
+    MainContainer.append(rowparent);
     
     // scrolling parent
     let parent = document.createElement("div");
     parent.className = "multi-parent sv-slider";
+    rowparent.append(parent);
     
     
 
@@ -35,19 +37,6 @@ function SpawnSpaceVoyage()
 
 
 
-    // comment
-    SpawnCommentBox(
-        "I created my first Steam release alongside\n" +
-        "school while studying computer science.\n" +
-        "\n" +
-        "I programmed the whole game myself in Unity3D,\n" +
-        "including UI and the save file system.\n" +
-        "\n" +
-        "The assets are all paid third party products\n" +
-        "that I meticulously modified and put\n" +
-        "together to look cohesive.\n"
-        , floatparent);
-
 
     
     SpawnBlogpostImage(`spacevoyage`, `1.jpg`, parent);
@@ -70,9 +59,13 @@ function SpawnSpaceVoyage()
     SpawnBlogpostImage(`spacevoyage`, `9.jpg`, parent);
 
     
+    // steam widget
+    let frame = document.createElement("iframe");
+    frame.src = "https://store.steampowered.com/widget/2101690/";
+    frame.className = "steam-widget-iframe hidden-mobile";
+    frame.frameborder = 0;
+    rowparent.append(frame);
     
-    rowparent.append(parent);
-    MainContainer.append(rowparent);
 }
 
     
@@ -81,10 +74,11 @@ function SpawnSpaceVoyageInfo()
 {
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col of-v");
+    MainContainer.append(rowparent);
     
     // scrolling parent
-    let imgParent = SpawnDiv(rowparent, "flex banner-img-container");
+    let imgParent = SpawnDiv(rowparent, "flex banner-img-container m-r-0");
 
 
     let img1 = SpawnElement(imgParent, "img", "sv-banner-portrait");
@@ -98,10 +92,11 @@ function SpawnSpaceVoyageInfo()
 
 
 
+    // v-space on mobile
     SpawnDiv(rowparent, "p-em-half hidden-pc");
     
-    // scrolling parent
-    let infoParent = SpawnDiv(rowparent, "info-container c-f-d");
+    // info parent
+    let infoParent = SpawnDiv(rowparent, "info-container c-f-d m-h-em-2");
 
     SpawnTextLine(infoParent, "a1games presents", "sv-presents");
     SpawnTextLine(infoParent, "Space Voyage", "sv-ethno");
@@ -122,8 +117,21 @@ function SpawnSpaceVoyageInfo()
         window.open("https://a1creator.itch.io/spacevoyage");
     };
 
+
     
-    MainContainer.append(rowparent);
+
+    // comment
+    SpawnCommentBox(
+        "I created my first Steam release in my\n" +
+        "free time while studying computer science.\n" +
+        "\n" +
+        "I programmed the whole game in Unity3D,\n" +
+        "including UI and the save file system.\n" +
+        "\n" +
+        "The assets are all paid third party products\n" +
+        "that I meticulously modified and put\n" +
+        "together to look cohesive.\n"
+        , rowparent, "m-l-0 hidden-mobile");
 }
 
 SpawnSpaceVoyageInfo();   

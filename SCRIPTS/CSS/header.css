@@ -8,7 +8,7 @@
 /* keep this the same height as header-tab !! */
 .header-buffer {
     height: 6em;
-    background-image: url("../../FILES/IMG/old/spacevoyage/bckg.png");
+    background-image: url("../../BLOGPOSTS/spacevoyage/img/bckg.png");
     background-size: cover;
 }
 

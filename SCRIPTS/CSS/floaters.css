@@ -75,7 +75,7 @@
 
 
 .comment-box {
-
+    margin: auto;
     font-family: RobotoLight, sans-serif;
     background: radial-gradient(circle, #000000EE 40%, #00000099 101%);
     padding: 1em 1.2em;
@@ -89,7 +89,6 @@
     */
     border-radius: 0.5em;
     color: white;
-    z-index: 99;
 
     min-width: 12em;
 }
