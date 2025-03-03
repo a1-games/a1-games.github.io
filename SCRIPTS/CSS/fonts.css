@@ -29,6 +29,12 @@
     src: url(../../FILES/FONTS/Roboto-All.ttf);
 }
 @font-face {
+    font-family: RobotoLight;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../FILES/FONTS/Static/Roboto/Roboto-Light.ttf);
+}
+@font-face {
     font-family: Roboto;
     font-style: italic;
     font-weight: 100 900;
