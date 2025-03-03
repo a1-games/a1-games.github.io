@@ -77,20 +77,6 @@
 }
 
 
-.steam-widget-iframe {
-    position: absolute;
-
-    width: 646px;
-    height: 210px;
-
-    border: none;
-    overflow: visible;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, calc(-50% + 20px));
-}
-
 
 
 /* Smartphones (landscape) ----------- */

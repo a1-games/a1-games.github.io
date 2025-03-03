@@ -25,6 +25,15 @@ function SpawnDiv(parent, classes = "")
     return div;
 }
 
+function SpawnDivWithID(parent, id, classes = "")
+{
+    let div = document.createElement("div");
+    div.id = `${id}`;
+    div.className = `${classes}`;
+    parent.append(div);
+    return div;
+}
+
 function SpawnImage(parent, src, classes = "")
 {
     let image = document.createElement("img");
@@ -56,9 +65,9 @@ function InsertStyling(filename, overwritepath = "")
     var linkElem_p = document.createElement("link");
     linkElem_p.rel = "stylesheet";
 
-    linkElem.href = `./SCRIPTS/CSS/${filename}.css`;
+    linkElem_p.href = `./SCRIPTS/CSS/${filename}.css`;
     if (overwritepath != "")
-        linkElem.href = overwritepath;
+        linkElem_p.href = overwritepath;
 
     linkElem_p.media = "print";
     document.head.append(linkElem_p);

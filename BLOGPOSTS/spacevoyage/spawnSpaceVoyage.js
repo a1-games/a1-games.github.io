@@ -60,11 +60,13 @@ function SpawnSpaceVoyage()
 
     
     // steam widget
-    let frame = document.createElement("iframe");
-    frame.src = "https://store.steampowered.com/widget/2101690/";
-    frame.className = "steam-widget-iframe hidden-mobile";
-    frame.frameborder = 0;
-    rowparent.append(frame);
+    //let frame = document.createElement("iframe");
+    //frame.src = "https://store.steampowered.com/widget/2101690/";
+    //frame.className = "steam-widget-iframe ";//hidden-mobile";
+    //frame.frameborder = 0;
+    //rowparent.append(frame);
+    SpawnSteamWidget(rowparent, 2101690);
+
     
 }
 

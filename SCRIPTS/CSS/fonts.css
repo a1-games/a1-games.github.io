@@ -23,33 +23,36 @@
     src: url(../../FILES/FONTS/ethnocentric.otf);
 }
 @font-face {
-    font-family: RobotoMedium;
+    font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
-    src: url(../../FILES/FONTS/Roboto-Medium.ttf);
-}
-@font-face {
-    font-family: RobotoLight;
-    font-style: normal;
-    font-weight: normal;
-    src: url(../../FILES/FONTS/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: RobotoThin;
-    font-style: normal;
-    font-weight: normal;
-    src: url(../../FILES/FONTS/Roboto-Thin.ttf);
+    font-weight: 100 900;
+    src: url(../../FILES/FONTS/Roboto-All.ttf);
 }
 @font-face {
     font-family: Roboto;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(../../FILES/FONTS/Roboto-All-Italic.ttf);
+}
+
+
+/* Can't find a combined ttf for this font */
+@font-face {
+    font-family: MotivaSans;
     font-style: normal;
-    font-weight: normal;
-    src: url(../../FILES/FONTS/Roboto-Regular.ttf);
+    font-weight: 300;
+    src: url(../../FILES/FONTS/Static/MotivaSans/MotivaSans-Light.ttf);
 }
 @font-face {
-    font-family: Roboto;
+    font-family: MotivaSans;
     font-style: normal;
-    font-weight: bold;
-    src: url(../../FILES/FONTS/Roboto-Bold.ttf);
+    font-weight: normal;
+    src: url(../../FILES/FONTS/Static/MotivaSans/MotivaSans-Regular.ttf);
+}
+@font-face {
+    font-family: MotivaSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../../FILES/FONTS/Static/MotivaSans/MotivaSans-Medium.ttf);
 }
 

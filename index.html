@@ -59,6 +59,7 @@
         InsertStyling("icons");
         InsertStyling("personalinfo");
         InsertStyling("scrollbar");
+        InsertStyling("widgets");
         // Blogpost Styles
         InsertBlogpostStyling("spacevoyage");
         InsertBlogpostStyling("androidapps");
@@ -77,6 +78,7 @@
     <!-- SPAWNING -->
     <!-------------->
 
+    <script src="./SCRIPTS/JS/spawnWidgets.js"></script>
     
     <!-- BLOGPOSTS -->
     <script src="./BLOGPOSTS/spacevoyage/spawnSpaceVoyage.js"></script>
@@ -135,6 +137,15 @@
 
 
     </script>
+
+<div id="steam-widget" class="custom-widget">
+    <h2 id="game-title"></h2>
+    <img id="game-image" alt="Game Image" />
+    <p id="game-description"></p>
+    <span id="game-price"></span>
+</div>
+
+
 
 
 </body>
