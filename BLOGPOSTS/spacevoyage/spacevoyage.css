@@ -6,7 +6,6 @@
 }
 
 
-
 #link-button {
     /*button:*/
     background: transparent;
@@ -101,6 +100,15 @@
 }
 
 
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 1121px) {
+
+    .sv-comment {
+        display: none;
+    }
+
+}
 
 
 

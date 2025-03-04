@@ -76,11 +76,11 @@ function SpawnSpaceVoyageInfo()
 {
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col of-v");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col of-v center-kids");
     MainContainer.append(rowparent);
     
     // scrolling parent
-    let imgParent = SpawnDiv(rowparent, "flex banner-img-container m-r-0");
+    let imgParent = SpawnDiv(rowparent, "flex banner-img-container m-h-0");
 
 
     let img1 = SpawnElement(imgParent, "img", "sv-banner-portrait");
@@ -98,7 +98,7 @@ function SpawnSpaceVoyageInfo()
     SpawnDiv(rowparent, "p-em-half hidden-pc");
     
     // info parent
-    let infoParent = SpawnDiv(rowparent, "info-container c-f-d m-h-em-2");
+    let infoParent = SpawnDiv(rowparent, "info-container c-f-d m-h-0");
 
     SpawnTextLine(infoParent, "a1games presents", "sv-presents");
     SpawnTextLine(infoParent, "Space Voyage", "sv-ethno");
@@ -133,7 +133,7 @@ function SpawnSpaceVoyageInfo()
         "The assets are all paid third party products\n" +
         "that I meticulously modified and put\n" +
         "together to look cohesive.\n"
-        , rowparent, "m-l-0 hidden-mobile");
+        , rowparent, "m-h-0 hidden-mobile sv-comment");
 }
 
 SpawnSpaceVoyageInfo();   

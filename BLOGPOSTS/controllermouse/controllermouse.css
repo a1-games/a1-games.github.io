@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conmou-thumb-box {
+    display: flex;
+    flex-direction: column;
+    font-family: "MotivaSans", Roboto, sans-serif;
+    width: 11em;
+    margin: auto;
+
+    border-radius: 0.65em;
+    overflow: hidden;
+    border: 1px transparent solid;
+    background-color: var(--c_Text_Light);
+    line-height: 1.25em;
+}
+
+
+.conmou-thumb-click {
+    display: flex;
+}
+
+.conmou-thumb {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+}
+
+.conmou-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    padding: 0.5em 0.7em;
+    margin: 0;
+}
+
+.conmou-title {
+    display: flex;
+    text-decoration: none;
+    color: var(--c_Text_Dark);
+    font-weight: 300;
+    font-size: 0.95em;
+    white-space: wrap;
+}
+.conmou-title:hover {
+    color: var(--c_Link_Hover);
+}
+
+.conmou-price {
+    font-weight: 600;
+}
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-width: 821px) {
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

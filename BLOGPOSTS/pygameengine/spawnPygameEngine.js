@@ -18,10 +18,10 @@ function SpawnPygameEngineInfo()
         , logobox);*/
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col ");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col center-kids");
     
     // scrolling parent
-    let imgParent = SpawnDiv(rowparent, "flex banner-img-container m-r-0");
+    let imgParent = SpawnDiv(rowparent, "flex banner-img-container m-h-0");
 
 
     let img1 = SpawnElement(imgParent, "img", "pygame-banner hidden-mobile");
@@ -34,7 +34,7 @@ function SpawnPygameEngineInfo()
 
     
     // scrolling parent
-    let infoParent = SpawnDiv(rowparent, "info-container c-f-d m-l-em-3");
+    let infoParent = SpawnDiv(rowparent, "info-container c-f-d m-h-0");
 
 
     // pygame x a1
@@ -43,7 +43,7 @@ function SpawnPygameEngineInfo()
 
     // title
     let title = SpawnBlogpostImage(`pygameengine`, `textlogo.png`, infoParent);
-    title.className = "float-logo-rectangle pygame-title";
+    title.className = "float-logo-rectangle pygame-title ";
 
     SpawnTextLine(infoParent, "Game engine framework for making games in python", "sv-small-title");
 
