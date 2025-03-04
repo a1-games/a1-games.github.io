@@ -1,7 +1,8 @@
 
 .android-apps-container {
-    overflow-x: auto;
+    overflow-x: hidden;
 }
+
 
 .android-app-box {
     position: relative;
