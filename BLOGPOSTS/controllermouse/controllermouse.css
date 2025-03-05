@@ -2,31 +2,48 @@
 
 
 
+.conmou-row {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    background-image: url("../../FILES/IMG/PATTERN/unity_logo_pattern.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 134px;
+    background-color: var(--c_Light_Shadow_Low);
+    
+
+    border: 2px var(--c_Text_Light) solid;
+    border-left: none;
+    border-right: none;
+
+    font-family: "MotivaSans", Roboto, sans-serif;
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* Thumb */
 
 .conmou-thumb-box {
     display: flex;
     flex-direction: column;
-    font-family: "MotivaSans", Roboto, sans-serif;
     width: 11em;
-    margin: auto;
+    margin: 0;
 
     border-radius: 0.65em;
     overflow: hidden;
     border: 1px transparent solid;
     background-color: var(--c_Text_Light);
     line-height: 1.25em;
+    
+    box-shadow: 0 2px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    transition: transform 0.1s ease-in-out;
+}
+.conmou-thumb-box:hover {
+    transform: scale(1.05);;
 }
 
 
@@ -64,11 +81,58 @@
 }
 
 
+/* Info */
+
+.conmou-info-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.4em;
+
+    max-width: 22em;
+    margin: auto 0;
+
+    height: fit-content;
+    background-color: var(--c_Text_Light);
+
+    border-radius: 0.5em;
+    box-shadow: 0 2px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+
+.conmou-info-title {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.conmou-info-sub {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
 
 
 /* Smartphones (landscape) ----------- */
 @media screen and (max-width: 821px) {
     
+    .conmou-row {
+        gap: 1.25em;
+    }
+
+    .conmou-thumb-box {
+        margin: 0 auto;
+    }
+
+    .conmou-info-box {
+        margin: 0 auto;
+    }
 
 }
 
