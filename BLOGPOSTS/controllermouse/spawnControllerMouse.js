@@ -5,13 +5,10 @@ function SpawnControllerMouse()
     let link = "https://assetstore.unity.com/packages/tools/input-management/mouse-simulation-with-controller-301035";
 
     // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col jsproj-showcase ");
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col conmou-row center-kids");
     
-    // 
-    let title = SpawnDiv(rowparent, "flex true-center jsproj-title");
-    title.innerText = "C# Projects";
 
-
+    //
     let thumbBox = SpawnDiv(rowparent, "conmou-thumb-box");
 
     let imgClick = SpawnElement(thumbBox, "a", "conmou-thumb-click");
@@ -29,6 +26,17 @@ function SpawnControllerMouse()
 
     let price = SpawnDiv(textBox, "conmou-price");
     price.innerText = "Free";
+
+
+    //
+    let infoBox = SpawnDiv(rowparent, "conmou-info-box");
+
+    let infoTitle = SpawnDiv(infoBox, "conmou-info-title");
+    infoTitle.innerText = "Unity Asset Store";
+
+    let subInfo = SpawnDiv(infoBox, "conmou-info-sub");
+    subInfo.innerText = "Released a package that lets you control the mouse cursor with a controller by just dragging a prefab into a scene.";
+
 
 
 }

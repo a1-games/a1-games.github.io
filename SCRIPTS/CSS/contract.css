@@ -54,6 +54,11 @@
     --c_Dark: rgb(31, 31, 31);
     --c_Dark_Hover: rgb(43, 43, 43);
 
+    --c_Light_Shadow_Low: #ffffff75;
+    --c_Dark_Shadow_Low: #00000007;
+
+    --c_Light_Shadow_High: #ffffffef;
+    --c_Dark_Shadow_High: #000000dd;
 
     /* These are switched on darkmode toggle - maybe delete
     --c_Text: var(--c_Text_Light);
