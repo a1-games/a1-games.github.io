@@ -1,12 +1,12 @@
 
 
-function SpawnControllerMouse()
+function SpawnAssetStore()
 {
     let link = "https://assetstore.unity.com/packages/tools/input-management/mouse-simulation-with-controller-301035";
 
     // row parent
     let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col conmou-row center-kids");
-    
+    let pattern = SpawnDiv(rowparent, "conmou-pattern");
 
     //
     let thumbBox = SpawnDiv(rowparent, "conmou-thumb-box");
@@ -43,4 +43,4 @@ function SpawnControllerMouse()
     
     
     
-SpawnControllerMouse();
+SpawnAssetStore();
