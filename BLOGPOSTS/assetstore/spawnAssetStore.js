@@ -1,45 +1,63 @@
 
 
-function SpawnAssetStore()
+function SpawnPackage(parent, packageLink, imgLink, title, price)
 {
-    let link = "https://assetstore.unity.com/packages/tools/input-management/mouse-simulation-with-controller-301035";
-
-    // row parent
-    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col conmou-row center-kids");
-    let pattern = SpawnDiv(rowparent, "conmou-pattern");
-
-    //
-    let thumbBox = SpawnDiv(rowparent, "conmou-thumb-box");
+    let thumbBox = SpawnDiv(parent, "conmou-thumb-box");
 
     let imgClick = SpawnElement(thumbBox, "a", "conmou-thumb-click");
     imgClick.target = "_blank";
-    imgClick.href = link;
+    imgClick.href = packageLink;
     let img = SpawnElement(imgClick, "img", "conmou-thumb");
-    img.src = "https://assetstorev1-prd-cdn.unity3d.com/key-image/42affb66-43c0-451c-92a0-4aced5f1794e.jpg";
+    img.src = imgLink
     
     let textBox = SpawnDiv(thumbBox, "conmou-text-box");
 
     let assetTitle = SpawnElement(textBox, "a", "conmou-title");
-    assetTitle.innerText = "Mouse Simulation With Controller";
+    assetTitle.innerText = title;
     assetTitle.target = "_blank";
-    assetTitle.href = link;
+    assetTitle.href = packageLink;
 
-    let price = SpawnDiv(textBox, "conmou-price");
-    price.innerText = "Free";
+    let pricediv = SpawnDiv(textBox, "conmou-price");
+    pricediv.innerText = price;
+
+    return thumbBox;
+}
 
 
-    //
+function SpawnAssetStore()
+{
+    // row parent
+    let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col conmou-row center-kids");
+    let pattern = SpawnDiv(rowparent, "conmou-pattern");
+
+    let packagesParent = SpawnDiv(rowparent, "multi-parent showcase-row-nolimit conmou-packageparent center-kids");
+
+    let mousecontroller = SpawnPackage(packagesParent,
+        "https://assetstore.unity.com/packages/tools/input-management/mouse-simulation-with-controller-301035",
+        "https://assetstorev1-prd-cdn.unity3d.com/key-image/42affb66-43c0-451c-92a0-4aced5f1794e.jpg",
+        "Mouse Simulation With Controller",
+        "Free"
+    );
+
+    let uiPosition = SpawnPackage(packagesParent,
+        "https://assetstore.unity.com/packages/tools/gui/ui-position-clamp-keep-recttransform-on-screen-315346",
+        "https://assetstorev1-prd-cdn.unity3d.com/key-image/3001f35a-3acd-4a55-9ba8-47f565f46d37.jpg",
+        "UI Position Clamp",
+        "Free"
+    );
+    
+        
     let infoBox = SpawnDiv(rowparent, "conmou-info-box");
 
     let infoTitle = SpawnDiv(infoBox, "conmou-info-title");
     infoTitle.innerText = "Unity Asset Store";
 
     let subInfo = SpawnDiv(infoBox, "conmou-info-sub");
-    subInfo.innerText = "Released a package that lets you control the mouse cursor with a controller by just dragging a prefab into a scene.";
-
+    subInfo.innerText = "Tools that make Unity development easier.";
 
 
 }
+
     
     
     

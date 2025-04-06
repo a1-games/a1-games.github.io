@@ -238,6 +238,6 @@ body {
 .center-items, .center-content {
     justify-content: center !important;
     align-items: center !important;
-    gap: 0 !important;
+    /*gap: 0 !important;*/
 }
 

@@ -35,6 +35,12 @@
     filter: opacity(0.6);
 }
 
+.conmou-packageparent {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+
+}
 
 
 /* Thumb */
@@ -142,9 +148,11 @@
         gap: 1.25em;
     }
 
-    .conmou-thumb-box {
-        margin: 0 auto;
+    .conmou-packageparent {
+        gap: 1.25em;
+        margin: auto;
     }
+
 
     .conmou-info-box {
         margin: 0 auto;
