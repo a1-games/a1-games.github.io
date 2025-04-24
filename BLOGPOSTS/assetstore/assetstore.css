@@ -36,10 +36,10 @@
 }
 
 .conmou-packageparent {
-    display: flex;
-    flex-direction: row;
     overflow: visible;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 
@@ -110,7 +110,7 @@
     gap: 0.4em;
 
     max-width: 22em;
-    margin: auto 0;
+    margin: auto 3em auto 0;
 
     height: fit-content;
     background-color: var(--c_Text_Light);

@@ -2,7 +2,7 @@
 
 function SpawnPackage(parent, packageLink, imgLink, title, price)
 {
-    let thumbBox = SpawnDiv(parent, "conmou-thumb-box");
+    let thumbBox = SpawnDiv(parent, "conmou-thumb-box no-select");
 
     let imgClick = SpawnElement(thumbBox, "a", "conmou-thumb-click");
     imgClick.target = "_blank";
@@ -30,7 +30,7 @@ function SpawnAssetStore()
     let rowparent = SpawnDiv(MainContainer, "multi-parent showcase-row-nolimit dynamic-row-col conmou-row center-kids");
     let pattern = SpawnDiv(rowparent, "conmou-pattern");
 
-    let packagesParent = SpawnDiv(rowparent, "multi-parent showcase-row-nolimit conmou-packageparent center-kids");
+    let packagesParent = SpawnDiv(rowparent, "multi-parent showcase-row-nolimit center-kids flex conmou-packageparent ");
 
     let mousecontroller = SpawnPackage(packagesParent,
         "https://assetstore.unity.com/packages/tools/input-management/mouse-simulation-with-controller-301035",
@@ -46,8 +46,15 @@ function SpawnAssetStore()
         "Free"
     );
     
+    let screenshotPNG = SpawnPackage(packagesParent,
+        "https://assetstore.unity.com/packages/tools/utilities/png-icon-snapper-easy-screenshots-without-background-315879",
+        "https://assetstorev1-prd-cdn.unity3d.com/key-image/d929f982-7324-455f-a009-904d3f332c31.jpg",
+        "PNG Icon Snapper",
+        "$4.99"
+    );
+    
         
-    let infoBox = SpawnDiv(rowparent, "conmou-info-box");
+    let infoBox = SpawnDiv(rowparent, "showcase-row-nolimit conmou-info-box");
 
     let infoTitle = SpawnDiv(infoBox, "conmou-info-title");
     infoTitle.innerText = "Unity Asset Store";
