@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="FILES/IMG/ICON/headshot_ico.png" type="image/x-icon">
+    <title>Asbjørn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Local Stylesheets -->
+     <link rel="stylesheet" href="SCRIPTS/CSS/loading.css" media="screen" />
+     <link rel="stylesheet" href="SCRIPTS/CSS/loading.css" media="print" />
+
+    <!-- Indie Ads Fetch -->
+    <script src="https://indieads.github.io/indieads.js"></script>
+
+    <!-- Injected Stylesheets -->
+
+</head>
+<!-- Dark background color so loading the page isn't a fucking flashbang -->
+<body class="m-0 c-bg-l">
+    <!-- Container for everything -->
+    <div id="main-container">
+    </div>
+
+    <script src="./SCRIPTS/JS/global.js"> </script>
+
+    <script>
+        
+        // Global Styles
+        InsertStyling("fonts");
+        InsertStyling("contract");
+        InsertStyling("contract_margin");
+        InsertStyling("containers");
+        InsertStyling("floaters");
+        InsertStyling("header");
+        InsertStyling("icons");
+        InsertStyling("personalinfo");
+        InsertStyling("scrollbar");
+        InsertStyling("widgets");
+        // Blogpost Styles
+        InsertBlogpostStyling("spacevoyage");
+        InsertBlogpostStyling("androidapps");
+        InsertBlogpostStyling("necesse");
+        InsertBlogpostStyling("pygameengine");
+        InsertBlogpostStyling("spaceshooter");
+        InsertBlogpostStyling("cursorinvasion");
+        InsertBlogpostStyling("jsprojects");
+        InsertBlogpostStyling("indieads");
+        InsertBlogpostStyling("splitthebill");
+        InsertBlogpostStyling("gamesfun");
+        InsertBlogpostStyling("resumemaker");
+        InsertBlogpostStyling("assetstore");
+    </script>
+
+    <!-------------->
+    <!-- SPAWNING -->
+    <!-------------->
+
+    <script>
+                
+        function SpawnDL()
+        {
+
+            SpawnTextLine(MainContainer, "SPIKLET", "pi-text clickable-link").onclick = () => {
+                DownloadFile(`FILES/DEMO/spiklet-win-x86.zip`, `spiklet-win-x86.zip`);
+            };
+
+            return piContainer;
+        }
+
+        SpawnDL();
+
+    </script>
+    
+
+
+</body>
+
+</html>

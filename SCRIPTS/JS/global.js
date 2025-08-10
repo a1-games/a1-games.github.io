@@ -90,11 +90,11 @@ function SpawnFloatParent(parent, leftrightmiddle, multicolum = false)
 
 function SpawnTextLine(parent, text, extraclasses = "")
 {
-    let name = document.createElement("div");
-    name.innerText = text;
-    name.className = `${extraclasses}`;
-    parent.append(name);
-    return name;
+    let textElem = document.createElement("div");
+    textElem.innerText = text;
+    textElem.className = `${extraclasses}`;
+    parent.append(textElem);
+    return textElem;
 }
 
 
