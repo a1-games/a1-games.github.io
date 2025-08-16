@@ -35,7 +35,7 @@ function SpawnRandomizedGames(parent)
 function AddGameImage(gamename, parent)
 {
     let image = document.createElement("img");
-    image.src = `https://a1games.fun/games/${gamename}/thumbnail.png`;
+    image.src = `https://a1gamesfun.github.io/games/${gamename}/thumbnail.png`;
     image.classList.add("showcase-img");
     image.classList.add("gamesfun-game");
     parent.append(image);
