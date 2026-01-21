@@ -28,29 +28,23 @@ function SpawnNecesse()
     // necesse logo
     let neclogo = SpawnBlogpostImage(`necesse`, `necesse_logo.png`, logobox);
     neclogo.className = "float-logo-rectangle shape-shadow-black";
-
-    // internship line
-    let intshipline = document.createElement("div");
-    intshipline.innerText = "Internship"
-    intshipline.className = "intshipline";
-    logobox.append(intshipline);
     
     // comment
     SpawnCommentBox(
+        "Fair Games\n" +
+        "-\n" +
         "September 16 -> October 11, 2024\n" +
-        "Internship at Fair Games as\n" +
-        "Gameplay Programmer.\n" +
+        "Gameplay Programmer (Internship)\n" +
+        "-\n" +
+        "July -> December, 2025\n" +
+        "Gameplay Programmer\n" +
         "\n" +
-        "Worked in a proprietary Game Engine,\n" +
-        "programming in Java.\n" +
+        "Language: Java (Proprietary Game Engine)\n" +
         "\n" +
-        "Pictures include things I created:\n" +
-        "• Witch & Evil Witch Castle\n" +
-        "• Randomly Generated Cave Rivers With Bridges\n" +
-        "• Full Witch Armor Set + Broom Mount\n" +
-        "• Necrotic Weapon Set\n" +
-        "• Suspiciously Tall Goblin\n" +
-        "• Randomly Generated Farm Houses\n"
+        "Implemented over 300 sounds\n" +
+        "Added new mobs and items\n" +
+        "Collaborated with great colleagues\n" +
+        "Helped bring the game from early access to release\n"
         , logobox);
 
 
