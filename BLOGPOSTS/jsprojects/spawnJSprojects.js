@@ -21,9 +21,9 @@ function SpawnJsProjectsInfo()
     splitthebill.classList.add("jsproj-grid-item");
     gridbox.append(splitthebill);
     
-    let gamesfun = SpawnGamesFun();
+    /*let gamesfun = SpawnGamesFun();
     gamesfun.classList.add("jsproj-grid-item");
-    gridbox.append(gamesfun);
+    gridbox.append(gamesfun);*/
 
 
     let resumemaker = SpawnResumeMaker();   
