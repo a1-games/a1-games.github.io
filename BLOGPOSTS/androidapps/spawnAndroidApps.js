@@ -35,7 +35,7 @@ function SpawnAndroidApps()
         "scenes, UI, input & sound in Unity " +
         ""
     );
-    
+    /*
     BuildAppVisual(parent, "nutbutton", "Nut Button", "10K+ Installs",
         "The dumbest thing I've ever released.\n\n" +
         "I spent thirty minutes making a button that " + 
@@ -53,7 +53,7 @@ function SpawnAndroidApps()
         "didn't pay off and the app is pretty idle. " +
         ""
     );
-
+*/
 
 
     rowparent.append(parent);
@@ -162,7 +162,7 @@ function SpawnAndroidAppsInfo(parentContainer)
     SpawnDiv(infoParent, "p-em-quarter hidden-mobile");
     SpawnTextLine(infoParent, "Published Android Developer", "sv-presents");
 
-    SpawnTextLine(infoParent, "Hover an app icon to read more", "sv-small-title hidden-mobile");
+    //SpawnTextLine(infoParent, "Hover an app icon to read more", "sv-small-title hidden-mobile");
 
 
     
